@@ -1,0 +1,14 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Debugger",
+			"args": ["${workspaceFolder}/dist/Dragonair.js"],
+			"env": {
+				"NODE_ENV": "development"
+			}
+		}
+	]
+}
