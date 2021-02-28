@@ -6,13 +6,13 @@
 	"license": "MIT",
 	"dependencies": {
 		"@discordjs/collection": "^0.1.6",
-		"@sapphire/decorators": "^2.0.4",
+		"@sapphire/decorators": "^2.0.5",
 		"@sapphire/discord-utilities": "^2.0.5",
-		"@sapphire/discord.js-utilities": "^1.4.4",
+		"@sapphire/discord.js-utilities": "^1.5.0",
 		"@sapphire/framework": "1.0.0-alpha.11",
 		"@sapphire/pieces": "^1.2.2",
 		"@sapphire/plugin-logger": "^1.0.8",
-		"@sapphire/time-utilities": "^1.2.9",
+		"@sapphire/time-utilities": "^1.2.10",
 		"@sapphire/utilities": "^1.4.5",
 		"discord.js": "^12.5.1",
 		"reflect-metadata": "^0.1.13"
@@ -24,7 +24,7 @@
 		"@types/ws": "^7.4.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.2.1",
-		"typescript": "4.2.0-beta"
+		"typescript": "^4.2.2"
 	},
 	"scripts": {
 		"build": "tsc",

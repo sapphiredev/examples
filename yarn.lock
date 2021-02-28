@@ -16,10 +16,10 @@
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-"@sapphire/decorators@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-2.0.4.tgz#8ebebe065eb154ee234b689534c6e27b525a5deb"
-  integrity sha512-6dZ5QhkYGK59tqIXb39RV4P8W6jbkohXOI08VIDNO+0m8J5gI12t3mb2m3Jzf7gX27FqU/6IC/tSziJFk2kMfA==
+"@sapphire/decorators@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-2.0.5.tgz#e7aa9b6fbf1d14f6c4161efd88d4a85491752290"
+  integrity sha512-9s6RWy9DVfNNKp/fikrztpcdx/A3urziE9yKoCsKL1wD/oxQKSgKqBwFt3tyV40BxR/gSZ87HfynBsoxv9ElPw==
 
 "@sapphire/discord-utilities@^2.0.4", "@sapphire/discord-utilities@^2.0.5":
   version "2.0.5"
@@ -28,10 +28,17 @@
   dependencies:
     twemoji-parser "^13.0.0"
 
-"@sapphire/discord.js-utilities@^1.4.3", "@sapphire/discord.js-utilities@^1.4.4":
+"@sapphire/discord.js-utilities@^1.4.3":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.4.4.tgz#734aead8a864cb064cc2f8f4121a57e93369cb46"
   integrity sha512-z5I1IAloFNj3hgXD3ILXIDZ/vacImgU5NWNFHaeCWIlj7s3sslbJO1jUEr/Jd5oJ3zSHqW7dyfprmHQrnKZKWw==
+  dependencies:
+    "@sapphire/discord-utilities" "^2.0.5"
+
+"@sapphire/discord.js-utilities@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-1.5.0.tgz#80249d69640372a1e0762777ced68c4178cc948a"
+  integrity sha512-AuQA4ej/MSbyIEp8ORVcdYVJi8LyQT0RLdNqMbW/1NUzxfq7H6pPjC5CI9O1ZZppqcmt2iXPYJoN7ABaHHfqWQ==
   dependencies:
     "@sapphire/discord-utilities" "^2.0.5"
 
@@ -72,6 +79,13 @@
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-1.1.5.tgz#04bbc9488d890d30e9b6541cab04f26663f97d0f"
   integrity sha512-7HzQrW3naxZTq1LN0oGzGX/xVDFWMWnfmPA1Z1erEO1DPd3hEo+CD6V/bEd3vWh7/XBAX5L+KMvlenvMQNy3wg==
+
+"@sapphire/time-utilities@^1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.10.tgz#a7659723571508a905cc2a2279ff8a3246bc1635"
+  integrity sha512-+9mvo8c4oD/J+eprJ262G44Mn8o8MF8pjAzVR1A/VuSc5yxPXBiG7X/ZIPJCy9BTE8Y1972c3DlMLIlTnEOIpg==
+  dependencies:
+    "@sapphire/utilities" "^1.4.5"
 
 "@sapphire/time-utilities@^1.2.9":
   version "1.2.9"
@@ -626,10 +640,10 @@ twemoji-parser@^13.0.0:
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.0.0.tgz#bd9d1b98474f1651dc174696b45cabefdfa405af"
   integrity sha512-zMaGdskpH8yKjT2RSE/HwE340R4Fm+fbie4AaqjDa4H/l07YUmAvxkSfNl6awVWNRRQ0zdzLQ8SAJZuY5MgstQ==
 
-typescript@4.2.0-beta:
-  version "4.2.0-beta"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.0-beta.tgz#75326e43625718f4a325f5725a105a1b3f1a7b45"
-  integrity sha512-0nYjpkQ6bKjHoJTQkUHcDtGLNenqc5rfTcl3ISUnJXPkGa0115FcVJABmodfMKHLyDBmzDr8IGLbDv5m7sbYgw==
+typescript@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
+  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
