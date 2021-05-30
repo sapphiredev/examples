@@ -1,6 +1,8 @@
-import { LogLevel, SapphireClient } from '@sapphire/framework';
-import '@sapphire/plugin-logger/register';
 import 'reflect-metadata';
+import '@sapphire/plugin-logger/register';
+import '@sapphire/interactions/register-discordjs'
+import '@skyra/editable-commands';
+import { LogLevel, SapphireClient } from '@sapphire/framework';
 import { BOT_TOKEN } from './config';
 
 const client = new SapphireClient({
