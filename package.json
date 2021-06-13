@@ -18,6 +18,7 @@
 		"@sapphire/utilities": "^1.4.5",
 		"@skyra/editable-commands": "^1.0.0",
 		"discord.js": "^12.5.1",
+		"dotenv-cra": "^2.0.2",
 		"reflect-metadata": "^0.1.13"
 	},
 	"devDependencies": {

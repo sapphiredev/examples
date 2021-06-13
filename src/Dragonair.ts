@@ -1,9 +1,5 @@
-import 'reflect-metadata';
-import '@sapphire/plugin-logger/register';
-import '@sapphire/interactions/register-discordjs'
-import '@skyra/editable-commands';
+import './lib/setup';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { BOT_TOKEN } from './config';
 
 const client = new SapphireClient({
 	defaultPrefix: 'dr!',
@@ -31,7 +27,7 @@ const client = new SapphireClient({
 const main = async () => {
 	try {
 		client.logger.info('Logging in');
-		await client.login(BOT_TOKEN);
+		await client.login();
 		client.logger.info('logged in');
 	} catch (error) {
 		client.logger.fatal(error);
