@@ -1,7 +1,7 @@
 {
-	"name": "dragonair-test-bot",
+	"name": "sapphire-sample-bot",
 	"version": "1.0.0",
-	"main": "dist/Dragonair.js",
+	"main": "dist/sample-bot.js",
 	"author": "Jeroen Claassens",
 	"license": "MIT",
 	"dependencies": {
@@ -34,7 +34,7 @@
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w",
-		"start": "node dist/Dragonair.js",
+		"start": "node dist/sample-bot.js",
 		"dev": "run-s build start",
 		"format": "prettier --write \"src/**/*.ts\""
 	},
