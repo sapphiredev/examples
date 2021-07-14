@@ -1,8 +1,4 @@
-import { Nullish, isNullish } from '@sapphire/utilities';
-
-function isNullishOrEmpty(value: unknown): value is Nullish | '' {
-	return value === '' || isNullish(value);
-}
+import { isNullishOrEmpty } from '@sapphire/utilities';
 
 export function envParseArray(key: 'OWNERS', defaultValue?: string[]): string[] {
 	const value = process.env[key];
