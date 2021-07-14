@@ -1,4 +1,4 @@
-import { Nullish, isNullish } from "@sapphire/utilities";
+import { Nullish, isNullish } from '@sapphire/utilities';
 
 function isNullishOrEmpty(value: unknown): value is Nullish | '' {
 	return value === '' || isNullish(value);
