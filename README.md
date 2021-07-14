@@ -6,7 +6,7 @@
 
 **A very basic setup of a [Sapphire] bot, used as an example and reference point**
 
-[![GitHub](https://img.shields.io/badge/license-Fully Open Source-green?logo=github)](https://github.com/favna/sapphire-sample-bot/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/badge/license-Fully%20Open%20Source-green?logo=github)](https://github.com/favna/sapphire-sample-bot/blob/main/LICENSE.md)
 
 [![Support Server](https://discord.com/api/guilds/737141877803057244/embed.png?style=banner2)](https://sapphirejs.dev/discord)
 
