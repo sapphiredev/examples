@@ -7,14 +7,12 @@ on:
   pull_request:
 
 jobs:
-  Linting:
-    name: Linting
+  Formatting:
+    name: Formatting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Add problem matcher
-        run: echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
@@ -24,35 +22,10 @@ jobs:
         id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-16-${{ hashFiles('**/package-lock.json') }}
       - name: Install Dependencies if Cache Miss
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: yarn --frozen-lockfile
+        run: npm ci
       - name: Run ESLint
-        run: yarn lint --fix=false
+        run: npx prettier --check src/**/*.ts
 
-  Building:
-    name: Compile source code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Add problem matcher
-        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v16
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - name: Restore CI Cache
-        uses: actions/cache@v2.1.6
-        id: cache-restore
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies if Cache Miss
-        if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: yarn --frozen-lockfile
-      - name: Build Code (tsc)
-        run: yarn build
-      - name: Build Code (vercel)
-        run: yarn vercel-build
