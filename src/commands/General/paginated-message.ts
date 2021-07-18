@@ -3,6 +3,7 @@ import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { Command, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { MessageEmbed } from 'discord.js';
+import { sendLoadingMessage } from '../../lib/utils';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['pm'],
@@ -11,6 +12,8 @@ import { MessageEmbed } from 'discord.js';
 })
 export class UserCommand extends Command {
 	public async run(message: Message) {
+		const response = await sendLoadingMessage(message)
+
 		const paginatedMessage = new PaginatedMessage({
 			template: new MessageEmbed()
 				.setColor('#FF0000')
@@ -30,6 +33,7 @@ export class UserCommand extends Command {
 					.setEmbed(new MessageEmbed().setTimestamp())
 			);
 
-		return paginatedMessage.run(message);
+		await paginatedMessage.run(response, message.author);
+		return response;
 	}
 }
