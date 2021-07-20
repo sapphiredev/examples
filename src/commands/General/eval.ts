@@ -19,7 +19,7 @@ export default class extends Command {
 	public async run(message: Message, args: Args) {
 		const code = await args.rest('string');
 
-		const { result, success, type } = await this.eval(code, {
+		const { result, success, type } = await this.eval(message, code, {
 			async: args.getFlags('async'),
 			depth: Number(args.getOption('depth')) ?? 0,
 			showHidden: args.getFlags('hidden', 'showHidden')
@@ -39,10 +39,15 @@ export default class extends Command {
 		return message.channel.send(`${output}\n${typeFooter}`);
 	}
 
-	private async eval(code: string, flags: { async: boolean; depth: number; showHidden: boolean }) {
+	private async eval(message: Message, code: string, flags: { async: boolean; depth: number; showHidden: boolean }) {
 		if (flags.async) code = `(async () => {\n${code}\n})();`;
+		// @ts-expect-error value is never read, this is so `msg` is possible as an alias when sending the eval.
+		// eslint-disable-next-line @typescript-eslint/no-unused-vars
+		const msg = message;
+
 		let success = true;
 		let result = null;
+
 		try {
 			// eslint-disable-next-line no-eval
 			result = eval(code);
