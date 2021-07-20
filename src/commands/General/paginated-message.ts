@@ -12,7 +12,7 @@ import { sendLoadingMessage } from '../../lib/utils';
 })
 export class UserCommand extends Command {
 	public async run(message: Message) {
-		const response = await sendLoadingMessage(message)
+		const response = await sendLoadingMessage(message);
 
 		const paginatedMessage = new PaginatedMessage({
 			template: new MessageEmbed()
