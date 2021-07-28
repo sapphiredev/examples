@@ -7,7 +7,7 @@ import type { Message } from 'discord.js';
 	description: 'A basic command with some subcommands',
 	subCommands: ['add', { input: 'create', output: 'add' }, 'remove', 'reset', { input: 'show', default: true }]
 })
-export default class extends SubCommandPluginCommand {
+export class UserCommand extends SubCommandPluginCommand {
 	// Anyone should be able to view the result, but not modify
 	public async show(message: Message) {
 		return message.channel.send('Showing!');

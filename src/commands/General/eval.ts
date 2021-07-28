@@ -15,7 +15,7 @@ import { inspect } from 'util';
 		options: ['depth']
 	}
 })
-export default class extends Command {
+export class UserCommand extends Command {
 	public async run(message: Message, args: Args) {
 		const code = await args.rest('string');
 
