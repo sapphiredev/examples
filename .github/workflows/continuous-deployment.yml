@@ -32,11 +32,19 @@ jobs:
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: npm ci
       - name: Add babel dependencies
-        run: npm i -D @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-typescript babel-plugin-const-enum
+        run: npm i -D @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env @babel/preset-typescript babel-plugin-const-enum
       - name: Create babel.config.js
         run: |
           echo 'module.exports = {
             presets: [
+              [
+                "@babel/preset-env",
+                {
+                  targets: {
+                    node: true
+                  }
+                }
+              ],
               "@babel/preset-typescript"
             ],
             plugins: [
