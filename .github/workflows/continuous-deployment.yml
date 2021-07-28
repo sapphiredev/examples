@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: javascript
+          path: javascript
       - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
