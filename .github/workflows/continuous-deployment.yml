@@ -51,9 +51,7 @@ jobs:
             ]
           }' > babel.config.js
       - name: Run Babel
-        run: |
-          ls -al
-          npx babel src --out-dir ../dist --extensions ".ts" --relative
+        run: npx babel src --out-dir ../dist --extensions ".ts" --relative
       - name: Push new code
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
@@ -73,7 +71,7 @@ jobs:
           sed -i 's/dist/src/g' javascript/package.json
 
           echo -e "\n# Commit and push"
-          cd out
+          cd javascript
           git add --all .
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
