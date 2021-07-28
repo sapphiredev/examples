@@ -1,0 +1,78 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  Deploy:
+    name: JS Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Checkout Project
+        uses: actions/checkout@v2
+        with:
+          ref: javascript
+      - name: Use Node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Restore CI Cache
+        uses: actions/cache@v2.1.6
+        id: cache-restore
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-16-${{ hashFiles('**/package-lock.json') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: npm ci
+      - name: Add babel dependencies
+        run: npm i -D @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-typescript babel-plugin-const-enum
+      - name: Create babel.config.js
+        run: |
+          echo 'module.exports = {
+            presets: [
+              "@babel/preset-typescript"
+            ],
+            plugins: [
+              [
+                "@babel/plugin-proposal-decorators",
+                {
+                  legacy: true
+                }              
+              ],
+              "@babel/plugin-proposal-class-properties",
+              "const-enum"
+            ]
+          }' > babel.config.js
+      - name: Run Babel
+        run: npx babel src --out-dir ../dist --extensions ".ts" --relative
+      - name: Push new code
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          echo -e "\n# Remove any old files in the dist folder"
+          rm -rfv javascript/src/*
+          rm -rfv javascript/package.json
+          rm -rfv javascript/package-lock.json
+          rm -rfv javascript/README.md
+
+          echo -e "\n# Move the generated docs to the newly-checked-out repo, to be committed and pushed"
+          rsync -vaI dist/ javascript/src
+          rsync -vaI package.json javascript/package.json
+          rsync -vaI package-lock.json javascript/package-lock.json
+          rsync -vaI README.md javascript/README.md
+
+          echo -e "\n# Adjust package.json"
+          sed -i 's/dist/src/g' javascript/package.json
+
+          echo -e "\n# Commit and push"
+          cd out
+          git add --all .
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "build: javascript build for ${GITHUB_SHA}" || true
+          git push origin javascript
