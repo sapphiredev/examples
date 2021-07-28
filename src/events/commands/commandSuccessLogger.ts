@@ -1,12 +1,17 @@
-import { ApplyOptions } from '@sapphire/decorators';
-import type { CommandSuccessPayload, EventOptions } from '@sapphire/framework';
+import type { CommandSuccessPayload, EventOptions, PieceContext } from '@sapphire/framework';
 import { Command, Event, Events, LogLevel } from '@sapphire/framework';
 import type { Logger } from '@sapphire/plugin-logger';
 import { cyan } from 'colorette';
 import type { Guild, User } from 'discord.js';
 
-@ApplyOptions<EventOptions>({ event: Events.CommandSuccess })
 export class UserEvent extends Event {
+	public constructor(context: PieceContext, options?: EventOptions) {
+		super(context, {
+			...options,
+			event: Events.CommandSuccess
+		});
+	}
+
 	public run({ message, command }: CommandSuccessPayload) {
 		const shard = this.shard(message.guild?.shardID ?? 0);
 		const commandName = this.command(command);

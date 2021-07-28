@@ -1,13 +1,18 @@
-import { ApplyOptions } from '@sapphire/decorators';
-import type { EventOptions } from '@sapphire/framework';
+import type { EventOptions, PieceContext } from '@sapphire/framework';
 import { Event, Store } from '@sapphire/framework';
 import { blue, gray, green, magenta, magentaBright, white, yellow } from 'colorette';
 
 const dev = process.env.NODE_ENV !== 'production';
 
-@ApplyOptions<EventOptions>({ once: true })
 export class UserEvent extends Event {
 	private readonly style = dev ? yellow : blue;
+
+	public constructor(context: PieceContext, options?: EventOptions) {
+		super(context, {
+			...options,
+			once: true
+		});
+	}
 
 	public run() {
 		this.printBanner();

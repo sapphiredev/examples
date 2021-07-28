@@ -1,12 +1,14 @@
-import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { Command, CommandOptions, PieceContext } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 
-@ApplyOptions<CommandOptions>({
-	description: 'ping pong',
-	enabled: true
-})
 export class UserCommand extends Command {
+	public constructor(context: PieceContext, options: CommandOptions) {
+		super(context, {
+			...options,
+			description: 'ping pong'
+		});
+	}
+
 	public async run(message: Message) {
 		const msg = await message.channel.send('Ping?');
 

@@ -1,16 +1,19 @@
-import { ApplyOptions } from '@sapphire/decorators';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { Command, CommandOptions, PieceContext } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { MessageEmbed } from 'discord.js';
 import { sendLoadingMessage } from '../../lib/utils';
 
-@ApplyOptions<CommandOptions>({
-	aliases: ['pm'],
-	description: 'A command that uses paginated messages.',
-	generateDashLessAliases: true
-})
 export class UserCommand extends Command {
+	public constructor(context: PieceContext, options: CommandOptions) {
+		super(context, {
+			...options,
+			aliases: ['pm'],
+			description: 'A command that uses paginated messages.',
+			generateDashLessAliases: true
+		});
+	}
+
 	public async run(message: Message) {
 		const response = await sendLoadingMessage(message);
 

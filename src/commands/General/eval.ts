@@ -1,21 +1,24 @@
-import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { Args, Command, CommandOptions, PieceContext } from '@sapphire/framework';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
 import { inspect } from 'util';
 
-@ApplyOptions<CommandOptions>({
-	aliases: ['ev'],
-	description: 'Evals any JavaScript code',
-	quotes: [],
-	preconditions: ['OwnerOnly'],
-	strategyOptions: {
-		flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
-		options: ['depth']
-	}
-})
 export class UserCommand extends Command {
+	public constructor(context: PieceContext, options: CommandOptions) {
+		super(context, {
+			...options,
+			aliases: ['ev'],
+			description: 'Evals any JavaScript code',
+			quotes: [],
+			preconditions: ['OwnerOnly'],
+			strategyOptions: {
+				flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
+				options: ['depth']
+			}
+		});
+	}
+
 	public async run(message: Message, args: Args) {
 		const code = await args.rest('string');
 
@@ -41,6 +44,7 @@ export class UserCommand extends Command {
 
 	private async eval(message: Message, code: string, flags: { async: boolean; depth: number; showHidden: boolean }) {
 		if (flags.async) code = `(async () => {\n${code}\n})();`;
+
 		// @ts-expect-error value is never read, this is so `msg` is possible as an alias when sending the eval.
 		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		const msg = message;
