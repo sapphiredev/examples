@@ -84,6 +84,7 @@ jobs:
             @types/ws \
             babel-plugin-const-enum \
             discord-api-types \
+            npm-run-all \
             typescript
 
           echo -e "\n# Adjust package.json"
