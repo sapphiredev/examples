@@ -104,6 +104,7 @@ jobs:
 
           echo -e "\n# Move the generated docs to the newly-checked-out repo, to be committed and pushed"
           rsync -vaI dist/ javascript/src
+          rsync -vaI src/.env javascript/src/.env
           rsync -vaI package.json javascript/package.json
           rsync -vaI package-lock.json javascript/package-lock.json
           rsync -vaI README.md javascript/README.md
