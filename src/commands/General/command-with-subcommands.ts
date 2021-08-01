@@ -1,4 +1,3 @@
-import { RequiresDMContext, RequiresGuildContext, RequiresPermissions } from '@sapphire/decorators';
 import type { PieceContext } from '@sapphire/pieces';
 import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
 import type { Message } from 'discord.js';
