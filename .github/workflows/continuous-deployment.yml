@@ -32,7 +32,15 @@ jobs:
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: npm ci
       - name: Add babel dependencies
-        run: npm i -D @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env @babel/preset-typescript babel-plugin-const-enum
+        run: |
+          npm i -D \
+          @babel/cli \
+          @babel/core \
+          @babel/plugin-proposal-class-properties \
+          @babel/plugin-proposal-decorators \
+          @babel/preset-env \
+          @babel/preset-typescript \
+          babel-plugin-const-enum
       - name: Create babel.config.js
         run: |
           echo 'module.exports = {
@@ -60,8 +68,30 @@ jobs:
           }' > babel.config.js
       - name: Run Babel
         run: npx babel src --out-dir ../dist --extensions ".ts" --relative
-      - name: Remove Babel dependencies again
-        run: npm r @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env @babel/preset-typescript babel-plugin-const-enum
+      - name: Cleanup dependencies and package.json
+        run: |
+          echo -e "\n# Remove dependencies"
+          npm r \
+            @babel/cli \
+            @babel/core \
+            @babel/plugin-proposal-class-properties \
+            @babel/plugin-proposal-decorators \
+            @babel/preset-env \
+            @babel/preset-typescript \
+            @sapphire/ts-config \
+            @types/node \
+            @types/node-fetch \
+            @types/ws \
+            babel-plugin-const-enum \
+            discord-api-types \
+            typescript
+
+          echo -e "\n# Adjust package.json"
+          sed -i 's/.*"watch".*//g' package.json
+          sed -i 's/.*"build".*//g' package.json
+          sed -i 's/.*"dev".*//g' package.json
+          sed -i 's/dist/src/g' package.json
+          npx prettier --write package.json
       - name: Push new code
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
