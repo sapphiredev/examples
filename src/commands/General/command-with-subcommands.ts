@@ -18,17 +18,14 @@ export class UserCommand extends SubCommandPluginCommand {
 		return message.channel.send('Showing!');
 	}
 
-	@RequiresPermissions('MANAGE_MESSAGES') // This command should only be available to fictive staff people, those who can ban people.
 	public async add(message: Message) {
 		return message.channel.send('Adding!');
 	}
 
-	@RequiresGuildContext((message: Message) => message.channel.send('This command can only be used in servers'))
 	public async remove(message: Message) {
 		return message.channel.send('Removing!');
 	}
 
-	@RequiresDMContext((message: Message) => message.channel.send('This command can only be used in DMs'))
 	public async reset(message: Message) {
 		return message.channel.send('Resetting!');
 	}
