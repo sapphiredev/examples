@@ -60,6 +60,8 @@ jobs:
           }' > babel.config.js
       - name: Run Babel
         run: npx babel src --out-dir ../dist --extensions ".ts" --relative
+      - name: Remove Babel dependencies again
+        run: npm r @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env @babel/preset-typescript babel-plugin-const-enum
       - name: Push new code
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
