@@ -11,7 +11,6 @@
 		"@sapphire/discord.js-utilities": "^2.0.2",
 		"@sapphire/fetch": "^1.0.5",
 		"@sapphire/framework": "^1.0.2",
-		"@sapphire/pieces": "^1.2.5",
 		"@sapphire/plugin-api": "^2.2.0",
 		"@sapphire/plugin-logger": "^1.0.13",
 		"@sapphire/plugin-subcommands": "^1.0.6",
