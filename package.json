@@ -1,43 +1,45 @@
 {
-	"name": "sapphire-sample-bot",
-	"version": "1.0.0",
-	"main": "dist/sample-bot.js",
-	"author": "Jeroen Claassens",
-	"license": "MIT",
-	"dependencies": {
-		"@discordjs/collection": "^0.2.1",
-		"@sapphire/decorators": "next",
-		"@sapphire/discord-utilities": "^2.1.5",
-		"@sapphire/discord.js-utilities": "next",
-		"@sapphire/fetch": "next",
-		"@sapphire/framework": "next",
-		"@sapphire/plugin-api": "next",
-		"@sapphire/plugin-logger": "next",
-		"@sapphire/plugin-subcommands": "next",
-		"@sapphire/time-utilities": "next",
-		"@sapphire/type": "^2.0.11",
-		"@sapphire/utilities": "^2.0.1",
-		"@skyra/editable-commands": "^2.1.0",
-		"discord.js": "^13.0.1",
-		"dotenv-cra": "^3.0.1",
-		"reflect-metadata": "^0.1.13"
-	},
+	"name": "root",
+	"private": true,
+	"workspaces": [
+		"examples/*"
+	],
 	"devDependencies": {
+		"@commitlint/cli": "^13.1.0",
+		"@commitlint/config-conventional": "^13.1.0",
 		"@sapphire/prettier-config": "^1.1.6",
-		"@sapphire/ts-config": "^3.0.0",
-		"@types/node": "^16.4.0",
+		"@types/node": "^16.6.0",
 		"@types/ws": "^7.4.7",
+		"cz-conventional-changelog": "^3.3.0",
 		"discord-api-types": "^0.22.0",
+		"husky": "^7.0.1",
 		"npm-run-all": "^4.1.5",
+		"npm-upgrade": "^3.0.0",
 		"prettier": "^2.3.2",
+		"pretty-quick": "^3.1.1",
 		"typescript": "^4.3.5"
 	},
 	"scripts": {
-		"build": "tsc",
-		"watch": "tsc -w",
-		"start": "node dist/sample-bot.js",
-		"dev": "run-s build start",
-		"format": "prettier --write \"src/**/*.ts\""
+		"format": "prettier --write \"./examples/**/*.{ts,md,js,json}\"",
+		"format:check": "prettier --check \"./examples/**/*.{ts,md,js,json}\"",
+		"commit": "git-cz",
+		"cz": "git-cz",
+		"update": "npm-upgrade",
+		"prepare": "husky install .github/husky"
+	},
+	"engines": {
+		"node": ">=16.6",
+		"npm": ">=7"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	},
 	"prettier": "@sapphire/prettier-config"
 }
