@@ -20,7 +20,8 @@
 		"@skyra/editable-commands": "^2.1.0",
 		"discord.js": "^13.0.1",
 		"dotenv-cra": "^3.0.1",
-		"reflect-metadata": "^0.1.13"
+		"reflect-metadata": "^0.1.13",
+		"tsc-watch": "^4.4.0"
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.1.6",
@@ -37,7 +38,9 @@
 		"watch": "tsc -w",
 		"start": "node dist/sample-bot.js",
 		"dev": "run-s build start",
-		"format": "prettier --write \"src/**/*.ts\""
+		"format": "prettier --write \"src/**/*.ts\"",
+		"predocker:watch": "npm install",
+		"docker:watch": "tsc-watch --onSuccess \"node ./dist/sample-bot.js\""
 	},
 	"prettier": "@sapphire/prettier-config"
 }

@@ -56,6 +56,27 @@ The code in this repo is licensed under a custom [Fully Open Source][fully-open-
     -   `src/sample-bot.ts`
         _**note**: The main bot file, this is called by NodeJS after compiling the TypeScript code._
 
+## Docker
+
+This sample bot has docker support for both development & production.
+
+**This is completely optional** and serves as an example on how to do things the docker-way
+
+### Development
+
+Fill in the .env and run `docker-compose up`. This will start the bot in watch mode and automatically run it after each save.
+It will build the `Dockerfile` up untill the `development` stage.
+
+### Production
+
+Just like in the development step, you have to fill in the `.env` file and then run the following command to create a production image;
+
+    docker build . -t botname
+
+To test if your image works, you can run:
+
+    docker run --name=botname botname
+
 ## Meta
 
 ### License

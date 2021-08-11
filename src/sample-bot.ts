@@ -2,7 +2,7 @@ import './lib/setup';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 
 const client = new SapphireClient({
-	defaultPrefix: 'dr!',
+	defaultPrefix: process.env.DEFAULT_PREFIX ?? 'dr!',
 	regexPrefix: /^(hey +)?dragon[,! ]/i,
 	caseInsensitiveCommands: true,
 	logger: {
@@ -26,7 +26,7 @@ const main = async () => {
 	try {
 		client.logger.info('Logging in');
 		await client.login();
-		client.logger.info('logged in');
+		client.logger.info(`logged in, using prefix \`${client.options.defaultPrefix}\``);
 	} catch (error) {
 		client.logger.fatal(error);
 		client.destroy();
