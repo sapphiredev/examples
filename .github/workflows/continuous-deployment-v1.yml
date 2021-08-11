@@ -1,0 +1,123 @@
+name: Continuous Deployment (V1)
+
+on:
+  push:
+    branches:
+      - v1
+  pull_request:
+
+jobs:
+  Deploy:
+    name: JS Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+        with:
+          ref: v1
+      - name: Checkout Project
+        uses: actions/checkout@v2
+        with:
+          ref: javascript-v1
+          path: javascript-v1
+      - name: Use Node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Restore CI Cache
+        uses: actions/cache@v2.1.6
+        id: cache-restore
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-16-${{ hashFiles('**/package-lock.json') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: npm ci
+      - name: Add babel dependencies
+        run: |
+          npm i -D \
+          @babel/cli \
+          @babel/core \
+          @babel/plugin-proposal-class-properties \
+          @babel/plugin-proposal-decorators \
+          @babel/preset-env \
+          @babel/preset-typescript \
+          babel-plugin-const-enum
+      - name: Create babel.config.js
+        run: |
+          echo 'module.exports = {
+            presets: [
+              [
+                "@babel/preset-env",
+                {
+                  targets: {
+                    node: true
+                  }
+                }
+              ],
+              "@babel/preset-typescript"
+            ],
+            plugins: [
+              [
+                "@babel/plugin-proposal-decorators",
+                {
+                  legacy: true
+                }              
+              ],
+              "@babel/plugin-proposal-class-properties",
+              "const-enum"
+            ]
+          }' > babel.config.js
+      - name: Run Babel
+        run: npx babel src --out-dir ../dist --extensions ".ts" --relative
+      - name: Cleanup dependencies and package.json
+        run: |
+          echo -e "\n# Remove dependencies"
+          npm r \
+            @babel/cli \
+            @babel/core \
+            @babel/plugin-proposal-class-properties \
+            @babel/plugin-proposal-decorators \
+            @babel/preset-env \
+            @babel/preset-typescript \
+            @sapphire/ts-config \
+            @types/node \
+            @types/node-fetch \
+            @types/ws \
+            babel-plugin-const-enum \
+            discord-api-types \
+            npm-run-all \
+            typescript
+
+          echo -e "\n# Adjust package.json"
+          sed -i 's/.*"watch".*//g' package.json
+          sed -i 's/.*"build".*//g' package.json
+          sed -i 's/.*"dev".*//g' package.json
+          sed -i 's/dist/src/g' package.json
+          npx prettier --write package.json
+      - name: Push new code
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          echo -e "\n# Remove any old files in the dist folder"
+          rm -rfv javascript-v1/src/*
+          rm -rfv javascript-v1/package.json
+          rm -rfv javascript-v1/package-lock.json
+          rm -rfv javascript-v1/README.md
+
+          echo -e "\n# Move the generated docs to the newly-checked-out repo, to be committed and pushed"
+          rsync -vaI dist/ javascript-v1/src
+          rsync -vaI src/.env javascript-v1/src/.env
+          rsync -vaI package.json javascript-v1/package.json
+          rsync -vaI package-lock.json javascript-v1/package-lock.json
+          rsync -vaI README.md javascript-v1/README.md
+
+          echo -e "\n# Adjust package.json"
+          sed -i 's/dist/src/g' javascript-v1/package.json
+
+          echo -e "\n# Commit and push"
+          cd javascript-v1
+          git add --all .
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "build(v1): javascript build for ${GITHUB_SHA}" || true
+          git push origin javascript-v1
