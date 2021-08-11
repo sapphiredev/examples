@@ -1,4 +1,4 @@
-import { ApplyOptions, RequiresDMContext, RequiresGuildContext, RequiresPermissions } from '@sapphire/decorators';
+import { ApplyOptions, RequiresDMContext, RequiresGuildContext, RequiresClientPermissions } from '@sapphire/decorators';
 import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
 import { Message, MessageEmbed } from 'discord.js';
 
@@ -13,7 +13,7 @@ export class UserCommand extends SubCommandPluginCommand {
 		return message.channel.send('Showing!');
 	}
 
-	@RequiresPermissions('EMBED_LINKS') // This sub-command requires the bot to have EMBED_LINKS permission because it sends a MessageEmbed
+	@RequiresClientPermissions('EMBED_LINKS') // This sub-command requires the bot to have EMBED_LINKS permission because it sends a MessageEmbed
 	public async add(message: Message) {
 		const embed = new MessageEmbed() //
 			.setColor('#3986E4')
@@ -21,7 +21,7 @@ export class UserCommand extends SubCommandPluginCommand {
 			.setTitle('Configuration Log')
 			.setTimestamp();
 
-		return message.channel.send({ embed });
+		return message.channel.send({ embeds: [embed] });
 	}
 
 	@RequiresGuildContext((message: Message) => message.channel.send('This sub-command can only be used in servers'))

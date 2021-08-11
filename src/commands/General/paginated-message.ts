@@ -33,7 +33,7 @@ export class UserCommand extends Command {
 			.addPageBuilder((builder) =>
 				builder //
 					.setContent('This is the second page')
-					.setEmbed(new MessageEmbed().setTimestamp())
+					.setEmbeds([new MessageEmbed().setTimestamp()])
 			);
 
 		await paginatedMessage.run(response, message.author);

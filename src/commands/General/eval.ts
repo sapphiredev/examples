@@ -12,10 +12,8 @@ export class UserCommand extends Command {
 			description: 'Evals any JavaScript code',
 			quotes: [],
 			preconditions: ['OwnerOnly'],
-			strategyOptions: {
-				flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
-				options: ['depth']
-			}
+			flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
+			options: ['depth']
 		});
 	}
 
@@ -34,7 +32,8 @@ export class UserCommand extends Command {
 		const typeFooter = `**Type**: ${codeBlock('typescript', type)}`;
 
 		if (output.length > 2000) {
-			return message.channel.send(`Output was too long... sent the result as a file.\n\n${typeFooter}`, {
+			return message.channel.send({
+				content: `Output was too long... sent the result as a file.\n\n${typeFooter}`,
 				files: [{ attachment: Buffer.from(output), name: 'output.txt' }]
 			});
 		}
@@ -57,7 +56,7 @@ export class UserCommand extends Command {
 			result = eval(code);
 		} catch (error) {
 			if (error && error.stack) {
-				this.context.client.logger.error(error);
+				this.container.client.logger.error(error);
 			}
 			result = error;
 			success = false;
@@ -74,5 +73,11 @@ export class UserCommand extends Command {
 		}
 
 		return { result, success, type };
+	}
+}
+
+declare module '@sapphire/framework' {
+	interface Preconditions {
+		OwnerOnly: never;
 	}
 }

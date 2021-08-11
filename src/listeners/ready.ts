@@ -1,13 +1,13 @@
-import type { EventOptions, PieceContext } from '@sapphire/framework';
-import { Event, Store } from '@sapphire/framework';
+import type { ListenerOptions, PieceContext } from '@sapphire/framework';
+import { Listener, Store } from '@sapphire/framework';
 import { blue, gray, green, magenta, magentaBright, white, yellow } from 'colorette';
 
 const dev = process.env.NODE_ENV !== 'production';
 
-export class UserEvent extends Event {
+export class UserEvent extends Listener {
 	private readonly style = dev ? yellow : blue;
 
-	public constructor(context: PieceContext, options?: EventOptions) {
+	public constructor(context: PieceContext, options?: ListenerOptions) {
 		super(context, {
 			...options,
 			once: true
@@ -42,7 +42,7 @@ ${line03}${dev ? ` ${pad}${blc('<')}${llc('/')}${blc('>')} ${llc('DEVELOPMENT MO
 	}
 
 	private printStoreDebugInformation() {
-		const { client, logger } = this.context;
+		const { client, logger } = this.container;
 		const stores = [...client.stores.values()];
 		const last = stores.pop()!;
 
