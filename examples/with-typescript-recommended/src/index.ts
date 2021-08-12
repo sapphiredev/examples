@@ -3,7 +3,7 @@ import { LogLevel, SapphireClient } from '@sapphire/framework';
 
 const client = new SapphireClient({
 	defaultPrefix: 'dr!',
-	regexPrefix: /^(hey +)?dragon[,! ]/i,
+	regexPrefix: /^(hey +)?bot[,! ]/i,
 	caseInsensitiveCommands: true,
 	logger: {
 		level: LogLevel.Debug
