@@ -2,7 +2,7 @@
 	"name": "with-pm2",
 	"version": "1.0.0",
 	"main": "dist/index.js",
-	"author": "@sapphiredev",
+	"author": "@sapphire",
 	"license": "MIT",
 	"dependencies": {
 		"@discordjs/collection": "^0.2.1",
