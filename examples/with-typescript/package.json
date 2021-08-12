@@ -1,8 +1,8 @@
 {
-	"name": "sapphire-sample-bot",
+	"name": "with-typescript",
 	"version": "1.0.0",
 	"main": "dist/sample-bot.js",
-	"author": "Jeroen Claassens",
+	"author": "@sapphire",
 	"license": "MIT",
 	"dependencies": {
 		"@discordjs/collection": "^0.2.1",
