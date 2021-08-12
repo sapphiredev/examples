@@ -1,9 +1,10 @@
 require('./lib/setup');
 const { LogLevel, SapphireClient } = require('@sapphire/framework');
+const { prefix, discord_token } = require('./config.json')
 
 const client = new SapphireClient({
-	defaultPrefix: process.env.DEFAULT_PREFIX,
-	regexPrefix: /^(hey +)?dragon[,! ]/i,
+	defaultPrefix: prefix,
+	regexPrefix: /^(hey +)?bot[,! ]/i,
 	caseInsensitiveCommands: true,
 	logger: {
 		level: LogLevel.Debug
@@ -25,7 +26,7 @@ const client = new SapphireClient({
 const main = async () => {
 	try {
 		client.logger.info('Logging in');
-		await client.login();
+		await client.login(discord_token);
 		client.logger.info('logged in');
 	} catch (error) {
 		client.logger.fatal(error);
