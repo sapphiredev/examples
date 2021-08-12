@@ -1,10 +1,31 @@
-# TpeScript Sapphire Bot example
+# PM2 Sapphire Bot example
 
-This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript
+This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript. This example contains a configuration example for pm2.
 
 ## How to use it?
 
-To Be Written
+Install pm2 globally with `npm install -g pm2`
+
+First make sure you have a build version of the bot by running the following;
+
+```sh
+npm install
+npm run build
+```
+
+Then to run your bot with pm2 use;
+
+```sh
+npm run start:node
+
+# or
+
+npm start
+
+# or
+
+pm2 start ecosystem.config.js
+```
 
 # License
 
