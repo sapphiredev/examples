@@ -1,6 +1,6 @@
 import './lib/setup';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { discord_token, prefix } from './config.json'
+import { discord_token, prefix } from './config.json';
 
 const client = new SapphireClient({
 	defaultPrefix: prefix,
