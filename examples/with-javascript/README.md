@@ -6,13 +6,17 @@ This is a basic setup of a Discord bot using the [sapphire framework][sapphire] 
 
 ### Prerequisite
 
-    npm install
+```sh
+npm install
+```
 
 ### Development
 
 This example can be run with `nodemon` to watch the files and automatically restart your bot.
 
-    npm run watch
+```sh
+npm run watch
+```
 
 ### Production
 
