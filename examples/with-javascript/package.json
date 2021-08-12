@@ -1,0 +1,34 @@
+{
+	"name": "with-javascript",
+	"version": "1.0.0",
+	"main": "src/sample-bot.js",
+	"author": "@sapphire",
+	"license": "MIT",
+	"dependencies": {
+		"@discordjs/collection": "^0.2.1",
+		"@sapphire/discord-utilities": "^2.1.5",
+		"@sapphire/discord.js-utilities": "next",
+		"@sapphire/fetch": "next",
+		"@sapphire/framework": "next",
+		"@sapphire/plugin-api": "next",
+		"@sapphire/plugin-logger": "next",
+		"@sapphire/plugin-subcommands": "next",
+		"@sapphire/time-utilities": "next",
+		"@sapphire/type": "^2.0.11",
+		"@sapphire/utilities": "^2.0.1",
+		"@skyra/editable-commands": "^2.1.0",
+		"discord.js": "^13.0.1"
+	},
+	"devDependencies": {
+		"@sapphire/prettier-config": "^1.1.6",
+		"nodemon": "^2.0.12",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.3.2"
+	},
+	"scripts": {
+		"watch": "nodemon -L --watch src",
+		"start": "node src/sample-bot.js",
+		"format": "prettier --write \"src/**/*.js\""
+	},
+	"prettier": "@sapphire/prettier-config"
+}
