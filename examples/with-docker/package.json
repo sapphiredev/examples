@@ -1,7 +1,7 @@
 {
-	"name": "with-pm2",
+	"name": "with-docker",
 	"version": "1.0.0",
-	"main": "dist/index.js",
+	"main": "dist/sample-bot.js",
 	"author": "@sapphire",
 	"license": "MIT",
 	"dependencies": {
@@ -26,21 +26,18 @@
 		"@types/node": "^16.4.0",
 		"@types/ws": "^7.4.7",
 		"npm-run-all": "^4.1.5",
-		"pm2": "^5.1.0",
 		"prettier": "^2.3.2",
-		"typescript": "^4.3.5"
+		"typescript": "^4.3.5",
+		"tsc-watch": "^4.4.0"
 	},
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w",
-		"start": "pm2 start ecosystem.config.js",
-		"start:node": "node dist/index.js",
+		"start": "node dist/sample-bot.js",
 		"dev": "run-s build start",
 		"format": "prettier --write \"src/**/*.ts\"",
-		"pm2:start": "pm2 start ecosystem.config.js",
-		"pm2:stop": "pm2 stop with-pm2",
-		"pm2:restart": "pm2 restart with-pm2",
-		"pm2:delete": "pm2 delete with-pm2"
+		"predocker:watch": "npm install",
+		"docker:watch": "tsc-watch --onSuccess \"node ./dist/sample-bot.js\""
 	},
 	"prettier": "@sapphire/prettier-config"
 }
