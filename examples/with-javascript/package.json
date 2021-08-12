@@ -1,7 +1,7 @@
 {
 	"name": "with-javascript",
 	"version": "1.0.0",
-	"main": "src/sample-bot.js",
+	"main": "src/index.js",
 	"author": "@sapphire",
 	"license": "MIT",
 	"dependencies": {
@@ -27,7 +27,7 @@
 	},
 	"scripts": {
 		"watch": "nodemon -L --watch src",
-		"start": "node src/sample-bot.js",
+		"start": "node src/index.js",
 		"format": "prettier --write \"src/**/*.js\""
 	},
 	"prettier": "@sapphire/prettier-config"

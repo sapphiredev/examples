@@ -8,16 +8,24 @@ Install pm2 globally with `npm install -g pm2`
 
 First make sure you have a build version of the bot by running the following;
 
-    npm install
-    npm run build
+```sh
+npm install
+npm run build
+```
 
 Then to run your bot with pm2 use;
 
-    npm start
+```sh
+npm run node:start
 
-    // or
+# or
 
-    pm2 start ecosystem.config.js
+npm start
+
+# or
+
+pm2 start ecosystem.config.js
+```
 
 # License
 

@@ -1,6 +1,6 @@
 module.exports = {
     apps : [{
-      name   : "sapphire-sample-bot",
-      script : "./dist/sample-bot.js"
+      name   : "with-pm2",
+      script : "./dist/index.js"
     }]
   }
