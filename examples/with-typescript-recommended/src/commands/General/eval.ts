@@ -75,9 +75,3 @@ export class UserCommand extends Command {
 		return { result, success, type };
 	}
 }
-
-declare module '@sapphire/framework' {
-	interface Preconditions {
-		OwnerOnly: never;
-	}
-}
