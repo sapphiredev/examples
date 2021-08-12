@@ -37,6 +37,7 @@
 		"start:node": "node dist/index.js",
 		"dev": "run-s build start",
 		"format": "prettier --write \"src/**/*.ts\"",
+		"pm2:start": "pm2 start ecosystem.config.js",
 		"pm2:stop": "pm2 stop with-pm2",
 		"pm2:restart": "pm2 restart with-pm2",
 		"pm2:delete": "pm2 delete with-pm2"

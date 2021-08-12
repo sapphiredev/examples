@@ -16,7 +16,7 @@ npm run build
 Then to run your bot with pm2 use;
 
 ```sh
-npm run node:start
+npm run start:node
 
 # or
 
