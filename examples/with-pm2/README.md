@@ -4,8 +4,6 @@ This is a basic setup of a Discord bot using the [sapphire framework][sapphire] 
 
 ## How to use it?
 
-### Prerequisite
-
 Install pm2 globally with `npm install -g pm2`
 
 First make sure you have a build version of the bot by running the following;
