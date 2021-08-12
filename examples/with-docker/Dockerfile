@@ -10,10 +10,12 @@ RUN apt-get update && \
 
 COPY . /opt/app
 
+ENTRYPOINT ["dumb-init", "--"]
+
 # Development, used for development only (defaults to watch command)
 FROM base as development
 
-CMD [ "dumb-init", "npm", "run", "docker:watch"]
+CMD [ "npm", "run", "docker:watch"]
 
 # Build stage for production
 FROM base as build
@@ -32,4 +34,4 @@ ENV NODE_ENV production
 COPY --from=build /opt/app/dist /opt/app/
 COPY --from=build /opt/app/node_modules /opt/app/
 
-CMD [ "dumb-init", "npm", "run", "start"]
+CMD [ "npm", "run", "start"]
