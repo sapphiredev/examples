@@ -1,20 +1,25 @@
 # Base required for most things
-FROM node:16 as base
+FROM node:16-buster-slim as base
 
 WORKDIR /opt/app
-COPY . /opt/app
 
-ENTRYPOINT [ "npm" ]
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential python dumb-init && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY . /opt/app
 
 # Development, used for development only (defaults to watch command)
 FROM base as development
 
-CMD ["run", "docker:watch"]
+CMD [ "dumb-init", "npm", "run", "docker:watch"]
 
 # Build stage for production
 FROM base as build
 
 COPY ./package.json package-lock.json /opt/app/
+
 RUN npm install
 
 RUN npm run build
@@ -27,4 +32,4 @@ ENV NODE_ENV production
 COPY --from=build /opt/app/dist /opt/app/
 COPY --from=build /opt/app/node_modules /opt/app/
 
-CMD ["run", "start"]
+CMD [ "dumb-init", "npm", "run", "start"]
