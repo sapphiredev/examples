@@ -30,13 +30,15 @@
 		"@types/ws": "^7.4.7",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.3.2",
-		"typescript": "^4.3.5"
+		"typescript": "^4.3.5",
+		"tsc-watch": "^4.4.0"
 	},
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w",
 		"start": "node dist/index.js",
 		"dev": "run-s build start",
+		"watch:start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
 		"format": "prettier --write \"src/**/*.ts\""
 	},
 	"prettier": "@sapphire/prettier-config"

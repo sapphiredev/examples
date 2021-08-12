@@ -1,7 +1,7 @@
 {
 	"name": "with-docker",
 	"version": "1.0.0",
-	"main": "dist/sample-bot.js",
+	"main": "dist/index.js",
 	"author": "@sapphire",
 	"license": "MIT",
 	"dependencies": {
@@ -33,11 +33,11 @@
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w",
-		"start": "node dist/sample-bot.js",
+		"start": "node dist/index.js",
 		"dev": "run-s build start",
 		"format": "prettier --write \"src/**/*.ts\"",
 		"predocker:watch": "npm install",
-		"docker:watch": "tsc-watch --onSuccess \"node ./dist/sample-bot.js\""
+		"docker:watch": "tsc-watch --onSuccess \"node ./dist/index.js\""
 	},
 	"prettier": "@sapphire/prettier-config"
 }
