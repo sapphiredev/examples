@@ -1,6 +1,6 @@
-# Docker Sapphire Bot example
+# PM2 Sapphire Bot example
 
-This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript containerized with Docker
+This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript. This example contains a configuration example for pm2.
 
 ## How to use it?
 
