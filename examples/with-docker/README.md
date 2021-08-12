@@ -17,11 +17,15 @@ It will build the `Dockerfile` up untill the `development` stage.
 
 Just like in the development step, you have to fill in the `.env` file and then run the following command to create a production image;
 
-    docker build . -t sapphire-sample-bot
+```sh
+docker build . -t sapphire-sample-bot
+```
 
 To test if your image works, you can run:
 
-    docker run --env-file .env sapphire-sample-bot
+```sh
+docker run --env-file .env sapphire-sample-bot
+```
 
 # License
 
