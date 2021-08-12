@@ -13,7 +13,7 @@ export class UserCommand extends Command {
 		const msg = await message.channel.send('Ping?');
 
 		return msg.edit(
-			`Pong from docker! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
+			`Pong from Docker! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
 				msg.createdTimestamp - message.createdTimestamp
 			}ms.`
 		);
