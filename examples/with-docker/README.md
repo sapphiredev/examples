@@ -11,7 +11,7 @@ Copy the `.env.example` and rename it to `.env`, make sure to fill the Token
 ### Development
 
 Run `docker-compose up`. This will start the bot in watch mode and automatically run it after each save.
-It will build the `Dockerfile` up untill the `development` stage.
+It will build the `Dockerfile` up until the `development` stage.
 
 ### Production
 
@@ -35,5 +35,5 @@ Released under the [Fully Open Source License][fully-open-source].
 The code in this repo is licensed under a custom [Fully Open Source][fully-open-source] license, which means you're free to take anything in this repository and put it into your own bot without license attribution back to this repository. Overall the license is based on the [MIT] license.
 
 [sapphire]: https://github.com/sapphiredev/framework
-[fully-open-source]: LICENSE.md
+[fully-open-source]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
 [mit]: https://opensource.org/licenses/MIT

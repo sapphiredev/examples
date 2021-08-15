@@ -35,5 +35,5 @@ We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub S
 |     PayPal      |     [Click Here](https://sapphirejs.dev/paypal)     |
 
 [sapphire]: https://github.com/sapphiredev/framework
-[fully-open-source]: LICENSE.md
+[fully-open-source]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
 [mit]: https://opensource.org/licenses/MIT
