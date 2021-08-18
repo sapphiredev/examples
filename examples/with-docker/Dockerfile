@@ -8,8 +8,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY . /opt/app
-
 ENTRYPOINT ["dumb-init", "--"]
 
 # Development, used for development only (defaults to watch command)
@@ -24,6 +22,8 @@ COPY ./package.json package-lock.json /opt/app/
 
 RUN npm install
 
+COPY . /opt/app
+
 RUN npm run build
 
 # Production image used to  run the bot in production, only contains node_modules & dist contents.
@@ -31,7 +31,8 @@ FROM base as production
 
 ENV NODE_ENV production
 
-COPY --from=build /opt/app/dist /opt/app/
-COPY --from=build /opt/app/node_modules /opt/app/
+COPY --from=build /opt/app/dist /opt/app/dist
+COPY --from=build /opt/app/node_modules /opt/app/node_modules
+COPY --from=build /opt/app/package.json /opt/app/package.json
 
 CMD [ "npm", "run", "start"]
