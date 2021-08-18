@@ -40,8 +40,5 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
-	"prettier": "@sapphire/prettier-config",
-	"imports": {
-		"#lib/*": "./dist/lib/*.js"
-	}
+	"prettier": "@sapphire/prettier-config"
 }
