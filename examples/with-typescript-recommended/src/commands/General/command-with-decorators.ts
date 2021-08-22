@@ -3,7 +3,7 @@ import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphi
 import { Message, MessageEmbed } from 'discord.js';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	aliases: ['cws'],
+	aliases: ['cwd'],
 	description: 'A basic command with some subcommands',
 	subCommands: ['add', { input: 'create', output: 'add' }, 'remove', 'reset', { input: 'show', default: true }]
 })
