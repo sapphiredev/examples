@@ -4,7 +4,7 @@ process.env.NODE_ENV ??= 'development';
 import 'reflect-metadata';
 import '@sapphire/plugin-logger/register';
 import '@sapphire/plugin-api/register';
-import '@skyra/editable-commands';
+import '@sapphire/plugin-editable-commands';
 import { options as coloretteOptions } from 'colorette';
 import { config } from 'dotenv-cra';
 import { join } from 'path';

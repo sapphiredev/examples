@@ -1,5 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { send } from '@sapphire/plugin-editable-commands';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
@@ -29,13 +30,13 @@ export class UserCommand extends Command {
 		const typeFooter = `**Type**: ${codeBlock('typescript', type)}`;
 
 		if (output.length > 2000) {
-			return message.channel.send({
+			return send(message, {
 				content: `Output was too long... sent the result as a file.\n\n${typeFooter}`,
 				files: [{ attachment: Buffer.from(output), name: 'output.txt' }]
 			});
 		}
 
-		return message.channel.send(`${output}\n${typeFooter}`);
+		return send(message, `${output}\n${typeFooter}`);
 	}
 
 	private async eval(message: Message, code: string, flags: { async: boolean; depth: number; showHidden: boolean }) {

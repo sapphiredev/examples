@@ -12,6 +12,7 @@
 		"@sapphire/fetch": "next",
 		"@sapphire/framework": "pr-244",
 		"@sapphire/plugin-api": "next",
+		"@sapphire/plugin-editable-commands": "^0.1.0-next.9af3e85.0",
 		"@sapphire/plugin-logger": "next",
 		"@sapphire/plugin-subcommands": "next",
 		"@sapphire/time-utilities": "next",
@@ -29,8 +30,8 @@
 		"@types/ws": "^7.4.7",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.3.2",
-		"typescript": "^4.3.5",
-		"tsc-watch": "^4.5.0"
+		"tsc-watch": "^4.5.0",
+		"typescript": "^4.3.5"
 	},
 	"scripts": {
 		"build": "tsc",

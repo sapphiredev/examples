@@ -1,4 +1,4 @@
-import { send } from '@skyra/editable-commands';
+import { send } from '@sapphire/plugin-editable-commands';
 import { Message, MessageEmbed } from 'discord.js';
 import { RandomLoadingMessage } from './constants';
 

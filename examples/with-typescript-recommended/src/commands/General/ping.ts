@@ -1,5 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command, CommandOptions } from '@sapphire/framework';
+import { send } from '@sapphire/plugin-editable-commands';
 import type { Message } from 'discord.js';
 
 @ApplyOptions<CommandOptions>({
@@ -7,10 +8,12 @@ import type { Message } from 'discord.js';
 })
 export class UserCommand extends Command {
 	public async run(message: Message) {
-		const msg = await message.channel.send('Ping?');
+		const msg = await send(message, 'Ping?');
 
-		return msg.edit(
-			`Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${msg.createdTimestamp - message.createdTimestamp}ms.`
-		);
+		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
+			(msg.editedTimestamp || msg.createdTimestamp) - (message.editedTimestamp || message.createdTimestamp)
+		}ms.`;
+
+		return send(message, content);
 	}
 }
