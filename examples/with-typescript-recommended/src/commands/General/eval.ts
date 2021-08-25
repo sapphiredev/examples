@@ -1,22 +1,19 @@
-import { Args, Command, CommandOptions, PieceContext } from '@sapphire/framework';
+import { ApplyOptions } from '@sapphire/decorators';
+import { Args, Command, CommandOptions } from '@sapphire/framework';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
 import { inspect } from 'util';
 
+@ApplyOptions<CommandOptions>({
+	aliases: ['ev'],
+	description: 'Evals any JavaScript code',
+	quotes: [],
+	preconditions: ['OwnerOnly'],
+	flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
+	options: ['depth']
+})
 export class UserCommand extends Command {
-	public constructor(context: PieceContext, options: CommandOptions) {
-		super(context, {
-			...options,
-			aliases: ['ev'],
-			description: 'Evals any JavaScript code',
-			quotes: [],
-			preconditions: ['OwnerOnly'],
-			flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
-			options: ['depth']
-		});
-	}
-
 	public async run(message: Message, args: Args) {
 		const code = await args.rest('string');
 
