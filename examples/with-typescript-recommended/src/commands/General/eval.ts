@@ -32,7 +32,7 @@ export class UserCommand extends Command {
 		if (output.length > 2000) {
 			return send(message, {
 				content: `Output was too long... sent the result as a file.\n\n${typeFooter}`,
-				files: [{ attachment: Buffer.from(output), name: 'output.txt' }]
+				files: [{ attachment: Buffer.from(output), name: 'output.js' }]
 			});
 		}
 
@@ -53,7 +53,7 @@ export class UserCommand extends Command {
 			// eslint-disable-next-line no-eval
 			result = eval(code);
 		} catch (error) {
-			if (error && error.stack) {
+			if (error && error instanceof Error && error.stack) {
 				this.container.client.logger.error(error);
 			}
 			result = error;
