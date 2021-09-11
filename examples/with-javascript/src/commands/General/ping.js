@@ -1,4 +1,5 @@
 const { Command } = require('@sapphire/framework');
+const { send } = require('@sapphire/plugin-editable-commands');
 
 class UserCommand extends Command {
 	constructor(context, options) {
@@ -9,13 +10,13 @@ class UserCommand extends Command {
 	}
 
 	async run(message) {
-		const msg = await message.channel.send('Ping?');
+		const msg = await send(message, 'Ping?');
 
-		return msg.edit(
-			`Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
-				msg.createdTimestamp - message.createdTimestamp
-			}ms.`
-		);
+		const content = `Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
+			msg.createdTimestamp - message.createdTimestamp
+		}ms.`;
+
+		return send(message, content);
 	}
 }
 
