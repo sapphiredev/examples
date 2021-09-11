@@ -11,5 +11,5 @@ copies of the Software, and to permit persons to whom the
 Software is furnished to do so, subject to the following
 condition:
 
-A copy of this the above copyright notice does not have to be
+A copy of this copyright notice does not have to be
 included in any copies, or substantial portions of this Software.
