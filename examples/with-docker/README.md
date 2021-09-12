@@ -29,11 +29,6 @@ docker run --env-file .env sapphire-sample-bot
 
 # License
 
-Copyright © 2021, [The Sapphire Community and its contributors](https://github.com/sapphiredev).
-Released under the [Fully Open Source License][fully-open-source].
-
-The code in this repo is licensed under a custom [Fully Open Source][fully-open-source] license, which means you're free to take anything in this repository and put it into your own bot without license attribution back to this repository. Overall the license is based on the [MIT] license.
 
 [sapphire]: https://github.com/sapphiredev/framework
-[fully-open-source]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
-[mit]: https://opensource.org/licenses/MIT
+[Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md

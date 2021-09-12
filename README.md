@@ -6,7 +6,8 @@
 
 **A set of code example setups for a [Sapphire Framework][sapphire] Discord bot**
 
-[![GitHub](https://img.shields.io/badge/license-Fully%20Open%20Source-green?logo=github)](https://github.com/sapphiredev/examples/blob/main/LICENSE.md)
+
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](https://github.com/sapphiredev/examples/blob/main/LICENSE.md)
 
 [![Support Server](https://discord.com/api/guilds/737141877803057244/embed.png?style=banner2)](https://sapphirejs.dev/discord)
 
@@ -16,10 +17,7 @@
 
 ## License
 
-Copyright © 2021, [The Sapphire Community and its contributors](https://github.com/sapphiredev).
-Released under the [Fully Open Source License][fully-open-source].
-
-The code in this repo is licensed under a custom [Fully Open Source][fully-open-source] license, which means you're free to take anything in this repository and put it into your own bot without license attribution back to this repository. Overall the license is based on the [MIT] license.
+Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
 
 ## Buy us some doughnuts
 
@@ -35,5 +33,4 @@ We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub S
 |     PayPal      |     [Click Here](https://sapphirejs.dev/paypal)     |
 
 [sapphire]: https://github.com/sapphiredev/framework
-[fully-open-source]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
-[mit]: https://opensource.org/licenses/MIT
+[Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
