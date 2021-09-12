@@ -22,7 +22,7 @@ npm run watch
 
 You can also run the bot with `npm start`, this will run `node ./src/index.js`. But this is not the recommended way to run a bot in production.
 
-# License
+## License
 
 Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
 

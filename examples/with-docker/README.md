@@ -27,8 +27,9 @@ To test if your image works, you can run:
 docker run --env-file .env sapphire-sample-bot
 ```
 
-# License
+## License
 
+Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
 
 [sapphire]: https://github.com/sapphiredev/framework
 [Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md

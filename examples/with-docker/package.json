@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "dist/index.js",
 	"author": "@sapphire",
-	"license": "MIT",
+	"license": "UNLICENSE",
 	"dependencies": {
 		"@discordjs/collection": "^0.2.1",
 		"@sapphire/decorators": "next",

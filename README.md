@@ -7,7 +7,7 @@
 **A set of code example setups for a [Sapphire Framework][sapphire] Discord bot**
 
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](https://github.com/sapphiredev/examples/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/sapphiredev/examples)](https://github.com/sapphiredev/examples/blob/main/LICENSE.md)
 
 [![Support Server](https://discord.com/api/guilds/737141877803057244/embed.png?style=banner2)](https://sapphirejs.dev/discord)
 
