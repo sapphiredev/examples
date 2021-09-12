@@ -27,4 +27,4 @@ You can also run the bot with `npm start`, this will run `node ./src/index.js`. 
 Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
 
 [sapphire]: https://github.com/sapphiredev/framework
-[Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
+[unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md

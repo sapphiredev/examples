@@ -6,7 +6,6 @@
 
 **A set of code example setups for a [Sapphire Framework][sapphire] Discord bot**
 
-
 [![GitHub](https://img.shields.io/github/license/sapphiredev/examples)](https://github.com/sapphiredev/examples/blob/main/LICENSE.md)
 
 [![Support Server](https://discord.com/api/guilds/737141877803057244/embed.png?style=banner2)](https://sapphirejs.dev/discord)
@@ -33,4 +32,4 @@ We accept donations through Open Collective, Ko-fi, Paypal, Patreon and GitHub S
 |     PayPal      |     [Click Here](https://sapphirejs.dev/paypal)     |
 
 [sapphire]: https://github.com/sapphiredev/framework
-[Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
+[unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md

@@ -32,4 +32,4 @@ docker run --env-file .env sapphire-sample-bot
 Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
 
 [sapphire]: https://github.com/sapphiredev/framework
-[Unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
+[unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
