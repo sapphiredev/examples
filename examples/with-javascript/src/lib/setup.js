@@ -1,6 +1,6 @@
 require('@sapphire/plugin-logger/register');
 require('@sapphire/plugin-api/register');
-require('@skyra/editable-commands');
+require('@sapphire/plugin-editable-commands');
 const { options: coloretteOptions } = require('colorette');
 const { inspect } = require('util');
 

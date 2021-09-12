@@ -11,6 +11,7 @@
 		"@sapphire/fetch": "next",
 		"@sapphire/framework": "next",
 		"@sapphire/plugin-api": "next",
+		"@sapphire/plugin-editable-commands": "^0.1.0-next.9af3e85.0",
 		"@sapphire/plugin-logger": "next",
 		"@sapphire/plugin-subcommands": "next",
 		"@sapphire/time-utilities": "next",
