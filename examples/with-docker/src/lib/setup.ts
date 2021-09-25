@@ -1,6 +1,6 @@
 import '@sapphire/plugin-logger/register';
 import '@sapphire/plugin-api/register';
-import '@skyra/editable-commands';
+import '@skyra/editable-commands/register';
 import { options as coloretteOptions } from 'colorette';
 import { inspect } from 'util';
 
