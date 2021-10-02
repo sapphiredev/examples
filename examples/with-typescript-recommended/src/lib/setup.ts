@@ -5,7 +5,7 @@ import 'reflect-metadata';
 import '@sapphire/plugin-logger/register';
 import '@sapphire/plugin-api/register';
 import '@sapphire/plugin-editable-commands/register';
-import { options as coloretteOptions } from 'colorette';
+import * as colorette from 'colorette';
 import { config } from 'dotenv-cra';
 import { join } from 'path';
 import { inspect } from 'util';
@@ -18,4 +18,4 @@ config({ path: join(srcDir, '.env') });
 inspect.defaultOptions.depth = 1;
 
 // Enable colorette
-coloretteOptions.enabled = true;
+colorette.createColors({ useColor: true })
