@@ -11,7 +11,7 @@ import { sendLoadingMessage } from '../../lib/utils';
 	generateDashLessAliases: true
 })
 export class UserCommand extends Command {
-	public async run(message: Message) {
+	public async messageRun(message: Message) {
 		const response = await sendLoadingMessage(message);
 
 		const paginatedMessage = new PaginatedMessage({

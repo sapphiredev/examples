@@ -7,7 +7,7 @@ import type { Message } from 'discord.js';
 	description: 'ping pong'
 })
 export class UserCommand extends Command {
-	public async run(message: Message) {
+	public async messageRun(message: Message) {
 		const msg = await send(message, 'Ping?');
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${

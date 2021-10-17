@@ -7,8 +7,8 @@
 	"devDependencies": {
 		"@commitlint/cli": "^13.2.1",
 		"@commitlint/config-conventional": "^13.2.0",
-		"@sapphire/prettier-config": "^1.2.1",
-		"@types/node": "^16.7.10",
+		"@sapphire/prettier-config": "^1.2.3",
+		"@types/node": "^16.11.1",
 		"@types/ws": "^8.2.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^7.0.2",
@@ -27,8 +27,8 @@
 		"prepare": "husky install .github/husky"
 	},
 	"engines": {
-		"node": ">=16.6",
-		"npm": ">=7.24.2"
+		"node": ">=v16.6.0",
+		"npm": ">=7.0.0"
 	},
 	"commitlint": {
 		"extends": [

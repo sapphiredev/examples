@@ -14,7 +14,7 @@ class UserCommand extends Command {
 		});
 	}
 
-	async run(message) {
+	async messageRun(message) {
 		const response = await sendLoadingMessage(message);
 
 		const paginatedMessage = new PaginatedMessage({

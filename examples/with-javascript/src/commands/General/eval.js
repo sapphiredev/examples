@@ -17,7 +17,7 @@ class UserCommand extends Command {
 		});
 	}
 
-	async run(message, args) {
+	async messageRun(message, args) {
 		const code = await args.rest('string');
 
 		const { result, success, type } = await this.eval(message, code, {

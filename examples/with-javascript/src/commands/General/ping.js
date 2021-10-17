@@ -9,7 +9,7 @@ class UserCommand extends Command {
 		});
 	}
 
-	async run(message) {
+	async messageRun(message) {
 		const msg = await send(message, 'Ping?');
 
 		const content = `Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
