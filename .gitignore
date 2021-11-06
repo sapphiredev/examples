@@ -4,6 +4,10 @@ node_modules/
 .idea/
 *.iml
 
+# Yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml
+
 # Environment variables
 .DS_Store
 
