@@ -20,8 +20,8 @@ config.ts
 *.heapsnapshot
 *.log
 
-# Ignore yarn lock file
-yarn.lock
+# Ignore npm lockfiles file
+package-lock.json
 
 # Environment variables
 .env.local
