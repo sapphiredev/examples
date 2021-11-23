@@ -672,6 +672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^16.11.10":
+  version: 16.11.10
+  resolution: "@types/node@npm:16.11.10"
+  checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -5251,7 +5258,7 @@ __metadata:
     "@commitlint/cli": ^15.0.0
     "@commitlint/config-conventional": ^15.0.0
     "@sapphire/prettier-config": ^1.2.4
-    "@types/node": ^16.11.9
+    "@types/node": ^16.11.10
     "@types/ws": ^8.2.0
     cz-conventional-changelog: ^3.3.0
     husky: ^7.0.4
