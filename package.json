@@ -13,7 +13,6 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^7.0.4",
 		"npm-run-all": "^4.1.5",
-		"npm-upgrade": "^3.0.0",
 		"prettier": "^2.4.1",
 		"pretty-quick": "^3.1.2",
 		"typescript": "^4.5.2"
@@ -23,7 +22,7 @@
 		"format:check": "prettier --check \"./examples/**/*.{ts,md,js,json}\"",
 		"commit": "git-cz",
 		"cz": "git-cz",
-		"update": "npm-upgrade",
+		"update": "yarn up \"@*/*\" -i && yarn up \"*\" -i",
 		"prepare": "husky install .github/husky"
 	},
 	"engines": {

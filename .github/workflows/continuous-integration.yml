@@ -25,6 +25,6 @@ jobs:
           key: ${{ runner.os }}-16-${{ hashFiles('**/package-lock.json') }}
       - name: Install Dependencies if Cache Miss
         if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: npm ci
+        run: yarn install --immutable
       - name: Run Prettier
-        run: npm run format:check
+        run: yarn format:check
