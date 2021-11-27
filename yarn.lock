@@ -383,7 +383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/plugin-editable-commands@npm:^1.1.1":
+"@sapphire/plugin-editable-commands@npm:*, @sapphire/plugin-editable-commands@npm:^1.1.1":
   version: 1.1.1
   resolution: "@sapphire/plugin-editable-commands@npm:1.1.1"
   dependencies:
@@ -4827,6 +4827,7 @@ __metadata:
     "@sapphire/fetch": ^2.0.3
     "@sapphire/framework": ^2.2.0
     "@sapphire/plugin-api": ^3.1.0
+    "@sapphire/plugin-editable-commands": "*"
     "@sapphire/plugin-logger": ^2.1.0
     "@sapphire/plugin-subcommands": ^2.1.0
     "@sapphire/prettier-config": ^1.2.6
@@ -4834,7 +4835,6 @@ __metadata:
     "@sapphire/ts-config": ^3.1.6
     "@sapphire/type": ^2.1.2
     "@sapphire/utilities": ^3.1.0
-    "@skyra/editable-commands": ^2.1.1
     "@types/node": ^16.11.10
     "@types/ws": ^8.2.0
     discord.js: ^13.3.1
@@ -4862,7 +4862,6 @@ __metadata:
     "@sapphire/time-utilities": ^1.4.9
     "@sapphire/type": ^2.1.2
     "@sapphire/utilities": ^3.1.0
-    "@skyra/editable-commands": ^2.1.1
     discord.js: ^13.3.1
     nodemon: ^2.0.15
     npm-run-all: ^4.1.5
@@ -4889,7 +4888,6 @@ __metadata:
     "@sapphire/ts-config": ^3.1.6
     "@sapphire/type": ^2.1.2
     "@sapphire/utilities": ^3.1.0
-    "@skyra/editable-commands": ^2.1.1
     "@types/node": ^16.11.10
     "@types/ws": ^8.2.0
     discord.js: ^13.3.1

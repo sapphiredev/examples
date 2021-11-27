@@ -18,7 +18,6 @@
 		"@sapphire/time-utilities": "^1.4.9",
 		"@sapphire/type": "^2.1.2",
 		"@sapphire/utilities": "^3.1.0",
-		"@skyra/editable-commands": "^2.1.1",
 		"discord.js": "^13.3.1",
 		"dotenv-cra": "^3.0.2",
 		"reflect-metadata": "^0.1.13"

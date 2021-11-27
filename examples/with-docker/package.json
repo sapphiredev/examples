@@ -12,12 +12,12 @@
 		"@sapphire/fetch": "^2.0.3",
 		"@sapphire/framework": "^2.2.0",
 		"@sapphire/plugin-api": "^3.1.0",
+		"@sapphire/plugin-editable-commands": "*",
 		"@sapphire/plugin-logger": "^2.1.0",
 		"@sapphire/plugin-subcommands": "^2.1.0",
 		"@sapphire/time-utilities": "^1.4.9",
 		"@sapphire/type": "^2.1.2",
 		"@sapphire/utilities": "^3.1.0",
-		"@skyra/editable-commands": "^2.1.1",
 		"discord.js": "^13.3.1"
 	},
 	"devDependencies": {
