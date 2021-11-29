@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-      - name: Install Dependencies if Cache Miss
+      - name: Install Dependencies
         run: yarn install --immutable
       - name: Run Prettier
         run: yarn format:check
