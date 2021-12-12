@@ -7,7 +7,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^15.0.0",
 		"@commitlint/config-conventional": "^15.0.0",
-		"@sapphire/prettier-config": "^1.2.6",
+		"@sapphire/prettier-config": "^1.2.7",
 		"@types/node": "^16.11.12",
 		"@types/ws": "^8.2.2",
 		"cz-conventional-changelog": "^3.3.0",
