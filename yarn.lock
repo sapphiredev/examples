@@ -487,12 +487,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.2.6, @sapphire/prettier-config@npm:^1.2.7":
+"@sapphire/prettier-config@npm:^1.2.6":
   version: 1.2.7
   resolution: "@sapphire/prettier-config@npm:1.2.7"
   dependencies:
     prettier: ^2.5.1
   checksum: 4b3f048c10001df84b07c78d82597f1771506cc99bc4a272614db0cf20ccf384fdb6c15b3b705acd5d7765466e808bcb6b9741a88be361b1cb6d14bee9f2953e
+  languageName: node
+  linkType: hard
+
+"@sapphire/prettier-config@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "@sapphire/prettier-config@npm:1.2.8"
+  dependencies:
+    prettier: ^2.5.1
+  checksum: fd574d6f023f882fb63366cfeb6fc7580c3485dd7964ffe4aa3efbf8384b8b6ebba417c425454a4d6d9dc323e716cc4f6477546d0bd7085f980276cae10ff41e
   languageName: node
   linkType: hard
 
@@ -4045,7 +4054,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.0.2
     "@commitlint/config-conventional": ^16.0.0
-    "@sapphire/prettier-config": ^1.2.7
+    "@sapphire/prettier-config": ^1.2.8
     "@types/node": ^17.0.0
     "@types/ws": ^8.2.2
     cz-conventional-changelog: ^3.3.0
