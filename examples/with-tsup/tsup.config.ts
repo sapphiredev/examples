@@ -3,8 +3,8 @@ import { defineConfig } from 'tsup';
 export default defineConfig({
 	clean: true,
 	bundle: false,
-	dts: true,
-	entry: ['src/**/*.ts'],
+	dts: false,
+	entry: ['src/**/*.ts', '!src/**/*.d.ts'],
 	format: ['cjs'],
 	minify: false,
 	tsconfig: 'tsconfig.json',
@@ -13,6 +13,5 @@ export default defineConfig({
 	skipNodeModulesBundle: true,
 	sourcemap: true,
 	shims: false,
-	keepNames: true,
-	outDir: 'dist'
+	keepNames: true
 });
