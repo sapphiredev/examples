@@ -12,10 +12,10 @@ npm install
 
 ### Development
 
-This example can be run with `tsc-watch` to watch the files and automatically restart your bot.
+This example can be run with `tsup` to watch the files and automatically restart your bot.
 
 ```sh
-npm run watch:start
+npm run dev
 ```
 
 ### Production
