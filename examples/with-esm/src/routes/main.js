@@ -16,5 +16,3 @@ export class UserRoute extends Route {
 		response.json({ message: 'Landing Page!' });
 	}
 }
-
-con;
