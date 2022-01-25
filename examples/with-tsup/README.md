@@ -1,4 +1,4 @@
-# TypeScript Sapphire Bot example
+# TypeScript Sapphire Bot example with Tsup
 
 This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript
 
