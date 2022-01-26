@@ -1,4 +1,4 @@
-# TypeScript Sapphire Bot example
+# TypeScript Sapphire Bot example with Tsup
 
 This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript
 
@@ -12,10 +12,10 @@ npm install
 
 ### Development
 
-This example can be run with `tsc-watch` to watch the files and automatically restart your bot.
+This example can be run with `tsup` to watch the files and automatically restart your bot.
 
 ```sh
-npm run watch:start
+npm run dev
 ```
 
 ### Production
