@@ -18,7 +18,7 @@ export class UserEvent extends Listener {
 	}
 
 	onLoad() {
-		this.enabled = this.container.logger.level <= LogLevel.Debug;
+		this.enabled = (Reflect.get(this.container.logger, 'level') ?? LogLevel.Info) <= LogLevel.Debug;
 		return super.onLoad();
 	}
 

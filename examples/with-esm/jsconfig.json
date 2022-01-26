@@ -5,10 +5,11 @@
 		"moduleResolution": "Node",
 		"baseUrl": "src",
 		"resolveJsonModule": true,
+		"checkJs": true,
 		"paths": {
-			"#lib/*": ["./src/lib/*"],
-			"#root/*": ["./src/*"],
-			"#rootJson/*": ["./src/*.json"]
+			"#lib/*": ["lib/*.mjs"],
+			"#root/*": ["*.mjs"],
+			"#rootJson/*": ["*.json"]
 		}
 	},
 	"include": ["src/**/*.mjs", "src/**/*.js"]
