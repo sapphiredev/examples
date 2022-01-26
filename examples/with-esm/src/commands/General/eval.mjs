@@ -2,7 +2,7 @@ import { Command } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
-import { inspect } from 'util';
+import { inspect } from 'node:util';
 
 export class UserCommand extends Command {
 	constructor(context, options) {

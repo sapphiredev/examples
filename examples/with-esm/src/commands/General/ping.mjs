@@ -12,7 +12,7 @@ export class UserCommand extends Command {
 	async messageRun(message) {
 		const msg = await send(message, 'Ping?');
 
-		const content = `Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
+		const content = `Pong from JavaScript (ESM Mode)! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
 			msg.createdTimestamp - message.createdTimestamp
 		}ms.`;
 

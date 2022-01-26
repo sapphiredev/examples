@@ -1,12 +1,11 @@
-import('./lib/setup.js');
+import '#lib/setup';
+import config from '#rootJson/config';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const { prefix, discord_token } = require('./config.json');
 
 const client = new SapphireClient({
-	defaultPrefix: prefix,
+	defaultPrefix: config.prefix,
 	regexPrefix: /^(hey +)?bot[,! ]/i,
+	caseInsensitivePrefixes: true,
 	caseInsensitiveCommands: true,
 	logger: {
 		level: LogLevel.Debug
@@ -28,7 +27,7 @@ const client = new SapphireClient({
 const main = async () => {
 	try {
 		client.logger.info('Logging in');
-		await client.login(discord_token);
+		await client.login(config.discord_token);
 		client.logger.info('logged in');
 	} catch (error) {
 		client.logger.fatal(error);

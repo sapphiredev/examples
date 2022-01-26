@@ -1,6 +1,6 @@
+import { RandomLoadingMessage } from '#lib/constants';
 import { send } from '@sapphire/plugin-editable-commands';
 import { MessageEmbed } from 'discord.js';
-import { RandomLoadingMessage } from './constants.js';
 
 export function pickRandom(array) {
 	return array[Math.floor(Math.random() * array.length)];

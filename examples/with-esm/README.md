@@ -1,6 +1,6 @@
 # Javascript ESM Sapphire Bot example
 
-This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in Javascript
+This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in Javascript and using [ECMAScript Modules][esm].
 
 ## How to use it?
 
@@ -28,3 +28,4 @@ Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Com
 
 [sapphire]: https://github.com/sapphiredev/framework
 [unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
+[esm]: https://nodejs.org/api/esm.html
