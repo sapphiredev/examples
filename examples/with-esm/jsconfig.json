@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "Node",
+		"baseUrl": "src",
+		"resolveJsonModule": true,
+		"checkJs": true,
+		"paths": {
+			"#lib/*": ["lib/*.mjs"],
+			"#root/*": ["*.mjs"],
+			"#rootJson/*": ["*.json"]
+		}
+	},
+	"include": ["src/**/*.mjs", "src/**/*.js"]
+}
