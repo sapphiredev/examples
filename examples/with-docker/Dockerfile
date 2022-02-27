@@ -30,6 +30,9 @@ RUN apt-get update && \
 # If you have an additional "tsconfig.base.json" file then enable the following line:
 # COPY --chown=node:node tsconfig.base.json tsconfig.base.json
 
+# If you require additional NodeJS flags then specify them here
+ENV NODE_OPTIONS="--enable-source-maps"
+
 # ---------------------------------------- #
 #   End Conditional steps for end-users    #
 # ---------------------------------------- #
