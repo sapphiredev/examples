@@ -4,7 +4,7 @@ FROM node:16-buster-slim as base
 WORKDIR /opt/app
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential python dumb-init && \
+    apt-get install -y --no-install-recommends build-essential python3 dumb-init && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
