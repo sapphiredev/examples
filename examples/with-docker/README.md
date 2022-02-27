@@ -6,7 +6,8 @@ This is a basic setup of a Discord bot using the [sapphire framework][sapphire] 
 
 ### Prerequisite
 
-Copy the `.env.example` and rename it to `.env`, make sure to fill the Token
+1. Copy the `.env.example` and rename it to `.env`, make sure to fill the Token.
+2. Open the Dockerfile and in the block marked with `Conditional steps for end-users` make sure you enable the lines that apply to your project.
 
 ### Development
 
