@@ -42,6 +42,8 @@ COPY --chown=node:node tsconfig.json .
 
 RUN sed -i 's/"prepare": "husky install\( .github\/husky\)\?"/"prepare": ""/' ./package.json
 
+USER node
+
 ENTRYPOINT ["dumb-init", "--"]
 
 # =================== #
@@ -82,7 +84,5 @@ COPY --from=build /opt/app/node_modules /opt/app/node_modules
 COPY --from=build /opt/app/package.json /opt/app/package.json
 
 RUN chown node:node /opt/app/
-
-USER node
 
 CMD [ "npm", "run", "start"]
