@@ -53,6 +53,8 @@ FROM base as development
 
 ENV NODE_ENV="development"
 
+USER node
+
 CMD [ "npm", "run", "docker:watch"]
 
 # ================ #
