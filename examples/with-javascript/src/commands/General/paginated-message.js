@@ -21,7 +21,7 @@ class UserCommand extends Command {
 			template: new MessageEmbed()
 				.setColor('#FF0000')
 				// Be sure to add a space so this is offset from the page numbers!
-				.setFooter(' footer after page numbers')
+				.setFooter({ text: ' footer after page numbers' })
 		});
 
 		paginatedMessage
