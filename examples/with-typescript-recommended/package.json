@@ -18,6 +18,7 @@
 		"@sapphire/time-utilities": "^1.5.2",
 		"@sapphire/type": "^2.1.2",
 		"@sapphire/utilities": "^3.2.1",
+		"colorette": "^2.0.16",
 		"discord.js": "^13.6.0",
 		"dotenv-cra": "^3.0.2",
 		"reflect-metadata": "^0.1.13"
