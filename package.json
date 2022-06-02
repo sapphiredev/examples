@@ -27,7 +27,7 @@
 		"commit": "git-cz",
 		"cz": "git-cz",
 		"update": "yarn up \"@*/*\" -i && yarn up \"*\" -i",
-		"prepare": "husky install .github/husky"
+		"postinstall": "husky install .github/husky"
 	},
 	"engines": {
 		"node": ">=v16.6.0",
