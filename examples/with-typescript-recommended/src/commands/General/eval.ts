@@ -6,7 +6,7 @@ import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
 import { inspect } from 'util';
 
-@ApplyOptions<CommandOptions>({
+@ApplyOptions<Command.Options>({
 	aliases: ['ev'],
 	description: 'Evals any JavaScript code',
 	quotes: [],

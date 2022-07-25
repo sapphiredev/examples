@@ -1,9 +1,9 @@
 import { ApplyOptions, RequiresClientPermissions, RequiresDMContext, RequiresGuildContext } from '@sapphire/decorators';
 import { send } from '@sapphire/plugin-editable-commands';
-import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
+import { SubCommandPluginCommand } from '@sapphire/plugin-subcommands';
 import { Message, MessageEmbed } from 'discord.js';
 
-@ApplyOptions<SubCommandPluginCommandOptions>({
+@ApplyOptions<SubCommandPluginCommand.Options>({
 	aliases: ['cwd'],
 	description: 'A basic command with some subcommands',
 	subCommands: ['add', { input: 'create', output: 'add' }, 'remove', 'reset', { input: 'show', default: true }]
