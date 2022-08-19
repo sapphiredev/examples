@@ -1,5 +1,5 @@
-import { Subcommand } from '@sapphire/plugin-subcommands';
-import { send } from '@sapphire/plugin-editable-commands';
+const { Subcommand } = require('@sapphire/plugin-subcommands');
+const { send } = require('@sapphire/plugin-editable-commands');
 
 class UserCommand extends Subcommand {
 	constructor(context, options) {

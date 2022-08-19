@@ -1,7 +1,7 @@
-import { PaginatedMessage } from '@sapphire/discord.js-utilities';
-import { Command } from '@sapphire/framework';
-import { MessageEmbed } from 'discord.js';
-import { sendLoadingMessage } from '#lib/utils';
+const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
+const { Command } = require('@sapphire/framework');
+const { MessageEmbed } = require('discord.js');
+const { sendLoadingMessage } = require('../../lib/utils');
 
 export class UserCommand extends Command {
 	constructor(context, options) {
