@@ -1771,7 +1771,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.33.3":
+"discord-api-types@npm:^0.33.3, discord-api-types@npm:^0.33.5":
   version: 0.33.5
   resolution: "discord-api-types@npm:0.33.5"
   checksum: 6dcaad640c5693a69c9a4f5e444e739dde11ba835164ae6fd3dd5a1ab7b4d7f96cd022ed653eeaff2c8051ead0d998a5d502a2915cfacdde596364b82d9e3b3f
@@ -5511,7 +5511,7 @@ __metadata:
     "@types/node": ^18.7.6
     "@types/ws": ^8.5.3
     colorette: ^2.0.19
-    discord-api-types: ^0.33.3
+    discord-api-types: ^0.33.5
     discord.js: ^13.10.2
     dotenv-cra: ^3.0.2
     npm-run-all: ^4.1.5
