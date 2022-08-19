@@ -4,7 +4,7 @@ const { Type } = require('@sapphire/type');
 const { codeBlock, isThenable } = require('@sapphire/utilities');
 const { inspect } = require('node:util');
 
-export class UserCommand extends Command {
+class UserCommand extends Command {
 	constructor(context, options) {
 		super(context, {
 			...options,

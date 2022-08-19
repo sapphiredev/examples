@@ -3,7 +3,7 @@ const { Command } = require('@sapphire/framework');
 const { MessageEmbed } = require('discord.js');
 const { sendLoadingMessage } = require('../../lib/utils');
 
-export class UserCommand extends Command {
+class UserCommand extends Command {
 	constructor(context, options) {
 		super(context, {
 			...options,

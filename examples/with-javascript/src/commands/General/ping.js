@@ -1,7 +1,7 @@
 const { Command } = require('@sapphire/framework');
 const { send } = require('@sapphire/plugin-editable-commands');
 
-export class UserCommand extends Command {
+class UserCommand extends Command {
 	constructor(context, options) {
 		super(context, {
 			...options,

@@ -1,5 +1,5 @@
 import '#lib/setup';
-import config from '#rootJson/config';
+import config from '#rootJson/config' assert { type: 'json' };
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 
 const client = new SapphireClient({
@@ -22,7 +22,7 @@ const client = new SapphireClient({
 		'DIRECT_MESSAGES',
 		'DIRECT_MESSAGE_REACTIONS'
 	],
-	partials: ['USER'],
+	partials: ['CHANNEL'],
 	loadMessageCommandListeners: true
 });
 
