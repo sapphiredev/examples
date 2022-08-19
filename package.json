@@ -22,7 +22,7 @@
 		"minimist": "^1.2.6"
 	},
 	"scripts": {
-		"format": "prettier --write \"./examples/**/*.{ts,md,js,json, mjs}\"",
+		"format": "prettier --write \"./examples/**/*.{ts,md,js,json,mjs}\"",
 		"format:check": "prettier --check \"./examples/**/*.{ts,md,js,json}\"",
 		"commit": "git-cz",
 		"cz": "git-cz",

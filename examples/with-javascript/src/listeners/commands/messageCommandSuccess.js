@@ -1,14 +1,7 @@
-const { Events, Listener, LogLevel } = require('@sapphire/framework');
+const { Listener, LogLevel } = require('@sapphire/framework');
 const { cyan } = require('colorette');
 
 class UserEvent extends Listener {
-	constructor(context, options = {}) {
-		super(context, {
-			...options,
-			event: Events.CommandSuccess
-		});
-	}
-
 	run({ message, command }) {
 		const shard = this.shard(message.guild?.shardId ?? 0);
 		const commandName = this.command(command);
