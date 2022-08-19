@@ -1,7 +1,7 @@
 import { Subcommand } from '@sapphire/plugin-subcommands';
 import { send } from '@sapphire/plugin-editable-commands';
 
-export class UserCommand extends Subcommand {
+class UserCommand extends Subcommand {
 	constructor(context, options) {
 		super(context, {
 			...options,
