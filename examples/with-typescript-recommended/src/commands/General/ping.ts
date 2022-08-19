@@ -28,7 +28,6 @@ export class UserCommand extends Command {
 
 	// Message command
 	public async messageRun(message: Message) {
-		// TODO Make Message Command in DM`s working
 		const msg = await send(message, 'Ping?');
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
