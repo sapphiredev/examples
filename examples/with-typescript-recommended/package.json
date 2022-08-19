@@ -6,8 +6,8 @@
 	"license": "UNLICENSE",
 	"dependencies": {
 		"@sapphire/decorators": "^4.3.8",
-		"@sapphire/discord-utilities": "^2.11.5",
-		"@sapphire/discord.js-utilities": "^4.12.0",
+		"@sapphire/discord-utilities": "next",
+		"@sapphire/discord.js-utilities": "next",
 		"@sapphire/fetch": "^2.4.1",
 		"@sapphire/framework": "next",
 		"@sapphire/plugin-api": "next",
