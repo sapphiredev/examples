@@ -1,11 +1,9 @@
-import { ApplyOptions } from '@sapphire/decorators';
-import { Events, Listener, LogLevel, ContextMenuCommandSuccessPayload } from '@sapphire/framework';
+import { ChatInputCommandSuccessPayload, Listener, LogLevel } from '@sapphire/framework';
 import type { Logger } from '@sapphire/plugin-logger';
 import { logSuccessCommand } from '../../../lib/utils';
 
-@ApplyOptions<Listener.Options>({ event: Events.ContextMenuCommandSuccess })
 export class UserListener extends Listener {
-	public run(payload: ContextMenuCommandSuccessPayload) {
+	public run(payload: ChatInputCommandSuccessPayload) {
 		logSuccessCommand(payload);
 	}
 

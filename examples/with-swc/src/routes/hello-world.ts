@@ -1,14 +1,8 @@
-import type { PieceContext } from '@sapphire/framework';
-import { ApiRequest, ApiResponse, methods, Route, RouteOptions } from '@sapphire/plugin-api';
+import { ApiRequest, ApiResponse, methods, Route } from '@sapphire/plugin-api';
+import { ApplyOptions } from '@sapphire/decorators';
 
+@ApplyOptions<Route.Options>({ route: 'hello-world' })
 export class UserRoute extends Route {
-	public constructor(context: PieceContext, options?: RouteOptions) {
-		super(context, {
-			...options,
-			route: 'hello-world'
-		});
-	}
-
 	public [methods.GET](_request: ApiRequest, response: ApiResponse) {
 		response.json({ message: 'Hello World' });
 	}
