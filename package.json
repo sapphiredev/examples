@@ -8,7 +8,7 @@
 		"@commitlint/cli": "^17.0.3",
 		"@commitlint/config-conventional": "^17.0.3",
 		"@sapphire/prettier-config": "^1.4.3",
-		"@types/node": "^17.0.10",
+		"@types/node": "^18.7.6",
 		"@types/ws": "^8.5.3",
 		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^8.0.1",
@@ -22,7 +22,7 @@
 		"minimist": "^1.2.6"
 	},
 	"scripts": {
-		"format": "prettier --write \"./examples/**/*.{ts,md,js,json}\"",
+		"format": "prettier --write \"./examples/**/*.{ts,md,js,json, mjs}\"",
 		"format:check": "prettier --check \"./examples/**/*.{ts,md,js,json}\"",
 		"commit": "git-cz",
 		"cz": "git-cz",

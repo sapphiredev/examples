@@ -1,10 +1,9 @@
-const { Command } = require('@sapphire/framework');
-const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
-const { send } = require('@sapphire/plugin-editable-commands');
-const { MessageEmbed } = require('discord.js');
-const { sendLoadingMessage } = require('../../lib/utils');
+import { PaginatedMessage } from '@sapphire/discord.js-utilities';
+import { Command } from '@sapphire/framework';
+import { MessageEmbed } from 'discord.js';
+import { sendLoadingMessage } from '#lib/utils';
 
-class UserCommand extends Command {
+export class UserCommand extends Command {
 	constructor(context, options) {
 		super(context, {
 			...options,
@@ -40,5 +39,4 @@ class UserCommand extends Command {
 		return response;
 	}
 }
-
 exports.UserCommand = UserCommand;

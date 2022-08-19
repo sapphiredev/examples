@@ -1,32 +1,53 @@
-const { SubCommandPluginCommand } = require('@sapphire/plugin-subcommands');
-const { send } = require('@sapphire/plugin-editable-commands');
+import { Subcommand } from '@sapphire/plugin-subcommands';
+import { send } from '@sapphire/plugin-editable-commands';
 
-class UserCommand extends SubCommandPluginCommand {
+export class UserCommand extends Subcommand {
 	constructor(context, options) {
 		super(context, {
 			...options,
 			aliases: ['cws'],
 			description: 'A basic command with some subcommands',
-			subCommands: ['add', { input: 'create', output: 'add' }, 'remove', 'reset', { input: 'show', default: true }]
+			subcommands: [
+				{
+					name: 'add',
+					messageRun: 'messageAdd'
+				},
+				{
+					name: 'create',
+					messageRun: 'messageAdd'
+				},
+				{
+					name: 'remove',
+					messageRun: 'messageRemove'
+				},
+				{
+					name: 'reset',
+					messageRun: 'messageReset'
+				},
+				{
+					name: 'show',
+					messageRun: 'messageShow',
+					default: true
+				}
+			]
 		});
 	}
 
 	// Anyone should be able to view the result, but not modify
-	async show(message) {
+	async messageShow(message) {
 		return send(message, 'Showing!');
 	}
 
-	async add(message) {
+	async messageAdd(message) {
 		return send(message, 'Adding!');
 	}
 
-	async remove(message) {
+	async messageRemove(message) {
 		return send(message, 'Removing!');
 	}
 
-	async reset(message) {
+	async messageReset(message) {
 		return send(message, 'Resetting!');
 	}
 }
-
 exports.UserCommand = UserCommand;

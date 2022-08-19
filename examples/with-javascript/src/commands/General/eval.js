@@ -1,10 +1,10 @@
-const { Command } = require('@sapphire/framework');
-const { send } = require('@sapphire/plugin-editable-commands');
-const { Type } = require('@sapphire/type');
-const { codeBlock, isThenable } = require('@sapphire/utilities');
-const { inspect } = require('util');
+import { Command } from '@sapphire/framework';
+import { send } from '@sapphire/plugin-editable-commands';
+import { Type } from '@sapphire/type';
+import { codeBlock, isThenable } from '@sapphire/utilities';
+import { inspect } from 'node:util';
 
-class UserCommand extends Command {
+export class UserCommand extends Command {
 	constructor(context, options) {
 		super(context, {
 			...options,
@@ -73,5 +73,4 @@ class UserCommand extends Command {
 		return { result, success, type };
 	}
 }
-
 exports.UserCommand = UserCommand;

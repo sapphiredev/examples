@@ -1,12 +1,12 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import { Args, Command } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
 import { inspect } from 'util';
 
-@ApplyOptions<CommandOptions>({
+@ApplyOptions<Command.Options>({
 	aliases: ['ev'],
 	description: 'Evals any JavaScript code',
 	quotes: [],
