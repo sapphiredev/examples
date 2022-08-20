@@ -1,5 +1,5 @@
 import '#lib/setup';
-import config from '#rootJson/config';
+import config from '#rootJson/config' assert { type: 'json' };
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 
 const client = new SapphireClient({
@@ -21,7 +21,9 @@ const client = new SapphireClient({
 		'GUILD_MESSAGE_REACTIONS',
 		'DIRECT_MESSAGES',
 		'DIRECT_MESSAGE_REACTIONS'
-	]
+	],
+	partials: ['CHANNEL'],
+	loadMessageCommandListeners: true
 });
 
 const main = async () => {

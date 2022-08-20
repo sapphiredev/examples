@@ -1,7 +1,7 @@
+import { sendLoadingMessage } from '#lib/utils';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { Command } from '@sapphire/framework';
 import { MessageEmbed } from 'discord.js';
-import { sendLoadingMessage } from '#lib/utils';
 
 export class UserCommand extends Command {
 	constructor(context, options) {

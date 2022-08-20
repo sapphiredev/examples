@@ -1,6 +1,5 @@
-const { Command } = require('@sapphire/framework');
 const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
-const { send } = require('@sapphire/plugin-editable-commands');
+const { Command } = require('@sapphire/framework');
 const { MessageEmbed } = require('discord.js');
 const { sendLoadingMessage } = require('../../lib/utils');
 
@@ -41,4 +40,6 @@ class UserCommand extends Command {
 	}
 }
 
-exports.UserCommand = UserCommand;
+module.exports = {
+	UserCommand
+};

@@ -10,5 +10,7 @@ function sendLoadingMessage(message) {
 	return send(message, { embeds: [new MessageEmbed().setDescription(pickRandom(RandomLoadingMessage)).setColor('#FF0000')] });
 }
 
-module.exports.pickRandom = pickRandom;
-module.exports.sendLoadingMessage = sendLoadingMessage;
+module.exports = {
+	pickRandom,
+	sendLoadingMessage
+};

@@ -20,4 +20,6 @@ class UserCommand extends Command {
 	}
 }
 
-exports.UserCommand = UserCommand;
+module.exports = {
+	UserCommand
+};
