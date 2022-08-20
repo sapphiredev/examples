@@ -1,11 +1,10 @@
+import type { ChatInputCommandSuccessPayload, Command, ContextMenuCommandSuccessPayload, MessageCommandSuccessPayload } from '@sapphire/framework';
+import { container } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
+import { cyan } from 'colorette';
+import type { APIUser } from 'discord-api-types/v9';
 import { Guild, Message, MessageEmbed, User } from 'discord.js';
 import { RandomLoadingMessage } from './constants';
-import type { ChatInputCommandSuccessPayload, ContextMenuCommandSuccessPayload, MessageCommandSuccessPayload } from '@sapphire/framework';
-import { cyan } from 'colorette';
-import type { Command } from '@sapphire/framework';
-import type { APIUser } from 'discord-api-types/v9';
-import { container } from '@sapphire/framework';
 
 /**
  * Picks a random item from an array
@@ -27,7 +26,8 @@ export function sendLoadingMessage(message: Message): Promise<typeof message> {
 }
 
 export function logSuccessCommand(payload: ContextMenuCommandSuccessPayload | ChatInputCommandSuccessPayload | MessageCommandSuccessPayload): void {
-	let successLoggerData;
+	let successLoggerData: ReturnType<typeof getSuccessLoggerData>;
+
 	if ('interaction' in payload) {
 		successLoggerData = getSuccessLoggerData(payload.interaction.guild, payload.interaction.user, payload.command);
 	} else {

@@ -7,4 +7,6 @@ class UserEvent extends Listener {
 	}
 }
 
-exports.UserEvent = UserEvent;
+module.exports = {
+	UserEvent
+};

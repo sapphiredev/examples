@@ -2,9 +2,9 @@
 process.env.NODE_ENV ??= 'development';
 
 import 'reflect-metadata';
-import '@sapphire/plugin-logger/register';
 import '@sapphire/plugin-api/register';
 import '@sapphire/plugin-editable-commands/register';
+import '@sapphire/plugin-logger/register';
 import * as colorette from 'colorette';
 import { config } from 'dotenv-cra';
 import { join } from 'path';

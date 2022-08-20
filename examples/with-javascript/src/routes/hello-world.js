@@ -17,4 +17,6 @@ class UserRoute extends Route {
 	}
 }
 
-module.exports.UserRoute = UserRoute;
+module.exports = {
+	UserRoute
+};

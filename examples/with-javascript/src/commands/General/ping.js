@@ -19,4 +19,7 @@ class UserCommand extends Command {
 		return send(message, content);
 	}
 }
-exports.UserCommand = UserCommand;
+
+module.exports = {
+	UserCommand
+};

@@ -50,4 +50,7 @@ class UserCommand extends Subcommand {
 		return send(message, 'Resetting!');
 	}
 }
-exports.UserCommand = UserCommand;
+
+module.exports = {
+	UserCommand
+};

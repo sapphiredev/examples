@@ -54,4 +54,6 @@ ${line03}${dev ? ` ${pad}${blc('<')}${llc('/')}${blc('>')} ${llc('DEVELOPMENT MO
 	}
 }
 
-exports.UserEvent = UserEvent;
+module.exports = {
+	UserEvent
+};

@@ -1,8 +1,34 @@
 import config from '#rootJson/config' assert { type: 'json' };
-import { Precondition } from '@sapphire/framework';
+import { AllFlowsPrecondition } from '@sapphire/framework';
 
-export class UserPrecondition extends Precondition {
-	async messageRun(message) {
-		return config.owners.includes(message.author.id) ? this.ok() : this.error({ message: 'This command can only be used by the owners.' });
+export class UserPrecondition extends AllFlowsPrecondition {
+	#message = 'This command can only be used by the owner.';
+
+	/**
+	 * @param {import('discord.js').CommandInteraction} interaction
+	 */
+	chatInputRun(interaction) {
+		return this.doOwnerCheck(interaction.user.id);
+	}
+
+	/**
+	 * @param {import('discord.js').ContextMenuInteraction} interaction
+	 */
+	contextMenuRun(interaction) {
+		return this.doOwnerCheck(interaction.user.id);
+	}
+
+	/**
+	 * @param {import('discord.js').Message} message
+	 */
+	messageRun(message) {
+		return this.doOwnerCheck(message.author.id);
+	}
+
+	/**
+	 * @param {import('discord.js').Snowflake} userId
+	 */
+	doOwnerCheck(userId) {
+		return config.owners.includes(userId) ? this.ok() : this.error({ message: this.#message });
 	}
 }

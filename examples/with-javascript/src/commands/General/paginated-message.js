@@ -39,4 +39,7 @@ class UserCommand extends Command {
 		return response;
 	}
 }
-exports.UserCommand = UserCommand;
+
+module.exports = {
+	UserCommand
+};
