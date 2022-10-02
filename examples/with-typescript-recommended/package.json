@@ -5,7 +5,7 @@
 	"author": "@sapphire",
 	"license": "UNLICENSE",
 	"dependencies": {
-		"@sapphire/decorators": "^4.3.8",
+		"@sapphire/decorators": "^5.0.0",
 		"@sapphire/discord-utilities": "^2.11.6",
 		"@sapphire/discord.js-utilities": "^5.0.1",
 		"@sapphire/fetch": "^2.4.1",
@@ -14,7 +14,7 @@
 		"@sapphire/plugin-editable-commands": "^2.0.1",
 		"@sapphire/plugin-logger": "^3.0.1",
 		"@sapphire/plugin-subcommands": "^3.2.2",
-		"@sapphire/time-utilities": "^1.7.5",
+		"@sapphire/time-utilities": "^1.7.8",
 		"@sapphire/type": "^2.2.4",
 		"@sapphire/utilities": "^3.10.1",
 		"colorette": "^2.0.19",
@@ -24,7 +24,7 @@
 		"reflect-metadata": "^0.1.13"
 	},
 	"devDependencies": {
-		"@sapphire/prettier-config": "^1.4.3",
+		"@sapphire/prettier-config": "^1.4.4",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/node": "^18.7.23",
 		"@types/ws": "^8.5.3",
