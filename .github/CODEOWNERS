@@ -1,2 +1,7 @@
 # Favna is the primary maintainer of this repository
-* @favna
+examples @favna
+scripts @favna
+.gitignore @favna
+.prettierignore @favna
+LICENSE.md @favna
+README.md @favna
