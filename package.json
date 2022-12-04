@@ -8,7 +8,7 @@
 		"@commitlint/cli": "^17.3.0",
 		"@commitlint/config-conventional": "^17.3.0",
 		"@sapphire/prettier-config": "^1.4.4",
-		"@types/node": "^18.11.9",
+		"@types/node": "^18.11.10",
 		"@types/ws": "^8.5.3",
 		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^8.0.2",
