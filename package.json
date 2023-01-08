@@ -22,8 +22,8 @@
 		"minimist": "^1.2.7"
 	},
 	"scripts": {
-		"format": "prettier --write \"./examples/**/*.{ts,md,js,json,mjs}\"",
-		"format:check": "prettier --check \"./examples/**/*.{ts,md,js,json}\"",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
 		"commit": "git-cz",
 		"cz": "git-cz",
 		"update": "yarn up \"@*/*\" -i && yarn up \"*\" -i",
