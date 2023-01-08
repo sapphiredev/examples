@@ -1,5 +1,5 @@
 import { AllFlowsPrecondition } from '@sapphire/framework';
-import type { CommandInteraction, ContextMenuInteraction, Message, Snowflake } from 'discord.js';
+import type { CommandInteraction, ContextMenuCommandInteraction, Message, Snowflake } from 'discord.js';
 import { envParseArray } from '../lib/env-parser';
 
 const OWNERS = envParseArray('OWNERS');
@@ -11,7 +11,7 @@ export class UserPrecondition extends AllFlowsPrecondition {
 		return this.doOwnerCheck(interaction.user.id);
 	}
 
-	public override contextMenuRun(interaction: ContextMenuInteraction) {
+	public override contextMenuRun(interaction: ContextMenuCommandInteraction) {
 		return this.doOwnerCheck(interaction.user.id);
 	}
 
