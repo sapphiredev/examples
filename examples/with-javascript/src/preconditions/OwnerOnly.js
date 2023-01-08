@@ -12,7 +12,7 @@ class UserPrecondition extends AllFlowsPrecondition {
 	}
 
 	/**
-	 * @param {import('discord.js').ContextMenuInteraction} interaction
+	 * @param {import('discord.js').ContextMenuCommandInteraction} interaction
 	 */
 	contextMenuRun(interaction) {
 		return this.doOwnerCheck(interaction.user.id);

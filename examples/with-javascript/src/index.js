@@ -1,6 +1,7 @@
 require('./lib/setup');
 const { LogLevel, SapphireClient } = require('@sapphire/framework');
 const { prefix, discord_token } = require('./config.json');
+import { GatewayIntentBits, Partials } from 'discord.js';
 
 const client = new SapphireClient({
 	defaultPrefix: prefix,
@@ -11,17 +12,18 @@ const client = new SapphireClient({
 	},
 	shards: 'auto',
 	intents: [
-		'GUILDS',
-		'GUILD_MEMBERS',
-		'GUILD_BANS',
-		'GUILD_EMOJIS_AND_STICKERS',
-		'GUILD_VOICE_STATES',
-		'GUILD_MESSAGES',
-		'GUILD_MESSAGE_REACTIONS',
-		'DIRECT_MESSAGES',
-		'DIRECT_MESSAGE_REACTIONS'
+		GatewayIntentBits.DirectMessageReactions,
+		GatewayIntentBits.DirectMessages,
+		GatewayIntentBits.GuildBans,
+		GatewayIntentBits.GuildEmojisAndStickers,
+		GatewayIntentBits.GuildMembers,
+		GatewayIntentBits.GuildMessageReactions,
+		GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.Guilds,
+		GatewayIntentBits.GuildVoiceStates,
+		GatewayIntentBits.MessageContent
 	],
-	partials: ['CHANNEL'],
+	partials: [Partials.Channel],
 	loadMessageCommandListeners: true
 });
 

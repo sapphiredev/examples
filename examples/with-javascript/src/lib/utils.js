@@ -1,5 +1,5 @@
 const { send } = require('@sapphire/plugin-editable-commands');
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { RandomLoadingMessage } = require('./constants');
 
 function pickRandom(array) {
@@ -7,7 +7,7 @@ function pickRandom(array) {
 }
 
 function sendLoadingMessage(message) {
-	return send(message, { embeds: [new MessageEmbed().setDescription(pickRandom(RandomLoadingMessage)).setColor('#FF0000')] });
+	return send(message, { embeds: [new EmbedBuilder().setDescription(pickRandom(RandomLoadingMessage)).setColor('#FF0000')] });
 }
 
 module.exports = {
