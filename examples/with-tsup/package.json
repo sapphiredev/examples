@@ -17,9 +17,8 @@
 		"@sapphire/time-utilities": "^1.7.8",
 		"@sapphire/type": "^2.3.0",
 		"@sapphire/utilities": "^3.11.0",
-		"discord.js": "^14.7.1",
-		"dotenv-cra": "^3.0.2",
-		"reflect-metadata": "^0.1.13"
+		"@skyra/env-utilities": "^1.1.0",
+		"discord.js": "^14.7.1"
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.4",
