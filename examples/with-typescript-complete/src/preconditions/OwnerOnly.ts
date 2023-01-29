@@ -1,6 +1,6 @@
 import { AllFlowsPrecondition } from '@sapphire/framework';
+import { envParseArray } from '@skyra/env-utilities';
 import type { CommandInteraction, ContextMenuCommandInteraction, Message, Snowflake } from 'discord.js';
-import { envParseArray } from '../lib/env-parser';
 
 const OWNERS = envParseArray('OWNERS');
 
