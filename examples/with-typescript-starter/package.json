@@ -6,8 +6,8 @@
 	"license": "UNLICENSE",
 	"dependencies": {
 		"@sapphire/decorators": "^6.0.0",
-		"@sapphire/discord.js-utilities": "6.0.0",
-		"@sapphire/framework": "^4.0.0",
+		"@sapphire/discord.js-utilities": "6.0.1",
+		"@sapphire/framework": "^4.0.2",
 		"@sapphire/plugin-logger": "^3.0.1",
 		"@sapphire/utilities": "^3.11.0",
 		"@skyra/env-utilities": "^1.1.0",
@@ -15,11 +15,11 @@
 		"discord.js": "^14.7.1"
 	},
 	"devDependencies": {
-		"@sapphire/prettier-config": "^1.4.4",
+		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/node": "^18.11.18",
 		"@types/ws": "^8.5.4",
-		"prettier": "^2.8.2",
+		"prettier": "^2.8.3",
 		"tsc-watch": "^6.0.0",
 		"typescript": "^4.9.4"
 	},
