@@ -36,7 +36,7 @@ export class UserCommand extends Subcommand {
 		return send(message, 'Showing!');
 	}
 
-	@RequiresClientPermissions('EMBED_LINKS') // This sub-command requires the bot to have EMBED_LINKS permission because it sends a EmbedBuilder
+	@RequiresClientPermissions(['EmbedLinks']) // This sub-command requires the bot to have EMBED_LINKS permission because it sends a EmbedBuilder
 	public async messageAdd(message: Message) {
 		const embed = new EmbedBuilder() //
 			.setColor('#3986E4')
