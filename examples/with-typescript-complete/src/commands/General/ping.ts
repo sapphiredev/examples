@@ -14,11 +14,13 @@ export class UserCommand extends Command {
 			name: this.name,
 			description: this.description
 		});
+
 		// Register context menu command available from any message
 		registry.registerContextMenuCommand({
 			name: this.name,
 			type: ApplicationCommandType.Message
 		});
+
 		// Register context menu command available from any user
 		registry.registerContextMenuCommand({
 			name: this.name,
