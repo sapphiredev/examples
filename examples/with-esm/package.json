@@ -13,10 +13,10 @@
 	},
 	"dependencies": {
 		"@sapphire/discord-utilities": "^3.0.0",
-		"@sapphire/discord.js-utilities": "6.0.1",
+		"@sapphire/discord.js-utilities": "6.0.3",
 		"@sapphire/fetch": "^2.4.1",
-		"@sapphire/framework": "^4.0.2",
-		"@sapphire/plugin-api": "^5.0.0",
+		"@sapphire/framework": "^4.2.1",
+		"@sapphire/plugin-api": "^5.0.1",
 		"@sapphire/plugin-editable-commands": "^3.0.0",
 		"@sapphire/plugin-logger": "^3.0.1",
 		"@sapphire/plugin-subcommands": "^4.0.0",
@@ -27,9 +27,9 @@
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.5",
-		"nodemon": "^2.0.20",
+		"nodemon": "^2.0.21",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.8.3"
+		"prettier": "^2.8.4"
 	},
 	"scripts": {
 		"watch": "nodemon --enable-source-maps --experimental-json-modules -L --watch src",

@@ -7,10 +7,10 @@
 	"dependencies": {
 		"@sapphire/decorators": "^6.0.0",
 		"@sapphire/discord-utilities": "^3.0.0",
-		"@sapphire/discord.js-utilities": "6.0.1",
+		"@sapphire/discord.js-utilities": "6.0.3",
 		"@sapphire/fetch": "^2.4.1",
-		"@sapphire/framework": "^4.0.2",
-		"@sapphire/plugin-api": "^5.0.0",
+		"@sapphire/framework": "^4.2.1",
+		"@sapphire/plugin-api": "^5.0.1",
 		"@sapphire/plugin-editable-commands": "^3.0.0",
 		"@sapphire/plugin-logger": "^3.0.1",
 		"@sapphire/plugin-subcommands": "^4.0.0",
@@ -23,12 +23,12 @@
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^3.3.4",
-		"@types/node": "^18.11.18",
+		"@types/node": "^18.15.0",
 		"@types/ws": "^8.5.4",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.8.3",
-		"tsup": "^6.5.0",
-		"typescript": "^4.9.4"
+		"prettier": "^2.8.4",
+		"tsup": "^6.6.3",
+		"typescript": "^4.9.5"
 	},
 	"scripts": {
 		"build": "tsup",
