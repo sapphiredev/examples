@@ -1,9 +1,9 @@
-import { sendLoadingMessage } from '#lib/utils';
 import { ApplyOptions } from '@sapphire/decorators';
 import { PaginatedMessage } from '@sapphire/discord.js-utilities';
 import { Command } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { EmbedBuilder } from 'discord.js';
+import { sendLoadingMessage } from '../../lib/utils';
 
 @ApplyOptions<Command.Options>({
 	aliases: ['pm'],

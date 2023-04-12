@@ -2,7 +2,7 @@ import type { ChatInputCommandSuccessPayload, Command, ContextMenuCommandSuccess
 import { container } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
 import { cyan } from 'colorette';
-import { EmbedBuilder, Guild, Message, User, type APIUser } from 'discord.js';
+import { EmbedBuilder, type APIUser, type Guild, type Message, type User } from 'discord.js';
 import { RandomLoadingMessage } from './constants';
 
 /**

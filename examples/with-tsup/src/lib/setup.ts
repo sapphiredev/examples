@@ -5,6 +5,7 @@ import { ApplicationCommandRegistries, RegisterBehavior } from '@sapphire/framew
 import '@sapphire/plugin-api/register';
 import '@sapphire/plugin-editable-commands/register';
 import '@sapphire/plugin-logger/register';
+import '@sapphire/plugin-subcommands/register';
 import { setup, type ArrayString } from '@skyra/env-utilities';
 import * as colorette from 'colorette';
 import { join } from 'path';

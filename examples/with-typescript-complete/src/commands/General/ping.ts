@@ -1,7 +1,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
-import { ApplicationCommandType, Message } from 'discord.js';
+import { ApplicationCommandType, type Message } from 'discord.js';
 
 @ApplyOptions<Command.Options>({
 	description: 'ping pong'

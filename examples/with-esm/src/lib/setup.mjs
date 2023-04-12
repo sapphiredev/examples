@@ -2,6 +2,7 @@ import { ApplicationCommandRegistries, RegisterBehavior } from '@sapphire/framew
 import '@sapphire/plugin-api/register';
 import '@sapphire/plugin-editable-commands/register';
 import '@sapphire/plugin-logger/register';
+import '@sapphire/plugin-subcommands/register';
 import { createColors } from 'colorette';
 import { inspect } from 'node:util';
 

@@ -1,5 +1,5 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command } from '@sapphire/framework';
+import { Command, type Args } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';

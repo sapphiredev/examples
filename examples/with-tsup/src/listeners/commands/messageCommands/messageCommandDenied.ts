@@ -1,7 +1,7 @@
-import type { MessageCommandDeniedPayload } from '@sapphire/framework';
-import { Listener, UserError } from '@sapphire/framework';
+import type { Events, MessageCommandDeniedPayload } from '@sapphire/framework';
+import { Listener, type UserError } from '@sapphire/framework';
 
-export class UserEvent extends Listener {
+export class UserEvent extends Listener<typeof Events.MessageCommandDenied> {
 	public async run({ context, message: content }: UserError, { message }: MessageCommandDeniedPayload) {
 		// `context: { silent: true }` should make UserError silent:
 		// Use cases for this are for example permissions error when running the `eval` command.

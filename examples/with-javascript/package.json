@@ -4,6 +4,7 @@
 	"main": "src/index.js",
 	"author": "@sapphire",
 	"license": "UNLICENSE",
+	"type": "commonjs",
 	"dependencies": {
 		"@sapphire/discord-utilities": "^3.0.1",
 		"@sapphire/discord.js-utilities": "6.0.5",
