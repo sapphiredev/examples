@@ -5094,7 +5094,6 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.5.1
     "@commitlint/config-conventional": ^17.4.4
-    "@sapphire/cli": ^1.5.0
     "@sapphire/prettier-config": ^1.4.5
     "@types/node": ^18.15.11
     "@types/ws": ^8.5.4
@@ -6108,36 +6107,6 @@ __metadata:
   checksum: d5fc37cd561f9daee3c80e03b92ed3e84d80dde3365a8767263d03dacfc8fa06b065ffe1df00d8c2a09f731482fcacae745abfbb478d4af36d0a891fad4834d3
   languageName: node
   linkType: hard
-
-"with-docker@workspace:examples/with-docker":
-  version: 0.0.0-use.local
-  resolution: "with-docker@workspace:examples/with-docker"
-  dependencies:
-    "@sapphire/cli": ^1.5.0
-    "@sapphire/decorators": ^6.0.1
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
-    "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
-    "@sapphire/plugin-api": ^5.0.3
-    "@sapphire/plugin-editable-commands": ^3.0.2
-    "@sapphire/plugin-logger": ^3.0.3
-    "@sapphire/plugin-subcommands": ^4.0.1
-    "@sapphire/prettier-config": ^1.4.5
-    "@sapphire/time-utilities": ^1.7.9
-    "@sapphire/ts-config": ^4.0.0
-    "@sapphire/type": ^2.3.0
-    "@sapphire/utilities": ^3.11.1
-    "@skyra/env-utilities": ^1.1.0
-    "@types/node": ^18.15.11
-    "@types/ws": ^8.5.4
-    discord.js: ^14.9.0
-    npm-run-all: ^4.1.5
-    prettier: ^2.8.7
-    tsc-watch: ^6.0.0
-    typescript: ^5.0.4
-  languageName: unknown
-  linkType: soft
 
 "with-esm@workspace:examples/with-esm":
   version: 0.0.0-use.local
