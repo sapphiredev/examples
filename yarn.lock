@@ -575,9 +575,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/cli@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@sapphire/cli@npm:1.5.0"
+"@sapphire/cli@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@sapphire/cli@npm:1.6.0"
   dependencies:
     "@favware/colorette-spinner": ^1.0.1
     "@sapphire/result": ^2.6.1
@@ -590,7 +590,7 @@ __metadata:
     tslib: ^2.5.0
   bin:
     sapphire: ./dist/cli.js
-  checksum: 3b2a8e740f18c9db69f0884a1c29b371184560fa1631a8ae716fa288fa4659ec8bad3abb9be7ad713e9dbcb51eab3cbc3030badf49195b662bdd0492be57503f
+  checksum: e097208dbc21c1cf6739534fc626ed2b026afd3d97a91fd7677d34f38075226f73f2a73e8512df7b720151bade2d1ced537ad063b601452263020dcde84fedd6
   languageName: node
   linkType: hard
 
@@ -612,12 +612,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord-utilities@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@sapphire/discord-utilities@npm:3.0.1"
+"@sapphire/discord-utilities@npm:^3.0.1, @sapphire/discord-utilities@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@sapphire/discord-utilities@npm:3.0.2"
   dependencies:
-    discord-api-types: ^0.37.36
-  checksum: 3c52ffca5677243ea3a8efbd86fbebcede4e2a9a8e69642f6ddae5ce4c4f24445e721fbf301210eeb73607caf66b2ca58fb3176f43fed1a30341176fcea449df
+    discord-api-types: ^0.37.38
+  checksum: d023d99b7d3ac9d4849151d8a5266206cea829f24fb9c2f5f60eefe5c24c535a26d4674ddd7513b89a96afd05c47fa536ad616e2c832d2c6aefd8af966c63cb6
   languageName: node
   linkType: hard
 
@@ -630,6 +630,18 @@ __metadata:
     "@sapphire/utilities": ^3.11.0
     tslib: ^2.5.0
   checksum: 8726777571ba20d62bf2057e624785198ace1c041aad83151080a2b180ab87b904ccacb5125a4590f43f76aaab989088027b07b4c86582ebc294067d10653e02
+  languageName: node
+  linkType: hard
+
+"@sapphire/discord.js-utilities@npm:6.0.6":
+  version: 6.0.6
+  resolution: "@sapphire/discord.js-utilities@npm:6.0.6"
+  dependencies:
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/duration": ^1.1.0
+    "@sapphire/utilities": ^3.11.1
+    tslib: ^2.5.0
+  checksum: b245fc63fa23e664c046419c847398287ef1ca98900a845c486fe2a1c2349b74a196483a04c419f158ec5eead6735e48d37ceba089fa452cc4b38f304708a314
   languageName: node
   linkType: hard
 
@@ -649,12 +661,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/framework@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "@sapphire/framework@npm:4.3.1"
+"@sapphire/framework@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@sapphire/framework@npm:4.4.1"
   dependencies:
     "@discordjs/builders": ^1.6.1
-    "@sapphire/discord-utilities": ^3.0.1
+    "@sapphire/discord-utilities": ^3.0.2
     "@sapphire/discord.js-utilities": 6.0.5
     "@sapphire/lexure": ^1.1.3
     "@sapphire/pieces": ^3.6.2
@@ -662,7 +674,7 @@ __metadata:
     "@sapphire/result": ^2.6.1
     "@sapphire/stopwatch": ^1.5.0
     "@sapphire/utilities": ^3.11.1
-  checksum: 7e67e689cadeecf321f8e90f0a79f7c2587c93752ab2919eb3430078554d30f2e8512093749bfa5ffab575fbb1419e343291b7a1d76190dbd8468a961ee346e8
+  checksum: e7a92461b97f03d55ffc5330430f22803f33616d4b923d36658e2115c13afa3afc226842d549b8625397adb9f06af81943250bff27b68d398a43ced3ef67ba57
   languageName: node
   linkType: hard
 
@@ -815,14 +827,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/type@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@sapphire/type@npm:2.3.0"
+"@sapphire/type@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@sapphire/type@npm:2.4.0"
   dependencies:
     "@discordjs/node-pre-gyp": ^0.4.5
     nan: ^2.17.0
-    tslib: ^2.4.1
-  checksum: 78473401140eb4af26c11f8cb2eb5f186369300a4a4105fcd720746abc32c69e3065e779f304416ea21a535ed0afcb9b298dfac3f9c92c13e9b045203b45f5fd
+    tslib: ^2.5.0
+  checksum: cda4545ec99d3855b70a6f3bdd4e2117fa20b6d5019b0bd525077b982694c4621419c2a24c45a5ee34730d92ef8417672d4dda1232f74c2777604c79be2b721c
   languageName: node
   linkType: hard
 
@@ -847,12 +859,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/env-utilities@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@skyra/env-utilities@npm:1.1.0"
+"@skyra/env-utilities@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@skyra/env-utilities@npm:1.2.0"
   dependencies:
-    dotenv-cra: ^3.0.2
-  checksum: 4b33b0c11041f1b0075bfa92ddbece9d09cb16c2c2cc9818f3ef49bf5c4e82a3945160abed220080d1b474f3c8af07ef11ca680742dbc7e2d5a930af9955f065
+    dotenv: ^16.0.3
+    dotenv-expand: ^10.0.0
+  checksum: 977d46bca06cc0578786c9acef0978f54adbfcd248d6b57c6376a59d18685b8666c5ec36df47ad8c1216b0cc2b301977dacf0d920dde2564f2350a407c334c3b
   languageName: node
   linkType: hard
 
@@ -880,90 +893,90 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-darwin-arm64@npm:1.3.49"
+"@swc/core-darwin-arm64@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-darwin-arm64@npm:1.3.55"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-darwin-x64@npm:1.3.49"
+"@swc/core-darwin-x64@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-darwin-x64@npm:1.3.55"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.49"
+"@swc/core-linux-arm-gnueabihf@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.55"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.49"
+"@swc/core-linux-arm64-gnu@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.55"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-linux-arm64-musl@npm:1.3.49"
+"@swc/core-linux-arm64-musl@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.55"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-linux-x64-gnu@npm:1.3.49"
+"@swc/core-linux-x64-gnu@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.55"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-linux-x64-musl@npm:1.3.49"
+"@swc/core-linux-x64-musl@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.55"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.49"
+"@swc/core-win32-arm64-msvc@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.55"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.49"
+"@swc/core-win32-ia32-msvc@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.55"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core-win32-x64-msvc@npm:1.3.49"
+"@swc/core-win32-x64-msvc@npm:1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.55"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.3.49":
-  version: 1.3.49
-  resolution: "@swc/core@npm:1.3.49"
+"@swc/core@npm:^1.3.55":
+  version: 1.3.55
+  resolution: "@swc/core@npm:1.3.55"
   dependencies:
-    "@swc/core-darwin-arm64": 1.3.49
-    "@swc/core-darwin-x64": 1.3.49
-    "@swc/core-linux-arm-gnueabihf": 1.3.49
-    "@swc/core-linux-arm64-gnu": 1.3.49
-    "@swc/core-linux-arm64-musl": 1.3.49
-    "@swc/core-linux-x64-gnu": 1.3.49
-    "@swc/core-linux-x64-musl": 1.3.49
-    "@swc/core-win32-arm64-msvc": 1.3.49
-    "@swc/core-win32-ia32-msvc": 1.3.49
-    "@swc/core-win32-x64-msvc": 1.3.49
+    "@swc/core-darwin-arm64": 1.3.55
+    "@swc/core-darwin-x64": 1.3.55
+    "@swc/core-linux-arm-gnueabihf": 1.3.55
+    "@swc/core-linux-arm64-gnu": 1.3.55
+    "@swc/core-linux-arm64-musl": 1.3.55
+    "@swc/core-linux-x64-gnu": 1.3.55
+    "@swc/core-linux-x64-musl": 1.3.55
+    "@swc/core-win32-arm64-msvc": 1.3.55
+    "@swc/core-win32-ia32-msvc": 1.3.55
+    "@swc/core-win32-x64-msvc": 1.3.55
   peerDependencies:
     "@swc/helpers": ^0.5.0
   dependenciesMeta:
@@ -990,7 +1003,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 7234f38451dd765ea94cb44236f261603014e27bff6ecd133d9ba8a2d39314e9949e43bb77ffccd21f5e6c942ad7acf444de8972744ca24ac8f3ccecaea849a1
+  checksum: e8ae32e21e78761597b802bd76bb5f0d819441454c4cc5624c077dfa8cf84760eb589e4a1eb6fdc1b1ec65a4b03f7ab42413952b38234f5c13b8b2afb4d453f4
   languageName: node
   linkType: hard
 
@@ -1087,10 +1100,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.15.11, @types/node@npm:^18.16.0":
-  version: 18.16.0
-  resolution: "@types/node@npm:18.16.0"
-  checksum: 63e0042136663b9e85ce503a4c65406cc6621fdba63ea66c74b4b1364a9aa9bdb57cadcb76696abab177f38a819b0fa6ace9e7f1647dcb990aedb1b4bd01012f
+"@types/node@npm:*, @types/node@npm:^18.16.1":
+  version: 18.16.1
+  resolution: "@types/node@npm:18.16.1"
+  checksum: 799026b949a48993cba7c9b81b2eabfdfb34c880744cb44c1c990fbedc9e315f3634d126eb2cf9a6e0795577c01016e2326d98565bef695ada9d363fadeb6946
   languageName: node
   linkType: hard
 
@@ -1731,10 +1744,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorette@npm:*, colorette@npm:^2.0.19":
-  version: 2.0.19
-  resolution: "colorette@npm:2.0.19"
-  checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
+"colorette@npm:*, colorette@npm:^2.0.19, colorette@npm:^2.0.20":
+  version: 2.0.20
+  resolution: "colorette@npm:2.0.20"
+  checksum: 0c016fea2b91b733eb9f4bcdb580018f52c0bc0979443dad930e5037a968237ac53d9beb98e218d2e9235834f8eebce7f8e080422d6194e957454255bde71d3d
   languageName: node
   linkType: hard
 
@@ -2093,10 +2106,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.36, discord-api-types@npm:^0.37.37":
-  version: 0.37.38
-  resolution: "discord-api-types@npm:0.37.38"
-  checksum: 58972778639234307ae6c0ce5b841a8a3a29c38116aa9f96051e65a88f6bbc4f1df671c5a985712d816764507308f8ebc97b1c98dad8de7bf756e05819db84ca
+"discord-api-types@npm:^0.37.37, discord-api-types@npm:^0.37.38":
+  version: 0.37.40
+  resolution: "discord-api-types@npm:0.37.40"
+  checksum: d05ab85c10eeaed4b066e5b826adee8faf05d53c93234ece89c17ef7bf8ff967b9e1fb60f0b343475416910d898f1656f1b7afe33d9a001c2fd7e0245584b128
   languageName: node
   linkType: hard
 
@@ -2130,27 +2143,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-cra@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "dotenv-cra@npm:3.0.2"
-  dependencies:
-    dotenv: ^10.0.0
-    dotenv-expand: ^5.1.0
-  checksum: dc33ca4c8751a16390f646513bbdfdf64e0cc6ebf3439e1d3e9fb418005f13d53106792e545824d9c08084a9c4e1bec425d30628f9791dab1f9a97f1e3684a64
-  languageName: node
-  linkType: hard
-
-"dotenv-expand@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "dotenv-expand@npm:5.1.0"
-  checksum: 8017675b7f254384915d55f9eb6388e577cf0a1231a28d54b0ca03b782be9501b0ac90ac57338636d395fa59051e6209e9b44b8ddf169ce6076dffb5dea227d3
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^10.0.0":
+"dotenv-expand@npm:^10.0.0":
   version: 10.0.0
-  resolution: "dotenv@npm:10.0.0"
-  checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
+  resolution: "dotenv-expand@npm:10.0.0"
+  checksum: 2a38b470efe0abcb1ac8490421a55e1d764dc9440fd220942bce40965074f3fb00b585f4346020cb0f0f219966ee6b4ee5023458b3e2953fe5b3214de1b314ee
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.0.3":
+  version: 16.0.3
+  resolution: "dotenv@npm:16.0.3"
+  checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
   languageName: node
   linkType: hard
 
@@ -4735,7 +4738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.2, prettier@npm:^2.8.7, prettier@npm:^2.8.8":
+"prettier@npm:^2.8.2, prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
@@ -5095,7 +5098,7 @@ __metadata:
     "@commitlint/cli": ^17.6.1
     "@commitlint/config-conventional": ^17.6.1
     "@sapphire/prettier-config": ^1.4.5
-    "@types/node": ^18.16.0
+    "@types/node": ^18.16.1
     "@types/ws": ^8.5.4
     cz-conventional-changelog: ^3.3.0
     husky: ^8.0.3
@@ -5818,7 +5821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.4.1, tslib@npm:^2.5.0":
+"tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.5.0":
   version: 2.5.0
   resolution: "tslib@npm:2.5.0"
   checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
@@ -6112,23 +6115,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-esm@workspace:examples/with-esm"
   dependencies:
-    "@sapphire/cli": ^1.5.0
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
+    "@sapphire/cli": ^1.6.0
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/discord.js-utilities": 6.0.6
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-api": ^5.0.3
     "@sapphire/plugin-editable-commands": ^3.0.2
     "@sapphire/plugin-logger": ^3.0.3
     "@sapphire/plugin-subcommands": ^4.0.1
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/time-utilities": ^1.7.9
-    "@sapphire/type": ^2.3.0
+    "@sapphire/type": ^2.4.0
     "@sapphire/utilities": ^3.11.1
     discord.js: ^14.9.0
     nodemon: ^2.0.22
     npm-run-all: ^4.1.5
-    prettier: ^2.8.7
+    prettier: ^2.8.8
   languageName: unknown
   linkType: soft
 
@@ -6136,23 +6139,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-javascript@workspace:examples/with-javascript"
   dependencies:
-    "@sapphire/cli": ^1.5.0
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
+    "@sapphire/cli": ^1.6.0
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/discord.js-utilities": 6.0.6
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-api": ^5.0.3
     "@sapphire/plugin-editable-commands": ^3.0.2
     "@sapphire/plugin-logger": ^3.0.3
     "@sapphire/plugin-subcommands": ^4.0.1
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/time-utilities": ^1.7.9
-    "@sapphire/type": ^2.3.0
+    "@sapphire/type": ^2.4.0
     "@sapphire/utilities": ^3.11.1
     discord.js: ^14.9.0
     nodemon: ^2.0.22
     npm-run-all: ^4.1.5
-    prettier: ^2.8.7
+    prettier: ^2.8.8
   languageName: unknown
   linkType: soft
 
@@ -6160,12 +6163,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-swc@workspace:examples/with-swc"
   dependencies:
-    "@sapphire/cli": ^1.5.0
+    "@sapphire/cli": ^1.6.0
     "@sapphire/decorators": ^6.0.1
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/discord.js-utilities": 6.0.6
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-api": ^5.0.3
     "@sapphire/plugin-editable-commands": ^3.0.2
     "@sapphire/plugin-logger": ^3.0.3
@@ -6173,16 +6176,16 @@ __metadata:
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/time-utilities": ^1.7.9
     "@sapphire/ts-config": ^4.0.0
-    "@sapphire/type": ^2.3.0
+    "@sapphire/type": ^2.4.0
     "@sapphire/utilities": ^3.11.1
-    "@skyra/env-utilities": ^1.1.0
+    "@skyra/env-utilities": ^1.2.0
     "@swc/cli": ^0.1.62
-    "@swc/core": ^1.3.49
-    "@types/node": ^18.15.11
+    "@swc/core": ^1.3.55
+    "@types/node": ^18.16.1
     "@types/ws": ^8.5.4
     discord.js: ^14.9.0
     npm-run-all: ^4.1.5
-    prettier: ^2.8.7
+    prettier: ^2.8.8
     tsc-watch: ^6.0.0
     typescript: ^5.0.4
   languageName: unknown
@@ -6192,12 +6195,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-tsup@workspace:examples/with-tsup"
   dependencies:
-    "@sapphire/cli": ^1.5.0
+    "@sapphire/cli": ^1.6.0
     "@sapphire/decorators": ^6.0.1
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/discord.js-utilities": 6.0.6
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-api": ^5.0.3
     "@sapphire/plugin-editable-commands": ^3.0.2
     "@sapphire/plugin-logger": ^3.0.3
@@ -6205,14 +6208,14 @@ __metadata:
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/time-utilities": ^1.7.9
     "@sapphire/ts-config": ^4.0.0
-    "@sapphire/type": ^2.3.0
+    "@sapphire/type": ^2.4.0
     "@sapphire/utilities": ^3.11.1
-    "@skyra/env-utilities": ^1.1.0
-    "@types/node": ^18.15.11
+    "@skyra/env-utilities": ^1.2.0
+    "@types/node": ^18.16.1
     "@types/ws": ^8.5.4
     discord.js: ^14.9.0
     npm-run-all: ^4.1.5
-    prettier: ^2.8.7
+    prettier: ^2.8.8
     tsup: ^6.7.0
     typescript: ^5.0.4
   languageName: unknown
@@ -6222,12 +6225,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-typescript-complete@workspace:examples/with-typescript-complete"
   dependencies:
-    "@sapphire/cli": ^1.5.0
+    "@sapphire/cli": ^1.6.0
     "@sapphire/decorators": ^6.0.1
-    "@sapphire/discord-utilities": ^3.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
+    "@sapphire/discord-utilities": ^3.0.2
+    "@sapphire/discord.js-utilities": 6.0.6
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-api": ^5.0.3
     "@sapphire/plugin-editable-commands": ^3.0.2
     "@sapphire/plugin-logger": ^3.0.3
@@ -6235,15 +6238,15 @@ __metadata:
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/time-utilities": ^1.7.9
     "@sapphire/ts-config": ^4.0.0
-    "@sapphire/type": ^2.3.0
+    "@sapphire/type": ^2.4.0
     "@sapphire/utilities": ^3.11.1
-    "@skyra/env-utilities": ^1.1.0
-    "@types/node": ^18.15.11
+    "@skyra/env-utilities": ^1.2.0
+    "@types/node": ^18.16.1
     "@types/ws": ^8.5.4
-    colorette: ^2.0.19
+    colorette: ^2.0.20
     discord.js: ^14.9.0
     npm-run-all: ^4.1.5
-    prettier: ^2.8.7
+    prettier: ^2.8.8
     tsc-watch: ^6.0.0
     typescript: ^5.0.4
   languageName: unknown
@@ -6253,20 +6256,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "with-typescript-starter@workspace:examples/with-typescript-starter"
   dependencies:
-    "@sapphire/cli": ^1.5.0
+    "@sapphire/cli": ^1.6.0
     "@sapphire/decorators": ^6.0.1
-    "@sapphire/discord.js-utilities": 6.0.5
-    "@sapphire/framework": ^4.3.1
+    "@sapphire/discord.js-utilities": 6.0.6
+    "@sapphire/framework": ^4.4.1
     "@sapphire/plugin-logger": ^3.0.3
     "@sapphire/prettier-config": ^1.4.5
     "@sapphire/ts-config": ^4.0.0
     "@sapphire/utilities": ^3.11.1
-    "@skyra/env-utilities": ^1.1.0
-    "@types/node": ^18.15.11
+    "@skyra/env-utilities": ^1.2.0
+    "@types/node": ^18.16.1
     "@types/ws": ^8.5.4
-    colorette: ^2.0.19
+    colorette: ^2.0.20
     discord.js: ^14.9.0
-    prettier: ^2.8.7
+    prettier: ^2.8.8
     tsc-watch: ^6.0.0
     typescript: ^5.0.4
   languageName: unknown
