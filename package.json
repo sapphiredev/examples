@@ -8,14 +8,14 @@
 		"@commitlint/cli": "^17.6.6",
 		"@commitlint/config-conventional": "^17.6.6",
 		"@sapphire/prettier-config": "^1.4.5",
-		"@types/node": "^18.16.18",
+		"@types/node": "^18.16.19",
 		"@types/ws": "^8.5.5",
 		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^8.0.3",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.8",
 		"pretty-quick": "^3.1.3",
-		"typescript": "^5.1.3"
+		"typescript": "^5.1.6"
 	},
 	"resolutions": {
 		"ansi-regex": "^5.0.1",
@@ -44,5 +44,5 @@
 		}
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.6.0"
+	"packageManager": "yarn@3.6.1"
 }
