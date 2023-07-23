@@ -6,25 +6,25 @@
 	"license": "UNLICENSE",
 	"type": "commonjs",
 	"dependencies": {
-		"@sapphire/discord-utilities": "^3.0.3",
-		"@sapphire/discord.js-utilities": "7.0.0",
+		"@sapphire/discord-utilities": "^3.0.4",
+		"@sapphire/discord.js-utilities": "7.0.1",
 		"@sapphire/fetch": "^2.4.1",
-		"@sapphire/framework": "^4.4.4",
+		"@sapphire/framework": "^4.5.1",
 		"@sapphire/plugin-api": "^5.1.0",
 		"@sapphire/plugin-editable-commands": "^3.0.2",
-		"@sapphire/plugin-logger": "^3.0.4",
-		"@sapphire/plugin-subcommands": "^4.0.1",
-		"@sapphire/time-utilities": "^1.7.9",
+		"@sapphire/plugin-logger": "^3.0.5",
+		"@sapphire/plugin-subcommands": "^4.0.2",
+		"@sapphire/time-utilities": "^1.7.10",
 		"@sapphire/type": "^2.4.0",
-		"@sapphire/utilities": "^3.12.0",
+		"@sapphire/utilities": "^3.13.0",
 		"discord.js": "^14.11.0"
 	},
 	"devDependencies": {
 		"@sapphire/cli": "^1.6.1",
-		"@sapphire/prettier-config": "^1.4.5",
-		"nodemon": "^2.0.22",
+		"@sapphire/prettier-config": "^2.0.0",
+		"nodemon": "^3.0.1",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.8.8"
+		"prettier": "^3.0.0"
 	},
 	"scripts": {
 		"sapphire": "sapphire",
