@@ -15,7 +15,7 @@ import { inspect } from 'util';
 	options: ['depth']
 })
 export class UserCommand extends Command {
-	public async messageRun(message: Message, args: Args) {
+	public override async messageRun(message: Message, args: Args) {
 		const code = await args.rest('string');
 
 		const { result, success, type } = await this.eval(message, code, {

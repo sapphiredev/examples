@@ -28,17 +28,17 @@ export class UserCommand extends Command {
 	}
 
 	// Message command
-	public async messageRun(message: Message) {
+	public override async messageRun(message: Message) {
 		return this.sendPing(message);
 	}
 
 	// Chat Input (slash) command
-	public async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
+	public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
 		return this.sendPing(interaction);
 	}
 
 	// Context Menu command
-	public async contextMenuRun(interaction: Command.ContextMenuCommandInteraction) {
+	public override async contextMenuRun(interaction: Command.ContextMenuCommandInteraction) {
 		return this.sendPing(interaction);
 	}
 

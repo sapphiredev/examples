@@ -3,11 +3,11 @@ import type { Logger } from '@sapphire/plugin-logger';
 import { logSuccessCommand } from '../../../lib/utils';
 
 export class UserListener extends Listener {
-	public run(payload: ChatInputCommandSuccessPayload) {
+	public override run(payload: ChatInputCommandSuccessPayload) {
 		logSuccessCommand(payload);
 	}
 
-	public onLoad() {
+	public override onLoad() {
 		this.enabled = (this.container.logger as Logger).level <= LogLevel.Debug;
 		return super.onLoad();
 	}

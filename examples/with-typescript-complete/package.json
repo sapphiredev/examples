@@ -7,31 +7,31 @@
 	"type": "commonjs",
 	"dependencies": {
 		"@sapphire/decorators": "^6.0.2",
-		"@sapphire/discord-utilities": "^3.0.4",
-		"@sapphire/discord.js-utilities": "7.0.1",
+		"@sapphire/discord-utilities": "^3.1.1",
+		"@sapphire/discord.js-utilities": "7.0.2",
 		"@sapphire/fetch": "^2.4.1",
-		"@sapphire/framework": "^4.5.1",
-		"@sapphire/plugin-api": "^5.1.0",
-		"@sapphire/plugin-editable-commands": "^3.0.2",
-		"@sapphire/plugin-logger": "^3.0.5",
-		"@sapphire/plugin-subcommands": "^4.0.2",
+		"@sapphire/framework": "^4.5.3",
+		"@sapphire/plugin-api": "^5.1.1",
+		"@sapphire/plugin-editable-commands": "^3.0.3",
+		"@sapphire/plugin-logger": "^3.0.6",
+		"@sapphire/plugin-subcommands": "^4.2.0",
 		"@sapphire/time-utilities": "^1.7.10",
 		"@sapphire/type": "^2.4.0",
 		"@sapphire/utilities": "^3.13.0",
 		"@skyra/env-utilities": "^1.2.1",
 		"colorette": "^2.0.20",
-		"discord.js": "^14.11.0"
+		"discord.js": "^14.13.0"
 	},
 	"devDependencies": {
 		"@sapphire/cli": "^1.6.1",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@sapphire/ts-config": "^4.0.1",
-		"@types/node": "^18.17.0",
+		"@sapphire/ts-config": "^5.0.0",
+		"@types/node": "^18.17.12",
 		"@types/ws": "^8.5.5",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.0.0",
+		"prettier": "^3.0.2",
 		"tsc-watch": "^6.0.4",
-		"typescript": "^5.1.6"
+		"typescript": "^5.2.2"
 	},
 	"scripts": {
 		"sapphire": "sapphire",

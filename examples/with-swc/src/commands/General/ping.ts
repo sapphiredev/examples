@@ -29,7 +29,7 @@ export class UserCommand extends Command {
 	}
 
 	// Message command
-	public async messageRun(message: Message) {
+	public override async messageRun(message: Message) {
 		const msg = await send(message, 'Ping?');
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
@@ -39,7 +39,7 @@ export class UserCommand extends Command {
 		return send(message, content);
 	}
 	// slash command
-	public async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
+	public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
 		const msg = await interaction.reply({ content: 'Ping?', fetchReply: true });
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
@@ -51,7 +51,7 @@ export class UserCommand extends Command {
 		});
 	}
 	// context menu command
-	public async contextMenuRun(interaction: Command.ContextMenuCommandInteraction) {
+	public override async contextMenuRun(interaction: Command.ContextMenuCommandInteraction) {
 		const msg = await interaction.reply({ content: 'Ping?', fetchReply: true });
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
