@@ -253,14 +253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@discordjs/collection@npm:1.5.1"
-  checksum: 98cc9cff3c7e6f919097b7ffc96f0a13eba2a90265d187b4db5f8cc09b550efd3d9fc952a21d92a08baf7d9e06d0bfa0467e8d0dbccb2d2f8eb0ee124b8b38d4
-  languageName: node
-  linkType: hard
-
-"@discordjs/collection@npm:^1.5.3":
+"@discordjs/collection@npm:^1.5.1, @discordjs/collection@npm:^1.5.3":
   version: 1.5.3
   resolution: "@discordjs/collection@npm:1.5.3"
   checksum: fefed19bea0f69053d195f9d9dc8af07ca5d8c9b1064581e0aa14bda2b70e632b93c164d5ef3e4910f5442369612ff4eec8d52a700aec562510c19b223f67023
@@ -637,15 +630,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord-utilities@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@sapphire/discord-utilities@npm:3.0.4"
-  dependencies:
-    discord-api-types: ^0.37.50
-  checksum: ce3d80d272e9a6a0085256607a2c5977e524be28aae1e8cb80a09bf413d5cd5b2075d7bd9a4ec7c1c2ce2d2d0ad43910ed93dc1958eb36b431a7d08cde5cd753
-  languageName: node
-  linkType: hard
-
 "@sapphire/discord-utilities@npm:^3.1.0, @sapphire/discord-utilities@npm:^3.1.1":
   version: 3.1.1
   resolution: "@sapphire/discord-utilities@npm:3.1.1"
@@ -655,7 +639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord.js-utilities@npm:7.0.2":
+"@sapphire/discord.js-utilities@npm:7.0.2, @sapphire/discord.js-utilities@npm:^7.0.1":
   version: 7.0.2
   resolution: "@sapphire/discord.js-utilities@npm:7.0.2"
   dependencies:
@@ -664,18 +648,6 @@ __metadata:
     "@sapphire/utilities": ^3.13.0
     tslib: ^2.6.2
   checksum: 55da08a85cb8113baa19f0b308df521495f9effa478c04b72dc41afa66dcbfff1250171113e7a64c4c847903d63a3de99cdcca467829f79be2f16ca66d0b2980
-  languageName: node
-  linkType: hard
-
-"@sapphire/discord.js-utilities@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@sapphire/discord.js-utilities@npm:7.0.1"
-  dependencies:
-    "@sapphire/discord-utilities": ^3.0.4
-    "@sapphire/duration": ^1.1.0
-    "@sapphire/utilities": ^3.13.0
-    tslib: ^2.6.0
-  checksum: cbc46da56b32071ba7fd4e2376de8ccf34860fe54aed124791f8eca6a7b73f00c11d659f79f08c2853e6de97b45776e6a58271a45af795f95a20978781a0549c
   languageName: node
   linkType: hard
 
@@ -1139,10 +1111,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.17.12":
-  version: 18.17.12
-  resolution: "@types/node@npm:18.17.12"
-  checksum: 79f8bcca3067a3c529f30e172df8d14f25ab9e4cd6a05ed897a924ab1dec774e8ea172ef5c4a67ffec433d423a0c81778f17db22606d574bc83871b60aab298e
+"@types/node@npm:^18.17.12, @types/node@npm:^18.17.14":
+  version: 18.17.14
+  resolution: "@types/node@npm:18.17.14"
+  checksum: f96ce1e588426a26cf82440193084f8bbab47bfb3c2e668cf174095f99ce808a20654b2137448c7e88cfd7b6c2b8521ffb6f714f521b3502ac595a0df0bff679
   languageName: node
   linkType: hard
 
@@ -2165,7 +2137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:0.37.50, discord-api-types@npm:^0.37.50":
+"discord-api-types@npm:0.37.50":
   version: 0.37.50
   resolution: "discord-api-types@npm:0.37.50"
   checksum: 08dc5145dbefda5f52b479cd42d96ac2b8110300861855e1f92cc8a0a6525a4059e32724cd5237490c286f5afd86797a86823238cd5eee016198560bb36f6d43
@@ -4846,12 +4818,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0, prettier@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "prettier@npm:3.0.2"
+"prettier@npm:^3.0.0, prettier@npm:^3.0.2, prettier@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "prettier@npm:3.0.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
+  checksum: e10b9af02b281f6c617362ebd2571b1d7fc9fb8a3bd17e371754428cda992e5e8d8b7a046e8f7d3e2da1dcd21aa001e2e3c797402ebb6111b5cd19609dd228e0
   languageName: node
   linkType: hard
 
@@ -5191,13 +5163,13 @@ __metadata:
     "@commitlint/cli": ^17.7.1
     "@commitlint/config-conventional": ^17.7.0
     "@sapphire/prettier-config": ^2.0.0
-    "@types/node": ^18.17.12
+    "@types/node": ^18.17.14
     "@types/ws": ^8.5.5
     cz-conventional-changelog: ^3.3.0
     husky: ^8.0.3
     lint-staged: ^14.0.1
     npm-run-all: ^4.1.5
-    prettier: ^3.0.2
+    prettier: ^3.0.3
     typescript: ^5.2.2
   languageName: unknown
   linkType: soft
@@ -5953,14 +5925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.5.0, tslib@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "tslib@npm:2.6.0"
-  checksum: c01066038f950016a18106ddeca4649b4d76caa76ec5a31e2a26e10586a59fceb4ee45e96719bf6c715648e7c14085a81fee5c62f7e9ebee68e77a5396e5538f
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.6.1, tslib@npm:^2.6.2":
+"tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.5.0, tslib@npm:^2.6.0, tslib@npm:^2.6.1, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
