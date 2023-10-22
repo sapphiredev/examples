@@ -8,7 +8,7 @@
 	"dependencies": {
 		"@sapphire/decorators": "^6.0.2",
 		"@sapphire/discord.js-utilities": "7.0.2",
-		"@sapphire/framework": "^4.6.0",
+		"@sapphire/framework": "^4.7.1",
 		"@sapphire/plugin-logger": "^3.0.6",
 		"@sapphire/utilities": "^3.13.0",
 		"@skyra/env-utilities": "^1.2.1",
@@ -19,8 +19,8 @@
 		"@sapphire/cli": "^1.6.1",
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^5.0.0",
-		"@types/node": "^20.6.0",
-		"@types/ws": "^8.5.5",
+		"@types/node": "^20.8.7",
+		"@types/ws": "^8.5.8",
 		"prettier": "^3.0.3",
 		"tsc-watch": "^6.0.4",
 		"typescript": "^5.2.2"
