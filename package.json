@@ -8,7 +8,7 @@
 		"@commitlint/cli": "^18.4.2",
 		"@commitlint/config-conventional": "^18.4.2",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@types/node": "^20.9.1",
+		"@types/node": "^20.9.2",
 		"@types/ws": "^8.5.9",
 		"cz-conventional-changelog": "^3.3.0",
 		"lint-staged": "^15.1.0",
@@ -45,5 +45,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.0.1"
+	"packageManager": "yarn@4.0.2"
 }
