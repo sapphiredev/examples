@@ -5,8 +5,8 @@
 		"examples/*"
 	],
 	"devDependencies": {
-		"@commitlint/cli": "^18.4.3",
-		"@commitlint/config-conventional": "^18.4.3",
+		"@commitlint/cli": "^18.4.4",
+		"@commitlint/config-conventional": "^18.4.4",
 		"@sapphire/prettier-config": "^2.0.0",
 		"@types/node": "^20.10.6",
 		"@types/ws": "^8.5.10",
