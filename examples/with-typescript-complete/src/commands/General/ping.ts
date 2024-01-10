@@ -38,6 +38,7 @@ export class UserCommand extends Command {
 
 		return send(message, content);
 	}
+
 	// slash command
 	public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
 		const msg = await interaction.reply({ content: 'Ping?', fetchReply: true });
@@ -46,10 +47,9 @@ export class UserCommand extends Command {
 			msg.createdTimestamp - interaction.createdTimestamp
 		}ms.`;
 
-		return await interaction.editReply({
-			content: content
-		});
+		return interaction.editReply({ content });
 	}
+
 	// context menu command
 	public override async contextMenuRun(interaction: Command.ContextMenuCommandInteraction) {
 		const msg = await interaction.reply({ content: 'Ping?', fetchReply: true });
@@ -58,8 +58,6 @@ export class UserCommand extends Command {
 			msg.createdTimestamp - interaction.createdTimestamp
 		}ms.`;
 
-		return await interaction.editReply({
-			content: content
-		});
+		return interaction.editReply({ content });
 	}
 }

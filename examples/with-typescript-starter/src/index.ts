@@ -1,4 +1,5 @@
 import './lib/setup';
+
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
 
@@ -19,9 +20,9 @@ const main = async () => {
 		client.logger.info('logged in');
 	} catch (error) {
 		client.logger.fatal(error);
-		client.destroy();
+		await client.destroy();
 		process.exit(1);
 	}
 };
 
-main();
+void main();

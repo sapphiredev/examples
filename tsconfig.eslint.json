@@ -1,0 +1,8 @@
+{
+	"extends": ["@sapphire/ts-config", "@sapphire/ts-config/extra-strict", "@sapphire/ts-config/decorators"],
+	"compilerOptions": {
+        "allowJs": true,
+        "checkJs": true
+    },
+	"include": ["examples/**/src"]
+}

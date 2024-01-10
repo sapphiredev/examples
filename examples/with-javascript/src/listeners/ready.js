@@ -2,10 +2,9 @@ const { Listener } = require('@sapphire/framework');
 const { blue, gray, green, magenta, magentaBright, white, yellow } = require('colorette');
 
 const dev = process.env.NODE_ENV !== 'production';
+const style = dev ? yellow : blue;
 
 class UserEvent extends Listener {
-	style = dev ? yellow : blue;
-
 	constructor(context, options = {}) {
 		super(context, {
 			...options,
@@ -50,7 +49,7 @@ ${line03}${dev ? ` ${pad}${blc('<')}${llc('/')}${blc('>')} ${llc('DEVELOPMENT MO
 	}
 
 	styleStore(store, last) {
-		return gray(`${last ? '└─' : '├─'} Loaded ${this.style(store.size.toString().padEnd(3, ' '))} ${store.name}.`);
+		return gray(`${last ? '└─' : '├─'} Loaded ${style(store.size.toString().padEnd(3, ' '))} ${store.name}.`);
 	}
 }
 
