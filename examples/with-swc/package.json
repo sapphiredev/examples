@@ -22,11 +22,11 @@
 		"discord.js": "^14.14.1"
 	},
 	"devDependencies": {
-		"@sapphire/cli": "^1.9.1",
+		"@sapphire/cli": "^1.9.3",
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^5.0.0",
-		"@swc/cli": "^0.1.63",
-		"@swc/core": "^1.3.104",
+		"@swc/cli": "^0.3.3",
+		"@swc/core": "^1.3.106",
 		"@types/node": "^20.11.5",
 		"@types/ws": "^8.5.10",
 		"npm-run-all": "^4.1.5",

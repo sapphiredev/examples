@@ -16,7 +16,7 @@
 		"discord.js": "^14.14.1"
 	},
 	"devDependencies": {
-		"@sapphire/cli": "^1.9.1",
+		"@sapphire/cli": "^1.9.3",
 		"@sapphire/prettier-config": "^2.0.0",
 		"@sapphire/ts-config": "^5.0.0",
 		"@types/node": "^20.11.5",
