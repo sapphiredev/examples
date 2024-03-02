@@ -37,8 +37,8 @@
 	"scripts": {
 		"sapphire": "sapphire",
 		"generate": "sapphire generate",
-		"build": "swc src -d dist",
-		"watch": "swc src -d dist -w",
+		"build": "swc src -d dist --strip-leading-paths",
+		"watch": "swc src -d dist -w --strip-leading-paths",
 		"start": "node dist/index.js",
 		"dev": "run-s build start",
 		"watch:start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
