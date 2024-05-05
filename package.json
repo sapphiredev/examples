@@ -9,7 +9,7 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@sapphire/eslint-config": "^5.0.4",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@types/node": "^20.12.7",
+		"@types/node": "^20.12.8",
 		"@types/ws": "^8.5.10",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.0",
@@ -48,5 +48,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.1.1"
+	"packageManager": "yarn@4.2.1"
 }
