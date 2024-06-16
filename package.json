@@ -13,9 +13,9 @@
 		"@types/ws": "^8.5.10",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.0",
-		"lint-staged": "^15.2.5",
+		"lint-staged": "^15.2.7",
 		"npm-run-all2": "^6.2.0",
-		"prettier": "^3.3.1",
+		"prettier": "^3.3.2",
 		"typescript": "^5.4.5"
 	},
 	"resolutions": {
@@ -48,5 +48,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.2.2"
+	"packageManager": "yarn@4.3.0"
 }
