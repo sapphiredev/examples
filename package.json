@@ -9,14 +9,14 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@sapphire/eslint-config": "^5.0.5",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@types/node": "^20.14.9",
-		"@types/ws": "^8.5.10",
+		"@types/node": "^20.14.10",
+		"@types/ws": "^8.5.11",
 		"@typescript-eslint/eslint-plugin": "^7.14.1",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.0",
 		"lint-staged": "^15.2.7",
-		"npm-run-all2": "^6.2.0",
-		"prettier": "^3.3.2",
+		"npm-run-all2": "^6.2.2",
+		"prettier": "^3.3.3",
 		"typescript": "~5.4.5"
 	},
 	"resolutions": {
