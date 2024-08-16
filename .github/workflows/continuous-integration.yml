@@ -8,7 +8,9 @@ on:
 
 jobs:
   formatting:
+    name: Formatting
     uses: sapphiredev/.github/.github/workflows/reusable-prettier-check.yml@main
 
   linting:
+    name: Linting
     uses: sapphiredev/.github/.github/workflows/reusable-linting.yml@main
