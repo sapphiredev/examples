@@ -1,6 +1,6 @@
 {
 	"sonarlint.connectedMode.project": {
-		"connectionId": "https-sonarqube-sapphirejs-dev",
-		"projectKey": "sapphiredev_examples_80a47da6-0973-4093-9f6d-9246f14e7b33"
+		"connectionId": "sapphiredev",
+		"projectKey": "sapphiredev_examples"
 	}
 }
