@@ -1,6 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
-import { ApplicationCommandType, Message } from 'discord.js';
+import { ApplicationCommandType, ApplicationIntegrationType, InteractionContextType, Message } from 'discord.js';
 
 @ApplyOptions<Command.Options>({
 	description: 'ping pong'
@@ -8,22 +8,37 @@ import { ApplicationCommandType, Message } from 'discord.js';
 export class UserCommand extends Command {
 	// Register Chat Input and Context Menu command
 	public override registerApplicationCommands(registry: Command.Registry) {
+		// Create shared integration types and contexts
+		// These allow the command to be used in guilds and DMs
+		const integrationTypes: ApplicationIntegrationType[] = [ApplicationIntegrationType.GuildInstall, ApplicationIntegrationType.UserInstall];
+		const contexts: InteractionContextType[] = [
+			InteractionContextType.BotDM,
+			InteractionContextType.Guild,
+			InteractionContextType.PrivateChannel
+		];
+
 		// Register Chat Input command
 		registry.registerChatInputCommand({
 			name: this.name,
-			description: this.description
+			description: this.description,
+			integrationTypes,
+			contexts
 		});
 
 		// Register Context Menu command available from any message
 		registry.registerContextMenuCommand({
 			name: this.name,
-			type: ApplicationCommandType.Message
+			type: ApplicationCommandType.Message,
+			integrationTypes,
+			contexts
 		});
 
 		// Register Context Menu command available from any user
 		registry.registerContextMenuCommand({
 			name: this.name,
-			type: ApplicationCommandType.User
+			type: ApplicationCommandType.User,
+			integrationTypes,
+			contexts
 		});
 	}
 
@@ -45,7 +60,7 @@ export class UserCommand extends Command {
 	private async sendPing(interactionOrMessage: Message | Command.ChatInputCommandInteraction | Command.ContextMenuCommandInteraction) {
 		const pingMessage =
 			interactionOrMessage instanceof Message
-				? await interactionOrMessage.channel.send({ content: 'Ping?' })
+				? await interactionOrMessage.channel.send({ content: 'Ping?' }) // TODO: fix typing issue with group dm channels
 				: await interactionOrMessage.reply({ content: 'Ping?', fetchReply: true });
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
