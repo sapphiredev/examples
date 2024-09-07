@@ -58,6 +58,10 @@ export class UserCommand extends Command {
 	}
 
 	private async sendPing(interactionOrMessage: Message | Command.ChatInputCommandInteraction | Command.ContextMenuCommandInteraction) {
+		// TODO: replace with BaseChannel#isSendable once discord.js releases a new version
+		// PR for reference: https://github.com/discordjs/discord.js/pull/10482
+		if (interactionOrMessage.channel && !('send' in interactionOrMessage.channel)) return;
+
 		const pingMessage =
 			interactionOrMessage instanceof Message
 				? await interactionOrMessage.channel.send({ content: 'Ping?' }) // TODO: fix typing issue with group dm channels
