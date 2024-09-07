@@ -64,7 +64,7 @@ export class UserCommand extends Command {
 
 		const pingMessage =
 			interactionOrMessage instanceof Message
-				? await interactionOrMessage.channel.send({ content: 'Ping?' }) // TODO: fix typing issue with group dm channels
+				? await interactionOrMessage.channel.send({ content: 'Ping?' })
 				: await interactionOrMessage.reply({ content: 'Ping?', fetchReply: true });
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
