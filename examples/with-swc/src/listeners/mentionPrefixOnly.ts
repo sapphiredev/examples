@@ -4,6 +4,7 @@ import { ChannelType, type Message } from 'discord.js';
 
 export class UserEvent extends Listener<typeof Events.MentionPrefixOnly> {
 	public override async run(message: Message) {
+		// TODO: replace with BaseChannel#isSendable once discord.js releases a new version
 		// Bots cannot send messages in group DMs, so we have no choice but to return.
 		if (message.channel.type === ChannelType.GroupDM) return;
 
