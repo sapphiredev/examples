@@ -58,9 +58,8 @@ export class UserCommand extends Command {
 	}
 
 	private async sendPing(interactionOrMessage: Message | Command.ChatInputCommandInteraction | Command.ContextMenuCommandInteraction) {
-		// TODO: replace with BaseChannel#isSendable once discord.js releases a new version
-		// PR for reference: https://github.com/discordjs/discord.js/pull/10482
-		if (interactionOrMessage.channel && !('send' in interactionOrMessage.channel)) return;
+		// Do nothing if we cannot send messages in the channel (eg. group DMs)
+		if (!interactionOrMessage.channel?.isSendable()) return;
 
 		const pingMessage =
 			interactionOrMessage instanceof Message

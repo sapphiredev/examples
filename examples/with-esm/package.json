@@ -23,7 +23,7 @@
 		"@sapphire/time-utilities": "^1.7.12",
 		"@sapphire/type": "^2.5.1",
 		"@sapphire/utilities": "^3.17.0",
-		"discord.js": "^14.16.1"
+		"discord.js": "^14.16.2"
 	},
 	"devDependencies": {
 		"@sapphire/cli": "^1.9.3",
