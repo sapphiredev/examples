@@ -13,7 +13,7 @@
 		"@types/ws": "^8.5.12",
 		"@typescript-eslint/eslint-plugin": "^7.14.1",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.57.0",
+		"eslint": "^8.57.1",
 		"lint-staged": "^15.2.10",
 		"npm-run-all2": "^6.2.3",
 		"prettier": "^3.3.3",
