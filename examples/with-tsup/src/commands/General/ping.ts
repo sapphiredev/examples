@@ -1,7 +1,7 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
 import { send } from '@sapphire/plugin-editable-commands';
-import { ApplicationCommandType, type Message } from 'discord.js';
+import { ApplicationCommandType, ApplicationIntegrationType, InteractionContextType, type Message } from 'discord.js';
 
 @ApplyOptions<Command.Options>({
 	description: 'ping pong'
@@ -9,22 +9,37 @@ import { ApplicationCommandType, type Message } from 'discord.js';
 export class UserCommand extends Command {
 	// Register slash and context menu command
 	public override registerApplicationCommands(registry: Command.Registry) {
+		// Create shared integration types and contexts
+		// These allow the command to be used in guilds and DMs
+		const integrationTypes: ApplicationIntegrationType[] = [ApplicationIntegrationType.GuildInstall, ApplicationIntegrationType.UserInstall];
+		const contexts: InteractionContextType[] = [
+			InteractionContextType.BotDM,
+			InteractionContextType.Guild,
+			InteractionContextType.PrivateChannel
+		];
+
 		// Register slash command
 		registry.registerChatInputCommand({
 			name: this.name,
-			description: this.description
+			description: this.description,
+			integrationTypes,
+			contexts
 		});
 
 		// Register context menu command available from any message
 		registry.registerContextMenuCommand({
 			name: this.name,
-			type: ApplicationCommandType.Message
+			type: ApplicationCommandType.Message,
+			integrationTypes,
+			contexts
 		});
 
 		// Register context menu command available from any user
 		registry.registerContextMenuCommand({
 			name: this.name,
-			type: ApplicationCommandType.User
+			type: ApplicationCommandType.User,
+			integrationTypes,
+			contexts
 		});
 	}
 
