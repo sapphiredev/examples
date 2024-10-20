@@ -9,13 +9,13 @@
 		"@commitlint/config-conventional": "^19.5.0",
 		"@sapphire/eslint-config": "^5.0.5",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@types/node": "^20.16.11",
+		"@types/node": "^20.16.13",
 		"@types/ws": "^8.5.12",
 		"@typescript-eslint/eslint-plugin": "^7.14.1",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.1",
 		"lint-staged": "^15.2.10",
-		"npm-run-all2": "^6.2.3",
+		"npm-run-all2": "^6.2.4",
 		"prettier": "^3.3.3",
 		"typescript": "~5.4.5"
 	},
@@ -49,5 +49,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.5.0"
+	"packageManager": "yarn@4.5.1"
 }
