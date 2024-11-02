@@ -950,12 +950,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/plugin-editable-commands@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@sapphire/plugin-editable-commands@npm:4.0.2"
+"@sapphire/plugin-editable-commands@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "@sapphire/plugin-editable-commands@npm:4.0.3"
   dependencies:
-    "@skyra/editable-commands": "npm:^3.0.1"
-  checksum: 10/5b98478cace39b7caaa419830a6e34cd35bde9229dbafa930a3dc394b405856f8d996779d08d412ea6a7eabc3389484d1e73bbe70e59fdf2fa2fa2b89358fb05
+    "@skyra/editable-commands": "npm:^3.0.4"
+  checksum: 10/13fbc421a55bfced552178bc4c2bdbc57d2a91ea6d979c3067945e77bdf62dc847f3408bfde51a5bf9a28cef7a7cff756f3c03ecf1e13066471b5cc63619df56
   languageName: node
   linkType: hard
 
@@ -1109,10 +1109,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/editable-commands@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@skyra/editable-commands@npm:3.0.1"
-  checksum: 10/1ce649569e95b51dfa228e76e9f9c93afcfb990237a9337878a2d6158b5638abc192a3435c8c2a1d5af5fd74ca2465aa44f30b65aac45ef11730e9738af5758d
+"@skyra/editable-commands@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@skyra/editable-commands@npm:3.0.4"
+  checksum: 10/c7a7029ced3c70b05db41edc12288081165dc8b4f302dd3f6e220ce28deb50ef9c53718ebb1da04e9167f7ec2a57ffb265e1ea43ad85e697d854ec0d1658912d
   languageName: node
   linkType: hard
 
@@ -6300,7 +6300,7 @@ __metadata:
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
     "@sapphire/plugin-api": "npm:^6.1.1"
-    "@sapphire/plugin-editable-commands": "npm:^4.0.2"
+    "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -6324,7 +6324,7 @@ __metadata:
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
     "@sapphire/plugin-api": "npm:^6.1.1"
-    "@sapphire/plugin-editable-commands": "npm:^4.0.2"
+    "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -6349,7 +6349,7 @@ __metadata:
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
     "@sapphire/plugin-api": "npm:^6.1.1"
-    "@sapphire/plugin-editable-commands": "npm:^4.0.2"
+    "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -6381,7 +6381,7 @@ __metadata:
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
     "@sapphire/plugin-api": "npm:^6.1.1"
-    "@sapphire/plugin-editable-commands": "npm:^4.0.2"
+    "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -6411,7 +6411,7 @@ __metadata:
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
     "@sapphire/plugin-api": "npm:^6.1.1"
-    "@sapphire/plugin-editable-commands": "npm:^4.0.2"
+    "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
