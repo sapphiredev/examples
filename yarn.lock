@@ -826,12 +826,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/cron@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "@sapphire/cron@npm:1.1.3"
+"@sapphire/cron@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@sapphire/cron@npm:1.2.0"
   dependencies:
-    "@sapphire/utilities": "npm:^3.15.3"
-  checksum: 10/8ddcd541823c20a185c7cb7fc5bed966b9f8fe916fa169669cba4fad705fdfc09427f6dd538396ea244238c88e24280a5915e4d378354f34babd654d8c30a272
+    "@sapphire/utilities": "npm:^3.18.0"
+  checksum: 10/532a23705238db7a283d5305c3bcabc983edc8d5ce47ffb139a4f1b0a21e75585712f76e7d91d12881099c02c244a67dc92d2e7db5f744a35527fd3956d89a9f
   languageName: node
   linkType: hard
 
@@ -844,7 +844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord-utilities@npm:^3.2.3, @sapphire/discord-utilities@npm:^3.3.0, @sapphire/discord-utilities@npm:^3.4.1":
+"@sapphire/discord-utilities@npm:^3.2.3, @sapphire/discord-utilities@npm:^3.3.0":
   version: 3.4.1
   resolution: "@sapphire/discord-utilities@npm:3.4.1"
   dependencies:
@@ -853,7 +853,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord.js-utilities@npm:7.3.0, @sapphire/discord.js-utilities@npm:^7.2.0":
+"@sapphire/discord-utilities@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@sapphire/discord-utilities@npm:3.4.2"
+  dependencies:
+    discord-api-types: "npm:0.37.100"
+  checksum: 10/a79220d5ec0a7f8a12cc516cb4cee9ce43520135f3bbaf3d71436f11813c678f6253176ad2b3eaada49e32b8e9737f0729dcba49efe1be690cca9733991b45c9
+  languageName: node
+  linkType: hard
+
+"@sapphire/discord.js-utilities@npm:7.3.1":
+  version: 7.3.1
+  resolution: "@sapphire/discord.js-utilities@npm:7.3.1"
+  dependencies:
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/duration": "npm:^1.1.3"
+    "@sapphire/utilities": "npm:^3.18.0"
+    tslib: "npm:^2.8.1"
+  checksum: 10/6b68247e98c3fca502bae8c2d0445ac5abc958813d65c6d7a1c95e4f0cbba162431189a9480d7f9d4057d93d4d52b2eddfa41017c85f00edab81572745448586
+  languageName: node
+  linkType: hard
+
+"@sapphire/discord.js-utilities@npm:^7.2.0":
   version: 7.3.0
   resolution: "@sapphire/discord.js-utilities@npm:7.3.0"
   dependencies:
@@ -872,6 +893,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sapphire/duration@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@sapphire/duration@npm:1.1.3"
+  checksum: 10/728111bf4e0eb534e1d3028200157431b22a90797d1dd0896cd6eeff6ddea1c5f57041a60808103b9e87b67e3d55cf171a5431867974d5856517fe36bccbe725
+  languageName: node
+  linkType: hard
+
 "@sapphire/eslint-config@npm:^5.0.5":
   version: 5.0.5
   resolution: "@sapphire/eslint-config@npm:5.0.5"
@@ -887,10 +915,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/fetch@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@sapphire/fetch@npm:3.0.3"
-  checksum: 10/4eed77aeb72d9a2fb4671b88e1e6d960c838ebd23d22735f78a385b295ed2938e348722b8b93da00aa8c9b1ec9a2e545b20d2f0100b5bd490c8f34734ae9831c
+"@sapphire/fetch@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@sapphire/fetch@npm:3.0.4"
+  checksum: 10/e140b262c9d2440504d914fae8a5652b222f9ba6c36c9cca6e77a78ea23667a44d689aa84f72c0a08e42224b4e046bfc63e7ade8e2225724febf4f743b5d0e8f
   languageName: node
   linkType: hard
 
@@ -1027,22 +1055,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/time-utilities@npm:^1.7.12":
-  version: 1.7.12
-  resolution: "@sapphire/time-utilities@npm:1.7.12"
+"@sapphire/time-utilities@npm:^1.7.13":
+  version: 1.7.13
+  resolution: "@sapphire/time-utilities@npm:1.7.13"
   dependencies:
-    "@sapphire/cron": "npm:^1.1.3"
-    "@sapphire/duration": "npm:^1.1.2"
-    "@sapphire/timer-manager": "npm:^1.0.2"
-    "@sapphire/timestamp": "npm:^1.0.3"
-  checksum: 10/d0bd156e6a6135344c69218f9ae6be71330b1da7b81f7d733e06bf1fc041103eae208ab011d2c6cc6966c398368c4be77825d491a9aa6c90af61ebd084bff6ad
+    "@sapphire/cron": "npm:^1.2.0"
+    "@sapphire/duration": "npm:^1.1.3"
+    "@sapphire/timer-manager": "npm:^1.0.3"
+    "@sapphire/timestamp": "npm:^1.0.4"
+  checksum: 10/cc658d2c6483a74f148cb2a60d32bf8c953ea7a76d1c3ebe8539d5ed8cccdb3e0840c33fda6a006e179ee514f88a637df2f769c8c42c1628b9e45923c535bd34
   languageName: node
   linkType: hard
 
-"@sapphire/timer-manager@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@sapphire/timer-manager@npm:1.0.2"
-  checksum: 10/70c2440b7c5b69d553f45977e2505c9f486d66e5beac86fae0b62896654dddecb27b625684f2ea425f3fa190adeb0740107e27034662d3bd2ec5414eeb86d2c0
+"@sapphire/timer-manager@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@sapphire/timer-manager@npm:1.0.3"
+  checksum: 10/40143b5d15913244a787e349fd82c4bb42468c4a4556c199143c8e6d9e58203bceb563e0e61ebe373fec444f2b86eb3944a4dbd718706b1f1f340b6900c02187
   languageName: node
   linkType: hard
 
@@ -1050,6 +1078,13 @@ __metadata:
   version: 1.0.3
   resolution: "@sapphire/timestamp@npm:1.0.3"
   checksum: 10/f4b8f0a36f4b494f6b19a2656cfd6d158e7f061208499225f88f7a0d0592c2a8ea0abf017a074c489f00e478878083960e57570b6a5d937efec9f7049fc4e38f
+  languageName: node
+  linkType: hard
+
+"@sapphire/timestamp@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@sapphire/timestamp@npm:1.0.4"
+  checksum: 10/f5af0003bbab285c4dd13af2b4975c89ab3e553f3921066d40343aa3c26c5dd54cd72198ea38a002d6765d29d4c97935f57ac0f76d38cb3fc65343f0f3104964
   languageName: node
   linkType: hard
 
@@ -1085,6 +1120,13 @@ __metadata:
   version: 3.17.0
   resolution: "@sapphire/utilities@npm:3.17.0"
   checksum: 10/cfdf604be06e1e4f7fd26f10c198586eef9012001b83dcc8178886d88145334db06e164725aadf5bfb065b39ecdefaa8286c695576e7674b5a3bc9280ce02e0d
+  languageName: node
+  linkType: hard
+
+"@sapphire/utilities@npm:^3.18.0":
+  version: 3.18.0
+  resolution: "@sapphire/utilities@npm:3.18.0"
+  checksum: 10/4185555696d97fa8b514118f94d66f5bd4c278fbc7ef70f3ee70505f8b90f865d2b8319a686739d78bf29711cc2e16aa99933f493515116e3226d466805c254a
   languageName: node
   linkType: hard
 
@@ -2399,6 +2441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"discord-api-types@npm:0.37.100, discord-api-types@npm:^0.37.98":
+  version: 0.37.100
+  resolution: "discord-api-types@npm:0.37.100"
+  checksum: 10/44b7366784b11e32d9015709658d2429d040a643748c0b8733752a1d2b0db328dc1ab9fa3210f93423d6b3762561e60ada6ba781ac1edd7fddf6174e3c645311
+  languageName: node
+  linkType: hard
+
 "discord-api-types@npm:0.37.83":
   version: 0.37.83
   resolution: "discord-api-types@npm:0.37.83"
@@ -2413,16 +2462,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.98":
-  version: 0.37.100
-  resolution: "discord-api-types@npm:0.37.100"
-  checksum: 10/44b7366784b11e32d9015709658d2429d040a643748c0b8733752a1d2b0db328dc1ab9fa3210f93423d6b3762561e60ada6ba781ac1edd7fddf6174e3c645311
-  languageName: node
-  linkType: hard
-
-"discord.js@npm:^14.16.2":
-  version: 14.16.2
-  resolution: "discord.js@npm:14.16.2"
+"discord.js@npm:^14.16.3":
+  version: 14.16.3
+  resolution: "discord.js@npm:14.16.3"
   dependencies:
     "@discordjs/builders": "npm:^1.9.0"
     "@discordjs/collection": "npm:1.5.3"
@@ -2431,12 +2473,12 @@ __metadata:
     "@discordjs/util": "npm:^1.1.1"
     "@discordjs/ws": "npm:1.1.1"
     "@sapphire/snowflake": "npm:3.5.3"
-    discord-api-types: "npm:0.37.97"
+    discord-api-types: "npm:0.37.100"
     fast-deep-equal: "npm:3.1.3"
     lodash.snakecase: "npm:4.1.1"
     tslib: "npm:^2.6.3"
     undici: "npm:6.19.8"
-  checksum: 10/9da5621e88734b3cc8236de492c4fb6b78ee8c0a9a751472aa221234f66cf741f0947e81eb1842dd5ba711b95228593855a9f16453b4786455f3cb7c7cd1c381
+  checksum: 10/d8ac4116411922acab80a19b0caac696e1d071646fbf01202a185a484b2c0145f4306aad07c1a448efff4b38c98f601cae767e91b3fc3dc4cd14b05d1278a0db
   languageName: node
   linkType: hard
 
@@ -5961,6 +6003,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: 10/3e2e043d5c2316461cb54e5c7fe02c30ef6dccb3384717ca22ae5c6b5bc95232a6241df19c622d9c73b809bea33b187f6dbc73030963e29950c2141bc32a79f7
+  languageName: node
+  linkType: hard
+
 "tsup@npm:^8.0.1":
   version: 8.0.1
   resolution: "tsup@npm:8.0.1"
@@ -6274,19 +6323,19 @@ __metadata:
   resolution: "with-esm@workspace:examples/with-esm"
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
-    "@sapphire/discord-utilities": "npm:^3.4.1"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-api": "npm:^6.1.1"
     "@sapphire/plugin-editable-commands": "npm:^4.0.2"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@sapphire/time-utilities": "npm:^1.7.12"
+    "@sapphire/time-utilities": "npm:^1.7.13"
     "@sapphire/type": "npm:^2.5.1"
-    "@sapphire/utilities": "npm:^3.17.0"
-    discord.js: "npm:^14.16.2"
+    "@sapphire/utilities": "npm:^3.18.0"
+    discord.js: "npm:^14.16.3"
     nodemon: "npm:^3.0.3"
     npm-run-all2: "npm:^6.1.1"
     prettier: "npm:^3.2.4"
@@ -6298,19 +6347,19 @@ __metadata:
   resolution: "with-javascript@workspace:examples/with-javascript"
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
-    "@sapphire/discord-utilities": "npm:^3.4.1"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-api": "npm:^6.1.1"
     "@sapphire/plugin-editable-commands": "npm:^4.0.2"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@sapphire/time-utilities": "npm:^1.7.12"
+    "@sapphire/time-utilities": "npm:^1.7.13"
     "@sapphire/type": "npm:^2.5.1"
-    "@sapphire/utilities": "npm:^3.17.0"
-    discord.js: "npm:^14.16.2"
+    "@sapphire/utilities": "npm:^3.18.0"
+    discord.js: "npm:^14.16.3"
     nodemon: "npm:^3.0.3"
     npm-run-all2: "npm:^6.1.1"
     prettier: "npm:^3.2.4"
@@ -6323,25 +6372,25 @@ __metadata:
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
     "@sapphire/decorators": "npm:^6.1.0"
-    "@sapphire/discord-utilities": "npm:^3.4.1"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-api": "npm:^6.1.1"
     "@sapphire/plugin-editable-commands": "npm:^4.0.2"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@sapphire/time-utilities": "npm:^1.7.12"
+    "@sapphire/time-utilities": "npm:^1.7.13"
     "@sapphire/ts-config": "npm:^5.0.1"
     "@sapphire/type": "npm:^2.5.1"
-    "@sapphire/utilities": "npm:^3.17.0"
+    "@sapphire/utilities": "npm:^3.18.0"
     "@skyra/env-utilities": "npm:^1.3.0"
     "@swc/cli": "npm:^0.3.3"
     "@swc/core": "npm:^1.3.106"
     "@types/node": "npm:^20.11.5"
     "@types/ws": "npm:^8.5.10"
-    discord.js: "npm:^14.16.2"
+    discord.js: "npm:^14.16.3"
     npm-run-all2: "npm:^6.1.1"
     prettier: "npm:^3.2.4"
     tsc-watch: "npm:^6.0.4"
@@ -6355,23 +6404,23 @@ __metadata:
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
     "@sapphire/decorators": "npm:^6.1.0"
-    "@sapphire/discord-utilities": "npm:^3.4.1"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-api": "npm:^6.1.1"
     "@sapphire/plugin-editable-commands": "npm:^4.0.2"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@sapphire/time-utilities": "npm:^1.7.12"
+    "@sapphire/time-utilities": "npm:^1.7.13"
     "@sapphire/ts-config": "npm:^5.0.1"
     "@sapphire/type": "npm:^2.5.1"
-    "@sapphire/utilities": "npm:^3.17.0"
+    "@sapphire/utilities": "npm:^3.18.0"
     "@skyra/env-utilities": "npm:^1.3.0"
     "@types/node": "npm:^20.11.5"
     "@types/ws": "npm:^8.5.10"
-    discord.js: "npm:^14.16.2"
+    discord.js: "npm:^14.16.3"
     npm-run-all2: "npm:^6.1.1"
     prettier: "npm:^3.2.4"
     tsup: "npm:^8.0.1"
@@ -6385,24 +6434,24 @@ __metadata:
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
     "@sapphire/decorators": "npm:^6.1.0"
-    "@sapphire/discord-utilities": "npm:^3.4.1"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/discord-utilities": "npm:^3.4.2"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-api": "npm:^6.1.1"
     "@sapphire/plugin-editable-commands": "npm:^4.0.2"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.0"
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@sapphire/time-utilities": "npm:^1.7.12"
+    "@sapphire/time-utilities": "npm:^1.7.13"
     "@sapphire/ts-config": "npm:^5.0.1"
     "@sapphire/type": "npm:^2.5.1"
-    "@sapphire/utilities": "npm:^3.17.0"
+    "@sapphire/utilities": "npm:^3.18.0"
     "@skyra/env-utilities": "npm:^1.3.0"
     "@types/node": "npm:^20.11.5"
     "@types/ws": "npm:^8.5.10"
     colorette: "npm:^2.0.20"
-    discord.js: "npm:^14.16.2"
+    discord.js: "npm:^14.16.3"
     npm-run-all2: "npm:^6.1.1"
     prettier: "npm:^3.2.4"
     tsc-watch: "npm:^6.0.4"
@@ -6416,17 +6465,17 @@ __metadata:
   dependencies:
     "@sapphire/cli": "npm:^1.9.3"
     "@sapphire/decorators": "npm:^6.1.0"
-    "@sapphire/discord.js-utilities": "npm:7.3.0"
+    "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/framework": "npm:^5.2.1"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/prettier-config": "npm:^2.0.0"
     "@sapphire/ts-config": "npm:^5.0.1"
-    "@sapphire/utilities": "npm:^3.17.0"
+    "@sapphire/utilities": "npm:^3.18.0"
     "@skyra/env-utilities": "npm:^1.3.0"
     "@types/node": "npm:^20.11.5"
     "@types/ws": "npm:^8.5.10"
     colorette: "npm:^2.0.20"
-    discord.js: "npm:^14.16.2"
+    discord.js: "npm:^14.16.3"
     prettier: "npm:^3.2.4"
     tsc-watch: "npm:^6.0.4"
     typescript: "npm:~5.4.5"
