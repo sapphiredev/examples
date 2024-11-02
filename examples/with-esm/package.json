@@ -16,10 +16,10 @@
 		"@sapphire/discord.js-utilities": "7.3.1",
 		"@sapphire/fetch": "^3.0.4",
 		"@sapphire/framework": "^5.3.0",
-		"@sapphire/plugin-api": "^6.1.1",
+		"@sapphire/plugin-api": "^7.0.0",
 		"@sapphire/plugin-editable-commands": "^4.0.3",
 		"@sapphire/plugin-logger": "^4.0.2",
-		"@sapphire/plugin-subcommands": "^7.0.0",
+		"@sapphire/plugin-subcommands": "^7.0.1",
 		"@sapphire/time-utilities": "^1.7.13",
 		"@sapphire/type": "^2.5.1",
 		"@sapphire/utilities": "^3.18.0",
@@ -28,9 +28,9 @@
 	"devDependencies": {
 		"@sapphire/cli": "^1.9.3",
 		"@sapphire/prettier-config": "^2.0.0",
-		"nodemon": "^3.0.3",
-		"npm-run-all2": "^6.1.1",
-		"prettier": "^3.2.4"
+		"nodemon": "^3.1.7",
+		"npm-run-all2": "^7.0.1",
+		"prettier": "^3.3.3"
 	},
 	"scripts": {
 		"sapphire": "sapphire",
