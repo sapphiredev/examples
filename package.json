@@ -9,7 +9,7 @@
 		"@commitlint/config-conventional": "^19.5.0",
 		"@sapphire/eslint-config": "^5.0.5",
 		"@sapphire/prettier-config": "^2.0.0",
-		"@types/node": "^22.8.7",
+		"@types/node": "^22.9.0",
 		"@types/ws": "^8.5.13",
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"cz-conventional-changelog": "^3.3.0",
