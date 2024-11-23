@@ -58,13 +58,12 @@ export class UserCommand extends Command {
 	}
 
 	private async sendPing(interactionOrMessage: Message | Command.ChatInputCommandInteraction | Command.ContextMenuCommandInteraction) {
-		// Do nothing if we cannot send messages in the channel (eg. group DMs)
-		if (!interactionOrMessage.channel?.isSendable()) return;
-
 		const pingMessage =
 			interactionOrMessage instanceof Message
-				? await interactionOrMessage.channel.send({ content: 'Ping?' })
+				? interactionOrMessage.channel?.isSendable() && await interactionOrMessage.channel.send({ content: 'Ping?' })
 				: await interactionOrMessage.reply({ content: 'Ping?', fetchReply: true });
+
+		if (!pingMessage) return;
 
 		const content = `Pong! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
 			pingMessage.createdTimestamp - interactionOrMessage.createdTimestamp
