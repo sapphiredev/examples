@@ -1125,16 +1125,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/plugin-api@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@sapphire/plugin-api@npm:7.0.0"
+"@sapphire/plugin-api@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "@sapphire/plugin-api@npm:7.0.3"
   dependencies:
     "@types/ws": "npm:^8.5.13"
     "@vladfrangu/async_event_emitter": "npm:2.4.6"
     cookie-es: "npm:^1.2.2"
     tldts: "npm:^6.1.58"
     undici: "npm:^6.20.1"
-  checksum: 10/d05bb12cb512601c0a08806e68e00f81dfbb2a986b20fac53e3ecdc51138f50c9432d5d7702a5af8739d107a9f504955455d131978dd271110c7876d8dee0418
+  checksum: 10/dc639238a770e6015fed5ac0c66a260698e490ac5498a18ccac196d39df81e4c43fd7c920d93cc0ca7c827595360766c3464bb2aafca21f23ac10aaee4705626
   languageName: node
   linkType: hard
 
@@ -6423,7 +6423,7 @@ __metadata:
     "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
-    "@sapphire/plugin-api": "npm:^7.0.0"
+    "@sapphire/plugin-api": "npm:^7.0.3"
     "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.1"
@@ -6447,7 +6447,7 @@ __metadata:
     "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
-    "@sapphire/plugin-api": "npm:^7.0.0"
+    "@sapphire/plugin-api": "npm:^7.0.3"
     "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.1"
@@ -6472,7 +6472,7 @@ __metadata:
     "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
-    "@sapphire/plugin-api": "npm:^7.0.0"
+    "@sapphire/plugin-api": "npm:^7.0.3"
     "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.1"
@@ -6504,7 +6504,7 @@ __metadata:
     "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
-    "@sapphire/plugin-api": "npm:^7.0.0"
+    "@sapphire/plugin-api": "npm:^7.0.3"
     "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.1"
@@ -6534,7 +6534,7 @@ __metadata:
     "@sapphire/discord.js-utilities": "npm:7.3.1"
     "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/framework": "npm:^5.3.0"
-    "@sapphire/plugin-api": "npm:^7.0.0"
+    "@sapphire/plugin-api": "npm:^7.0.3"
     "@sapphire/plugin-editable-commands": "npm:^4.0.3"
     "@sapphire/plugin-logger": "npm:^4.0.2"
     "@sapphire/plugin-subcommands": "npm:^7.0.1"
