@@ -60,7 +60,7 @@ export class UserCommand extends Command {
 	private async sendPing(interactionOrMessage: Message | Command.ChatInputCommandInteraction | Command.ContextMenuCommandInteraction) {
 		const pingMessage =
 			interactionOrMessage instanceof Message
-				? interactionOrMessage.channel?.isSendable() && await interactionOrMessage.channel.send({ content: 'Ping?' })
+				? interactionOrMessage.channel?.isSendable() && (await interactionOrMessage.channel.send({ content: 'Ping?' }))
 				: await interactionOrMessage.reply({ content: 'Ping?', fetchReply: true });
 
 		if (!pingMessage) return;
