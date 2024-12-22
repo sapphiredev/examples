@@ -23,20 +23,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^19.6.0":
-  version: 19.6.0
-  resolution: "@commitlint/cli@npm:19.6.0"
+"@commitlint/cli@npm:^19.6.1":
+  version: 19.6.1
+  resolution: "@commitlint/cli@npm:19.6.1"
   dependencies:
     "@commitlint/format": "npm:^19.5.0"
     "@commitlint/lint": "npm:^19.6.0"
-    "@commitlint/load": "npm:^19.5.0"
+    "@commitlint/load": "npm:^19.6.1"
     "@commitlint/read": "npm:^19.5.0"
     "@commitlint/types": "npm:^19.5.0"
     tinyexec: "npm:^0.3.0"
     yargs: "npm:^17.0.0"
   bin:
     commitlint: cli.js
-  checksum: 10/12ed3ad48de1b838c6603f39970b6fde6fd0594f86402e40cccb72940b4c9b1b1321e11606caffdf46b54ce8730c38970bc08e56b8878b9709c44ceb2a520bfa
+  checksum: 10/b63b8a716d943419a0bb0542e752d380d62f2715266ae0bb53911f3fe749ae9c3bf0fd591abd87be6b863e522ca183c7bac6a82ef73255a5c5bbeceb620ecbb1
   languageName: node
   linkType: hard
 
@@ -113,9 +113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^19.5.0":
-  version: 19.5.0
-  resolution: "@commitlint/load@npm:19.5.0"
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^19.6.1":
+  version: 19.6.1
+  resolution: "@commitlint/load@npm:19.6.1"
   dependencies:
     "@commitlint/config-validator": "npm:^19.5.0"
     "@commitlint/execute-rule": "npm:^19.5.0"
@@ -123,11 +123,11 @@ __metadata:
     "@commitlint/types": "npm:^19.5.0"
     chalk: "npm:^5.3.0"
     cosmiconfig: "npm:^9.0.0"
-    cosmiconfig-typescript-loader: "npm:^5.0.0"
+    cosmiconfig-typescript-loader: "npm:^6.1.0"
     lodash.isplainobject: "npm:^4.0.6"
     lodash.merge: "npm:^4.6.2"
     lodash.uniq: "npm:^4.5.0"
-  checksum: 10/87a9450c768632c09e9d98993752a5622aee698642eee5a9b31c3c48625455e043406b7ea6e02a8f41d86c524c9ecbdb9b823caf67da3048f0d96531177fda28
+  checksum: 10/f340060751016de8e06f67137373f9ec51aff85ceb7ac8d5eec1bfb3693df38f7ad2c231fd1dd61acf58affb2f514761c12281328aacceaacef455d25d58c2ce
   languageName: node
   linkType: hard
 
@@ -2411,16 +2411,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig-typescript-loader@npm:^5.0.0":
-  version: 5.1.0
-  resolution: "cosmiconfig-typescript-loader@npm:5.1.0"
+"cosmiconfig-typescript-loader@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "cosmiconfig-typescript-loader@npm:6.1.0"
   dependencies:
-    jiti: "npm:^1.21.6"
+    jiti: "npm:^2.4.1"
   peerDependencies:
     "@types/node": "*"
-    cosmiconfig: ">=8.2"
-    typescript: ">=4"
-  checksum: 10/a3ea9de9633899867ddc8368735d085f9e050dce2c319ca13dbe51187476edd7818586618eabe38bc81e5e981863903415e90da17e346f839bb442eeb29aa38a
+    cosmiconfig: ">=9"
+    typescript: ">=5"
+  checksum: 10/e8b28b08759753c46a991e3d4db675480ea0081da9c098e426a89f4a12395e448c3090536d1ec1cb7adb5d7beb0ea266b7717053e3adbc283806a3b62339b68d
   languageName: node
   linkType: hard
 
@@ -2452,14 +2452,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
-  version: 7.0.3
-  resolution: "cross-spawn@npm:7.0.3"
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3, cross-spawn@npm:^7.0.6":
+  version: 7.0.6
+  resolution: "cross-spawn@npm:7.0.6"
   dependencies:
     path-key: "npm:^3.1.0"
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
-  checksum: 10/e1a13869d2f57d974de0d9ef7acbf69dc6937db20b918525a01dacb5032129bd552d290d886d981e99f1b624cb03657084cc87bd40f115c07ecf376821c729ce
+  checksum: 10/0d52657d7ae36eb130999dffff1168ec348687b48dd38e2ff59992ed916c88d328cf1d07ff4a4a10bc78de5e1c23f04b306d569e42f7a2293915c081e4dfee86
   languageName: node
   linkType: hard
 
@@ -3994,12 +3994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.21.6":
-  version: 1.21.6
-  resolution: "jiti@npm:1.21.6"
+"jiti@npm:^2.4.1":
+  version: 2.4.2
+  resolution: "jiti@npm:2.4.2"
   bin:
-    jiti: bin/jiti.js
-  checksum: 10/289b124cea411c130a14ffe88e3d38376ab44b6695616dfa0a1f32176a8f20ec90cdd6d2b9d81450fc6467cfa4d865f04f49b98452bff0f812bc400fd0ae78d6
+    jiti: lib/jiti-cli.mjs
+  checksum: 10/e2b07eb2e3fbb245e29ad288dddecab31804967fc84d5e01d39858997d2743b5e248946defcecf99272275a00284ecaf7ec88b8c841331324f0c946d8274414b
   languageName: node
   linkType: hard
 
@@ -4734,12 +4734,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all2@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "npm-run-all2@npm:7.0.1"
+"npm-run-all2@npm:^7.0.1, npm-run-all2@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "npm-run-all2@npm:7.0.2"
   dependencies:
     ansi-styles: "npm:^6.2.1"
-    cross-spawn: "npm:^7.0.3"
+    cross-spawn: "npm:^7.0.6"
     memorystream: "npm:^0.3.1"
     minimatch: "npm:^9.0.0"
     pidtree: "npm:^0.6.0"
@@ -4751,7 +4751,7 @@ __metadata:
     npm-run-all2: bin/npm-run-all/index.js
     run-p: bin/run-p/index.js
     run-s: bin/run-s/index.js
-  checksum: 10/1920595f6e508d1de4255790cd24037b957aefa1af9b6fec0e402f93fbb5cf5ee50a68db9d691d9e9562c3a812cd9c8f6543b712b367a588658207cdd45d4faf
+  checksum: 10/46d3f7a9117d6af2463285a02909ecc92bde31fc5cd9d8a7c4cc66157e639481eed13d5553dda62b9def6df36b8a5c748393ea65233aea97ee0e615033595266
   languageName: node
   linkType: hard
 
@@ -5465,7 +5465,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root@workspace:."
   dependencies:
-    "@commitlint/cli": "npm:^19.6.0"
+    "@commitlint/cli": "npm:^19.6.1"
     "@commitlint/config-conventional": "npm:^19.6.0"
     "@sapphire/eslint-config": "npm:^5.0.5"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -5475,7 +5475,7 @@ __metadata:
     cz-conventional-changelog: "npm:^3.3.0"
     eslint: "npm:^8.57.1"
     lint-staged: "npm:^15.2.11"
-    npm-run-all2: "npm:^7.0.1"
+    npm-run-all2: "npm:^7.0.2"
     prettier: "npm:^3.4.2"
     typescript: "npm:~5.4.5"
   languageName: unknown
