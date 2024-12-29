@@ -14,7 +14,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.1",
-		"lint-staged": "^15.2.11",
+		"lint-staged": "^15.3.0",
 		"npm-run-all2": "^7.0.2",
 		"prettier": "^3.4.2",
 		"typescript": "~5.4.5"
