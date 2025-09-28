@@ -14,7 +14,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.57.1",
-		"lint-staged": "^16.1.6",
+		"lint-staged": "^16.2.1",
 		"npm-run-all2": "^8.0.4",
 		"prettier": "^3.6.2",
 		"typescript": "~5.4.5"
@@ -49,5 +49,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.10.0"
+	"packageManager": "yarn@4.10.3"
 }
