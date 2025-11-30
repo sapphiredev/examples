@@ -16,7 +16,7 @@
 		"eslint": "^8.57.1",
 		"lint-staged": "^16.2.7",
 		"npm-run-all2": "^8.0.4",
-		"prettier": "^3.6.2",
+		"prettier": "^3.7.3",
 		"typescript": "~5.4.5"
 	},
 	"resolutions": {
@@ -49,5 +49,5 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.11.0"
+	"packageManager": "yarn@4.12.0"
 }
