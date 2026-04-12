@@ -16,7 +16,7 @@
 		"eslint": "^8.57.1",
 		"lint-staged": "^16.4.0",
 		"npm-run-all2": "^8.0.4",
-		"prettier": "^3.8.1",
+		"prettier": "^3.8.2",
 		"typescript": "~5.4.5"
 	},
 	"resolutions": {
