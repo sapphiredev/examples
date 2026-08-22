@@ -1029,16 +1029,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord-utilities@npm:^3.4.4":
-  version: 3.4.4
-  resolution: "@sapphire/discord-utilities@npm:3.4.4"
-  dependencies:
-    discord-api-types: "npm:^0.37.114"
-  checksum: 10/b8eb98c25fb110460822d296adc7a82681860e660d85be4cd618d9426ecd45ccd3746b8f718b9fd3b16248f212e7c92e7bf7a7d5cd943e5c087ec63920884b22
-  languageName: node
-  linkType: hard
-
-"@sapphire/discord-utilities@npm:^3.5.0":
+"@sapphire/discord-utilities@npm:^3.4.4, @sapphire/discord-utilities@npm:^3.5.0":
   version: 3.5.0
   resolution: "@sapphire/discord-utilities@npm:3.5.0"
   dependencies:
@@ -1047,7 +1038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord.js-utilities@npm:7.3.3":
+"@sapphire/discord.js-utilities@npm:7.3.3, @sapphire/discord.js-utilities@npm:^7.3.2":
   version: 7.3.3
   resolution: "@sapphire/discord.js-utilities@npm:7.3.3"
   dependencies:
@@ -1059,26 +1050,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord.js-utilities@npm:^7.3.2":
-  version: 7.3.2
-  resolution: "@sapphire/discord.js-utilities@npm:7.3.2"
-  dependencies:
-    "@sapphire/discord-utilities": "npm:^3.4.4"
-    "@sapphire/duration": "npm:^1.1.4"
-    "@sapphire/utilities": "npm:^3.18.1"
-    tslib: "npm:^2.8.1"
-  checksum: 10/dc051db27d9a63cbc7e4eeb7907596c505fc2d6616a8772f12dede34c9efc1401e1bbae53a6b87a72641a33ad4edf3a1fd6d25c259423510f988a354e1019ed7
-  languageName: node
-  linkType: hard
-
-"@sapphire/duration@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@sapphire/duration@npm:1.1.4"
-  checksum: 10/cbc2dff3bcaa56b06347a4dcf4be4417e710e146d22c9034124c2ecb9c8937ee3bf33b7e6b659b7f743304f4843b36ae36d83f62e1439d9fc82bafc0f5958d1c
-  languageName: node
-  linkType: hard
-
-"@sapphire/duration@npm:^1.2.0":
+"@sapphire/duration@npm:^1.1.4, @sapphire/duration@npm:^1.2.0":
   version: 1.2.0
   resolution: "@sapphire/duration@npm:1.2.0"
   checksum: 10/70fdb4f699ff5ecdccb25ba72a5917956195e9d377dd2dc7affaa0ec1e1145d1f5c3f79e595ac0f6edcec2a78fdc14acc5fdc591b1559f17df69532eb428967b
@@ -1295,14 +1267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.16.2, @sapphire/utilities@npm:^3.18.0, @sapphire/utilities@npm:^3.18.1":
-  version: 3.18.1
-  resolution: "@sapphire/utilities@npm:3.18.1"
-  checksum: 10/e13fdc6f83d2a326dfe124a65d0db4243cd5ca636cc770d881927a5e466221065d5f241e3e7673bf133b76c2359f86e4c0b1b834485f0470e25941457ee2cb90
-  languageName: node
-  linkType: hard
-
-"@sapphire/utilities@npm:^3.18.2":
+"@sapphire/utilities@npm:^3.16.2, @sapphire/utilities@npm:^3.18.0, @sapphire/utilities@npm:^3.18.1, @sapphire/utilities@npm:^3.18.2":
   version: 3.18.2
   resolution: "@sapphire/utilities@npm:3.18.2"
   checksum: 10/d7433b4231f56e3b07b93daaad7c43cb129f4a4e01ecf36ac22a6fcb1cedbd9059c124427002839006e3ee16fae7faa29bc48f6d40338873ac5c84dc28757ab8
@@ -1953,6 +1918,13 @@ __metadata:
   version: 6.2.1
   resolution: "ansi-styles@npm:6.2.1"
   checksum: 10/70fdf883b704d17a5dfc9cde206e698c16bcd74e7f196ab821511651aee4f9f76c9514bdfa6ca3a27b5e49138b89cb222a28caf3afe4567570139577f991df32
+  languageName: node
+  linkType: hard
+
+"ansi-styles@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "ansi-styles@npm:7.0.0"
+  checksum: 10/d04ab754dec550a771849abb7b866c52852a2ffa6b2c08f6a1729a51bb89931a396e8a2734c631a6781507e1570c6c5162587a24a4c6ca334dffdc64256fb06b
   languageName: node
   linkType: hard
 
@@ -4053,6 +4025,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isexe@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "isexe@npm:4.0.0"
+  checksum: 10/2ead327ef596042ef9c9ec5f236b316acfaedb87f4bb61b3c3d574fb2e9c8a04b67305e04733bde52c24d9622fdebd3270aadb632adfbf9cadef88fe30f479e5
+  languageName: node
+  linkType: hard
+
 "jackspeak@npm:^3.1.2":
   version: 3.4.3
   resolution: "jackspeak@npm:3.4.3"
@@ -4125,6 +4104,13 @@ __metadata:
   version: 4.0.0
   resolution: "json-parse-even-better-errors@npm:4.0.0"
   checksum: 10/da1ae7ef0cc9db02972a06a71322f26bdcda5d7f648c23b28ce7f158ba35707461bcbd91945d8aace10d8d79c383b896725c65ffa410242352692328aa9b5edf
+  languageName: node
+  linkType: hard
+
+"json-parse-even-better-errors@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "json-parse-even-better-errors@npm:6.0.0"
+  checksum: 10/52f10c3c999f646f1c3fbbf84e0cee6ef3939609bb99d704e7b9a98544325f5a33b4439f2ddb89b5ffcad7171b47658b5365742de398fb3e1145a38ac3c15d1f
   languageName: node
   linkType: hard
 
@@ -4743,6 +4729,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"npm-normalize-package-bin@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "npm-normalize-package-bin@npm:6.0.0"
+  checksum: 10/0d9b2a629b488bec426abc64718a5fdf095b40039b58d218f112eb51feb17249f2b362084b787ace8a0b44c56908621b9ca87a40c9c08db9630046a90f5cabdf
+  languageName: node
+  linkType: hard
+
 "npm-run-all2@npm:^7.0.2":
   version: 7.0.2
   resolution: "npm-run-all2@npm:7.0.2"
@@ -4764,24 +4757,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all2@npm:^8.0.4":
-  version: 8.0.4
-  resolution: "npm-run-all2@npm:8.0.4"
+"npm-run-all2@npm:^9.0.3":
+  version: 9.0.3
+  resolution: "npm-run-all2@npm:9.0.3"
   dependencies:
-    ansi-styles: "npm:^6.2.1"
+    ansi-styles: "npm:^7.0.0"
     cross-spawn: "npm:^7.0.6"
     memorystream: "npm:^0.3.1"
     picomatch: "npm:^4.0.2"
-    pidtree: "npm:^0.6.0"
-    read-package-json-fast: "npm:^4.0.0"
-    shell-quote: "npm:^1.7.3"
-    which: "npm:^5.0.0"
+    pidtree: "npm:^1.0.0"
+    read-package-json-fast: "npm:^6.0.0"
+    shell-quote: "npm:^1.8.4"
+    which: "npm:^7.0.0"
   bin:
     npm-run-all: bin/npm-run-all/index.js
     npm-run-all2: bin/npm-run-all/index.js
     run-p: bin/run-p/index.js
     run-s: bin/run-s/index.js
-  checksum: 10/6e485f0d71fdfcf5bd872e5bbb8440ea5816ebeed88e6e39ff6e758d76adefa516b3101ed7ddc8de117d61b499f176417c87b0c595394e15733738834ad6ef0a
+  checksum: 10/4b67957c871edee07d4cd30404b99dbd009094a2722bf1829657d5f13688752000fad1ede202dc76ae0cfbbc7b9d17df7b624904454062d53552db8030cc03e9
   languageName: node
   linkType: hard
 
@@ -5063,6 +5056,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pidtree@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "pidtree@npm:1.0.0"
+  bin:
+    pidtree: bin/pidtree.js
+  checksum: 10/f9195d62aaf3a87c8c7c18bf3a96f9e28fdb58e347050271e2c7c87c8c66d1b1193a8ae4a8749487a772d3f29a543a74de1d315772327ec17e55ba114417ecd0
+  languageName: node
+  linkType: hard
+
 "pirates@npm:^4.0.1":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -5210,6 +5212,16 @@ __metadata:
     json-parse-even-better-errors: "npm:^4.0.0"
     npm-normalize-package-bin: "npm:^4.0.0"
   checksum: 10/bf0becd7d0b652dcc5874b466d1dbd98313180e89505c072f35ff48a1ad6bdaf2427143301e1924d64e4af5064cda8be5df16f14de882f03130e29051bbaab87
+  languageName: node
+  linkType: hard
+
+"read-package-json-fast@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "read-package-json-fast@npm:6.0.0"
+  dependencies:
+    json-parse-even-better-errors: "npm:^6.0.0"
+    npm-normalize-package-bin: "npm:^6.0.0"
+  checksum: 10/22fc66c316533f000ec12ed08ae79ab935a13f07c7e928dbb84af3674b0a47aa56fb8a03c170a9b2e4ecbfcb502f17cd3c79814002c3a3a30d17b1e668b1fc3c
   languageName: node
   linkType: hard
 
@@ -5429,7 +5441,7 @@ __metadata:
     cz-conventional-changelog: "npm:^3.3.0"
     eslint: "npm:^8.57.1"
     lint-staged: "npm:^16.4.0"
-    npm-run-all2: "npm:^8.0.4"
+    npm-run-all2: "npm:^9.0.3"
     prettier: "npm:^3.8.4"
     typescript: "npm:~5.4.5"
   languageName: unknown
@@ -5543,10 +5555,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:^1.7.3":
-  version: 1.8.1
-  resolution: "shell-quote@npm:1.8.1"
-  checksum: 10/af19ab5a1ec30cb4b2f91fd6df49a7442d5c4825a2e269b3712eded10eedd7f9efeaab96d57829880733fc55bcdd8e9b1d8589b4befb06667c731d08145e274d
+"shell-quote@npm:^1.7.3, shell-quote@npm:^1.8.4":
+  version: 1.10.0
+  resolution: "shell-quote@npm:1.10.0"
+  checksum: 10/d4a22aeefe64919290af753ac6098239d7ffee52a5db62c20edef69794bd10b5f86e298f68be26af9606ac435e890dd391994a5405a90bb8aebef1ff1dde839b
   languageName: node
   linkType: hard
 
@@ -6377,6 +6389,17 @@ __metadata:
   bin:
     node-which: bin/which.js
   checksum: 10/6ec99e89ba32c7e748b8a3144e64bfc74aa63e2b2eacbb61a0060ad0b961eb1a632b08fb1de067ed59b002cec3e21de18299216ebf2325ef0f78e0f121e14e90
+  languageName: node
+  linkType: hard
+
+"which@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "which@npm:7.0.0"
+  dependencies:
+    isexe: "npm:^4.0.0"
+  bin:
+    node-which: bin/which.js
+  checksum: 10/913a43ac10df37602ba9795a004dd7ab12ba7dd592aca1f08ec333be1fdd6a49bbf119a88c3f8d0ea70eeb6251726e77069251424d73000299a0a840ed000732
   languageName: node
   linkType: hard
 
