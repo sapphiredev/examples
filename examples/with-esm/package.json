@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"@sapphire/discord-utilities": "^3.4.4",
-		"@sapphire/discord.js-utilities": "7.3.2",
+		"@sapphire/discord.js-utilities": "7.3.3",
 		"@sapphire/fetch": "^3.0.5",
 		"@sapphire/framework": "^5.3.2",
 		"@sapphire/plugin-api": "^8.0.0",
