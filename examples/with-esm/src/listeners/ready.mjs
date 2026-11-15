@@ -1,4 +1,4 @@
-import { Listener } from '@sapphire/framework';
+import { Events, Listener } from '@sapphire/framework';
 import { blue, gray, green, magenta, magentaBright, white, yellow } from 'colorette';
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -9,7 +9,8 @@ export class UserEvent extends Listener {
 	constructor(context, options = {}) {
 		super(context, {
 			...options,
-			once: true
+			once: true,
+			event: Events.ClientReady
 		});
 	}
 

@@ -1,4 +1,4 @@
-const { Listener } = require('@sapphire/framework');
+const { Events, Listener } = require('@sapphire/framework');
 const { blue, gray, green, magenta, magentaBright, white, yellow } = require('colorette');
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -8,7 +8,8 @@ class UserEvent extends Listener {
 	constructor(context, options = {}) {
 		super(context, {
 			...options,
-			once: true
+			once: true,
+			event: Events.ClientReady
 		});
 	}
 
